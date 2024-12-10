@@ -12,10 +12,9 @@ export default function About() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      id="aboutAnchor"
-      className="px-8 flex flex-col items-center"
+      className="px-5 flex flex-col items-center "
     >
-      <section className="bg-pureWhite max-w-[60rem] text-dark py-8 px-6 rounded-lg">
+      <section className="container">
         <div className="max-w-4xl mx-auto">
           <section className="flex flex-col md:flex-row items-center gap-6">
             <img

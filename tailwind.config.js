@@ -21,19 +21,6 @@ export default {
         // primary colors
         primary: '#ffc654',
         primaryHover: '#f7b42d',
-
-        // special hover color effect
-        linkColor: '#2e72b2',
-        linkHoverGradient1: '#2e72b2',
-        linkHoverGradient2: '#3c87cd',
-        linkHoverGradient3: '#d8ad48',
-        linkHoverGradient4: '#f7b42d',
-      },
-      boxShadow: {
-        standard: '0px 5px 25px rgba(0, 0, 0, 0.1)', // defined shadow for elements
-      },
-      borderRadius: {
-        standard: '5px', // border radius for most containers
       },
       fontFamily: {
         headers: ['"PT Sans Caption"', 'sans-serif'], // fonts for headers

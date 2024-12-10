@@ -9,9 +9,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// icons import
-import { MdFormatQuote } from "react-icons/md";
-
 // animation imports
 import { motion } from "framer-motion";
 import { generalVariants } from "/animations";
@@ -51,7 +48,7 @@ export default function Endorsements() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="px-5" // padding: 0 1.3rem;
+      className="px-5 " // padding: 0 1.3rem;
     >
       <Swiper
         grabCursor={true}
@@ -72,30 +69,30 @@ export default function Endorsements() {
         }}
         navigation={true}
         modules={[EffectCreative, Pagination, Navigation]}
-        className="max-w-[70rem] rounded-standard" // max-width: 70rem; border-radius: standard;
+        className="container"
       >
         {endorsementsMap.map((endorsement, index) => (
           <SwiperSlide
             key={index}
-            className="flex flex-col items-center justify-center space-y-2.5 text-center p-12 bg-pureWhite text-grayText"
+            className="flex flex-col items-center justify-center space-y-2.5 text-center bg-pureWhite p-12 text-grayText"
           >
             <img
               src={endorsement.endorsementsImageUrl}
               alt="missing"
-              className="w-16 h-16 rounded-full mx-auto" // width & height: 5.5rem; border-radius: 50%;
+              className="w-16 h-16 rounded-full mx-auto"
             />
 
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={endorsement.linkUrl}
-              className="text-lg font-semibold" // Font size: 1.1rem; font weight: 600;
+              className="text-lg font-semibold"
             >
               {endorsement.name}
             </a>
             <small className="-mt-2 italic">{endorsement.job}</small>
-            <p className="text-xl">
-              <MdFormatQuote /> {endorsement.message} <MdFormatQuote />
+            <p className="text-xl flex w-10/12 mx-auto py-6">
+              {endorsement.message}
             </p>
           </SwiperSlide>
         ))}
