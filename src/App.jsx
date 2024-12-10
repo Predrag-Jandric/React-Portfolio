@@ -21,7 +21,7 @@ export default function App() {
 
       {/* <Skills /> */}
       {/* <Projects /> */}
-      <Roadmap />
+      {/* <Roadmap /> */}
       {/* <Endorsements /> */}
       {/* <Title text="About"/> */}
 

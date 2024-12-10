@@ -53,15 +53,30 @@ export const projectsVariants = {
 export const roadmapVariants = {
   initial: {
     opacity: 0,
+  },
+  animate: (customDelay) => {
+    return {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: customDelay,
+      },
+    };
+  },
+};
+
+export const roadmapArrowVariants = {
+  initial: {
+    opacity: 0,
     x: -70,
   },
-  animate: (index) => {
+  animate: (customDelay) => {
     return {
       opacity: 1,
       x: 0,
       transition: {
         duration: 0.5,
-        delay: 0.5 * index,
+        delay: customDelay,
       },
     };
   },
