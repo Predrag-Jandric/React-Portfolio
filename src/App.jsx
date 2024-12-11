@@ -13,21 +13,17 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <main className="flex flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
-      {/* <Hero /> */}
-      <Title text="Roadmap"/>
-      
-      {/* <About />  */}
-      {/* <Title text="About"/> */}
+    
 
+      <Hero />
+
+      <Title text="Roadmap"/>
+      {/* <About />  */}
       {/* <Skills /> */}
       {/* <Projects /> */}
       {/* <Roadmap /> */}
       {/* <Endorsements /> */}
-      {/* <Title text="About"/> */}
-
       {/* <Faq /> */}
-      <Title text="About"/>
-
       {/* <Footer /> */}
 
       {/* <TestingComp/> */}

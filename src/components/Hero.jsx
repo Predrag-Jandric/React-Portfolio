@@ -4,14 +4,12 @@
 import { motion } from "framer-motion";
 import { heroVariants } from "/animations.js";
 
-// import Navbar from "./navbar/Navbar";
-
-// import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import Navbar from "./navbar/Navbar";
 
 export default function Hero() {
   return (
     <header className="relative h-screen bg-dark overflow-hidden flex items-center">
-      {/* <Navbar /> */}
+      <Navbar />
       <section className="w-11/20 ml-32 z-10 flex flex-col sm:w-11/12 sm:mx-auto sm:items-center sm:text-center">
         <motion.h1
           initial={heroVariants.initial}
