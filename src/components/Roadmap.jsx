@@ -26,7 +26,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: "all" }}
           custom={0.5}
           className="flex items-center gap-8  text-center"
         >
@@ -44,7 +44,7 @@ export default function Roadmap() {
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: "all" }}
             custom={0.5}
           >
             <HiOutlineArrowLongRight size={40} className=" text-gray-600" />
@@ -56,7 +56,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           custom={1}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: "all" }}
           className="flex items-center gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
@@ -73,7 +73,7 @@ export default function Roadmap() {
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: "all" }}
             custom={1}
           >
             <HiOutlineArrowLongRight size={40} className=" text-gray-600" />
@@ -84,7 +84,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: "all" }}
           custom={1.5}
           className="flex items-center gap-8  text-center"
         >
@@ -101,7 +101,7 @@ export default function Roadmap() {
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: "all" }}
             custom={1.5}
           >
             <HiOutlineArrowLongRight size={40} className=" text-gray-600" />
@@ -112,7 +112,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: "all" }}
           custom={2}
           className="flex items-center gap-8  text-center"
         >

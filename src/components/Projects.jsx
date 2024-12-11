@@ -5,61 +5,60 @@ import { projectsVariants, generalVariants } from "/animations";
 // data for map method
 const projectsMap = [
   {
-    name: "Valve Corp. Clone",
+    name: "Project_name",
     description:
-      "I was inspired by this ValveCorp webpage, to recreate it mobile first. The end result is a faithful clone of the original webpage which I made with HTML, JS and styled with Sass.",
-    projectsImageUrl: "src/assets/projects/card-valve.jpeg",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "src/assets/projects/placeholder.png",
     TechUsedUrl: [
       "src/assets/projects/techUsed/nextjs.png",
       "src/assets/projects/techUsed/react.png",
       "src/assets/projects/techUsed/tailwind.png",
       "src/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "https://github.com/Predrag-Jandric/SASS-valve-clone",
-    previewLink: "https://valve-clone.netlify.app/",
+    githubLink: "./",
+    previewLink: "./",
   },
   {
-    name: "React online store",
+    name: "Project_name",
     description:
-      "Ecommerce simulation project that uses modern React features such as Advanced state management, mapping data from API, Routing, reusable components and more.",
-    projectsImageUrl: "src/assets/projects/card-react.png",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "src/assets/projects/placeholder.png",
     TechUsedUrl: [
       "src/assets/projects/techUsed/nextjs.png",
       "src/assets/projects/techUsed/react.png",
       "src/assets/projects/techUsed/tailwind.png",
       "src/assets/projects/techUsed/sass.png",
     ],
-    githubLink:
-      "https://github.com/Predrag-Jandric/React-online-store-exercise",
-    previewLink: "https://peppy-khapse-f13bb3.netlify.app/",
+    githubLink: "./",
+    previewLink: "./",
   },
   {
-    name: "Portfolio",
+    name: "Project_name",
     description:
-      "A showcase of my skills and experience as a developer. It took months of dedication to create and design. React version is coming soon. dasdasdasdasdasd asd asda  asd asdasd",
-    projectsImageUrl: "src/assets/projects/card-portfolio.jpeg",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "src/assets/projects/placeholder.png",
     TechUsedUrl: [
       "src/assets/projects/techUsed/nextjs.png",
       "src/assets/projects/techUsed/react.png",
       "src/assets/projects/techUsed/tailwind.png",
       "src/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "https://github.com/Predrag-Jandric/Portfolio",
-    previewLink: "javascript:void(0)", // You can set this to null or an appropriate value
+    githubLink: "./",
+    previewLink: "./", // You can set this to null or an appropriate value
   },
   {
-    name: "Bootstrap webpage",
+    name: "Project_name",
     description:
-      "This project was an opportunity to put my design and coding skills to the test. I focused on creating a clean, visually appealing layout in Bootstrap with UI/UX rules in mind.",
-    projectsImageUrl: "src/assets/projects/card-bootstrap.jpeg",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "src/assets/projects/placeholder.png",
     TechUsedUrl: [
       "src/assets/projects/techUsed/nextjs.png",
       "src/assets/projects/techUsed/react.png",
       "src/assets/projects/techUsed/tailwind.png",
       "src/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "https://github.com/Predrag-Jandric/Bootstrap-climate-webpage",
-    previewLink: "https://bootstrap-climate-webpage-page.netlify.app/",
+    githubLink: "./",
+    previewLink: "./",
   },
 ];
 
@@ -72,71 +71,71 @@ export default function Projects() {
       viewport={{ once: true }}
       className="flex items-center justify-center"
     >
-      <article className=" w-[80rem] mx-5 flex items-center justify-center">
-        <div className="grid grid-cols-1 gap-20  lg:grid-cols-2 ">
-          {projectsMap.map((project, index) => (
-            <motion.section
-              key={index}
-              variants={projectsVariants}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              custom={index}
-              className="bg-pureWhite w-[30rem]   flex flex-col items-center justify-center gap-8 rounded-lg shadow-md overflow-hidden "
-            >
-              <img
-                src={project.projectsImageUrl}
-                alt="image missing"
-                className="w-56 h-56"
-              />
+      {/* <article className="bg-red-100 w-[80rem] mx-5 flex items-center justify-center"> */}
+      <div className="grid grid-cols-1 gap-20 place-items-center lg:grid-cols-2 ">
+        {projectsMap.map((project, index) => (
+          <motion.section
+            key={index}
+            variants={projectsVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            custom={index}
+            className="max-w-[30rem] bg-pureWhite w-11/12 flex flex-col items-center justify-center gap-8 rounded-lg shadow-md overflow-hidden "
+          >
+            <img
+              src={project.projectsImageUrl}
+              alt="image missing"
+              className=""
+            />
 
-              {/* Card text */}
-              <article className="flex flex-col items-center justify-center gap-4 px-5 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {project.name}
-                </h3>
-                <p className="text-gray-600">{project.description}</p>
-              </article>
+            {/* Card text */}
+            <article className="flex flex-col items-center justify-center gap-4 px-6 text-center">
+              <h3 className="text-2xl font-semibold text-gray-800">
+                {project.name}
+              </h3>
+              <p className="text-gray-600">{project.description}</p>
+            </article>
 
-              {/* Technologies used */}
-              <article className="flex flex-col items-center gap-2 text-lg">
-                <h4 className="text-gray-800 font-medium">Technologies used</h4>
-                <div className="flex flex-row items-center justify-center gap-2">
-                  {project.TechUsedUrl.map((techImageUrl, techIndex) => (
-                    <img
-                      key={techIndex}
-                      src={techImageUrl}
-                      alt="image missing"
-                      className="w-[4rem] h-[4rem]"
-                    />
-                  ))}
-                </div>
-              </article>
+            {/* Technologies used */}
+            <article className="flex flex-col items-center gap-2 text-lg">
+              <h4 className="text-gray-800 font-medium">Technologies used</h4>
+              <div className="flex flex-row items-center justify-center gap-2">
+                {project.TechUsedUrl.map((techImageUrl, techIndex) => (
+                  <img
+                    key={techIndex}
+                    src={techImageUrl}
+                    alt="image missing"
+                    className="size-14"
+                  />
+                ))}
+              </div>
+            </article>
 
-              {/* Buttons */}
-              <article className="flex items-center justify-center gap-7 mb-10  sm:gap-6">
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                >
-                  Code
-                </a>
+            {/* Buttons */}
+            <article className="flex items-center justify-center gap-7 mb-10">
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn w-28 xs:w-40"
+              >
+                Code
+              </a>
 
-                <a
-                  href={project.previewLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                >
-                  Preview
-                </a>
-              </article>
-            </motion.section>
-          ))}
-        </div>
-      </article>
+              <a
+                href={project.previewLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn w-28 xs:w-40"
+              >
+                Preview
+              </a>
+            </article>
+          </motion.section>
+        ))}
+      </div>
+      {/* </article> */}
     </motion.div>
   );
 }

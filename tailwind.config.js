@@ -27,6 +27,9 @@ export default {
         text: ['"Poppins"', 'sans-serif'], // fonts for text
       },
     },
+    screens: {
+      'xs': '480px',
+    }
   },
   plugins: [],
 };
