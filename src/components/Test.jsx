@@ -1,7 +1,15 @@
+function Test() {
+  return (
+    <div className="bg-stone-400 h-[90vh]">
+      <MobileNavbar />
+    </div>
+  );
+}
+
+export default Test;
 
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import { MenuToggleBtn } from "./MenuToggleBtn";
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
@@ -56,7 +64,7 @@ function useMenuAnimation(isOpen) {
   return scope;
 }
 
-export default function MobileNavbar() {
+function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
@@ -114,3 +122,40 @@ export default function MobileNavbar() {
     </div>
   );
 }
+
+export const Path = (props) => (
+  <path
+    fill="#f1f1f1"
+    strokeWidth="3"
+    stroke="#f1f1f1"
+    strokeLinecap="round"
+    {...props}
+  />
+);
+
+export const MenuToggleBtn = ({ toggle }) => (
+  <button
+    className="absolute z-50 top-5 right-3 w-10 h-10 sm:hidden cursor-pointer"
+    onClick={toggle}
+  >
+    <svg width="32" height="32" viewBox="0 0 23 18">
+      <Path
+        d="M 2 2.5 L 20 2.5"
+        className="top"
+        variants={{
+          closed: { d: "M 2 2.5 L 20 2.5" },
+          open: { d: "M 3 16.5 L 17 2.5" },
+        }}
+      />
+      <Path d="M 2 9.423 L 20 9.423" opacity="1" className="middle" />
+      <Path
+        d="M 2 16.346 L 20 16.346"
+        className="bottom"
+        variants={{
+          closed: { d: "M 2 16.346 L 20 16.346" },
+          open: { d: "M 3 2.5 L 17 16.346" },
+        }}
+      />
+    </svg>
+  </button>
+);
