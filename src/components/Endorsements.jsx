@@ -21,7 +21,7 @@ const endorsementsMap = [
     job: "Policeman at  XYZ Osiguranje",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
+    linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
   {
     endorsementsImageUrl: "src/assets/endorsements/face3.jpg",
@@ -29,7 +29,7 @@ const endorsementsMap = [
     job: "Freelancer at Self-Employed",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
+    linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
   {
     endorsementsImageUrl: "src/assets/endorsements/face2.jpg",
@@ -37,7 +37,7 @@ const endorsementsMap = [
     job: "Coleague at XYZ company",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
+    linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
 ];
 
@@ -86,11 +86,11 @@ export default function Endorsements() {
               target="_blank"
               rel="noopener noreferrer"
               href={endorsement.linkUrl}
-              className="text-lg font-semibold"
+              className="specialLink"
             >
               {endorsement.name}
             </a>
-            <small className="-mt-2 italic">{endorsement.job}</small>
+            <small className=" block italic">{endorsement.job}</small>
             <p className="text-xl flex w-10/12 mx-auto py-6">
               {endorsement.message}
             </p>

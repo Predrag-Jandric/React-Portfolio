@@ -8,21 +8,25 @@ import Roadmap from "./components/Roadmap";
 import Endorsements from "./components/Endorsements";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
-import Test from "./components/Test";
 
 export default function App() {
   return (
     <main className="flex flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
       <Hero />
-      {/* <Test /> */}
-      {/* <Title text="Roadmap"/> */}
-      {/* <About />  */}
-      {/* <Skills /> */}
-      {/* <Projects /> */}
-      {/* <Roadmap /> */}
-      {/* <Endorsements /> */}
-      {/* <Faq /> */}
-      {/* <Footer /> */}
+
+      <Title text="About" />
+      <About />
+      <Title text="Skills" />
+      <Skills />
+      <Title text="Projects" />
+      <Projects />
+      <Title text="Roadmap" />
+      <Roadmap />
+      <Title text="Endorsements" />
+      <Endorsements />
+      <Title text="Faq" />
+      <Faq />
+      <Footer />
     </main>
   );
 }

@@ -3,7 +3,6 @@ import react from "../assets/roadmap/react.png";
 import job from "../assets/roadmap/job.png";
 import mern from "../assets/roadmap/mern.png";
 
-
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import {
   generalVariants,
@@ -12,23 +11,25 @@ import {
 } from "/animations";
 import { motion } from "framer-motion";
 
+const viewportConfig = { once: true, };
+
 export default function Roadmap() {
   return (
     <motion.section
-      className="overflow-x-auto px-6 flex flex-col items-center "
+      className="overflow-x-auto px-6 flex flex-col py-16 items-center shadow-md bg-dark"
       variants={generalVariants}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
     >
-      <div className="flex items-center justify-center gap-8 container">
+      <div className="flex items-center justify-center shadow-none gap-8 text-white container bg-dark">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: "all" }}
+          viewport={viewportConfig}
           custom={0.5}
-          className="flex items-center gap-8  text-center"
+          className="flex items-center gap-8 text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q1 2025</p>
@@ -44,10 +45,10 @@ export default function Roadmap() {
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true, amount: "all" }}
+            viewport={viewportConfig}
             custom={0.5}
           >
-            <HiOutlineArrowLongRight size={40} className=" text-gray-600" />
+            <HiOutlineArrowLongRight size={40} className=" text-white" />
           </motion.span>
         </motion.article>
 
@@ -56,7 +57,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           custom={1}
-          viewport={{ once: true, amount: "all" }}
+          viewport={viewportConfig}
           className="flex items-center gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
@@ -73,10 +74,10 @@ export default function Roadmap() {
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true, amount: "all" }}
+            viewport={viewportConfig}
             custom={1}
           >
-            <HiOutlineArrowLongRight size={40} className=" text-gray-600" />
+            <HiOutlineArrowLongRight size={40} className=" text-white" />
           </motion.span>
         </motion.article>
 
@@ -84,7 +85,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: "all" }}
+          viewport={viewportConfig}
           custom={1.5}
           className="flex items-center gap-8  text-center"
         >
@@ -101,10 +102,10 @@ export default function Roadmap() {
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true, amount: "all" }}
+            viewport={viewportConfig}
             custom={1.5}
           >
-            <HiOutlineArrowLongRight size={40} className=" text-gray-600" />
+            <HiOutlineArrowLongRight size={40} className=" text-white" />
           </motion.span>
         </motion.article>
 
@@ -112,7 +113,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: "all" }}
+          viewport={viewportConfig}
           custom={2}
           className="flex items-center gap-8  text-center"
         >

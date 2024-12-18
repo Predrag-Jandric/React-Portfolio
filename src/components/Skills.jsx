@@ -27,7 +27,7 @@ export default function Skills() {
       whileInView="animate"
       viewport={{ once: true }}
     >
-      <section className="flex flex-col items-center justify-center gap-16 py-16 bg-dark">
+      <section className="flex flex-col items-center justify-center gap-16 py-16 bg-dark shadow-md">
         <article className="grid gap-8 text-center text-lg font-normal md:grid-cols-5 grid-cols-2">
           {skillsMap.map((skill, index) => (
             <motion.div

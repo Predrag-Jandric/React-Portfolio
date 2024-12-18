@@ -22,7 +22,7 @@ export default function About() {
               //   width={192}
               //   height={192}
               alt="image missing"
-              className="w-48 h-48 rounded-full object-cover border-4 border-primary"
+              className="w-48 h-48 rounded-full object-cover "
             />
 
             <div>

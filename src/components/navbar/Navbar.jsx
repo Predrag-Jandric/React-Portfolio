@@ -1,17 +1,17 @@
 import MobileNavbar from "./MobileNavbar";
 
 const navLinks = [
-  { href: "#", label: "Skills" },
-  { href: "#", label: "Projects" },
-  { href: "#", label: "Endorsements" },
-  { href: "#", label: "Questions" },
+  { href: "#", label: "Link" },
+  { href: "#", label: "Link" },
+  { href: "#", label: "Link" },
+  { href: "#", label: "Link" },
 ];
 
 function Navbar() {
   return (
     <>
       <nav className="flex items-center justify-center h-[10vh] px-32 w-full absolute top-0 left-0 right-0 md:px-12">
-        <ul className="hidden sm:flex items-center justify-center gap-0 transition ease-in-out duration-200 bg-stone-700 ">
+        <ul className="hidden sm:flex items-center justify-center gap-0 transition ease-in-out duration-200">
           {navLinks.map((link, index) => (
             <li key={index} className="relative flex w-full z-10 group">
               <a

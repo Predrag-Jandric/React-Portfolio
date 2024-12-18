@@ -94,18 +94,18 @@ export default function MobileNavbar() {
   return (
     <div ref={scope}>
       <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20  z-40 text-center translate-x-full transition-colors">
-        <ul className="flex flex-col gap-y-4 px-8 ">
-          <li className="text-white text-3xl cursor-pointer  hover:text-primary ">
-            Portfolio
+        <ul className="flex flex-col gap-y-6 px-8 ">
+          <li className="text-white text-3xl cursor-pointer hover:text-primary ">
+            Link
           </li>
           <li className="text-white text-3xl cursor-pointer hover:text-primary">
-            About
+            Link
           </li>
           <li className="text-white text-3xl cursor-pointer hover:text-primary">
-            Contact
+            Link
           </li>
           <li className="text-white text-3xl cursor-pointer hover:text-primary">
-            Search
+            Link
           </li>
         </ul>
       </nav>

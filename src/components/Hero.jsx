@@ -10,24 +10,23 @@ export default function Hero() {
   return (
     <header className="relative h-screen bg-dark overflow-hidden flex items-center">
       <Navbar />
-      <section className="bg-stone-500 z-10 flex flex-col  sm:mx-auto sm:items-center sm:text-center">
+      {/* promeni padding na X asi */}
+      <section className="flex flex-col px-6 sm:mx-auto sm:items-center sm:text-center">
         <motion.h1
           initial={heroVariants.initial}
           animate={heroVariants.animate}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-4xl font-headers text-primary sm:text-3xl"
+          className="text-4xl font-headers text-primary sm:text-5xl"
         >
-          Hi, my name is Predrag
+          Lorem ipsum dolor sit.
         </motion.h1>
         <motion.p
           initial={heroVariants.initial}
           animate={heroVariants.animate}
           transition={{ duration: 0.5, delay: 0.45 }}
-          className="text-lg text-white my-6 sm:text-base"
+          className="text-lg text-white my-6 bg-red-90 md:max-w-4xl"
         >
-          Let&apos;s make the internet interesting! I am eager to fulfill my
-          potential as <span className="text-primary">lorem</span> and create
-          outstanding websites that deliver an exceptional user experience.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit officia quam tenetur repellendus nesciunt perspiciatis. <span className="text-primary">lorem</span> Velit officia quam tenetur repellendus nesciunt perspiciatis. Velit officia quam tenetur repellendus nesciunt perspiciatis. 
         </motion.p>
 
         {/* <motion.a
