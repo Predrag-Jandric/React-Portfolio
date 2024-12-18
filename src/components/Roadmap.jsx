@@ -1,7 +1,7 @@
-import php from "../assets/roadmap/php.png";
-import react from "../assets/roadmap/react.png";
-import job from "../assets/roadmap/job.png";
-import mern from "../assets/roadmap/mern.png";
+import php from "/assets/roadmap/php.png";
+import react from "/assets/roadmap/react.png";
+import job from "/assets/roadmap/job.png";
+import mern from "/assets/roadmap/mern.png";
 
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import {

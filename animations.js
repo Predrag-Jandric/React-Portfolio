@@ -58,13 +58,14 @@ export const roadmapVariants = {
     return {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.4,
         delay: customDelay,
       },
     };
   },
 };
 
+// ROADMAP ARROW variants
 export const roadmapArrowVariants = {
   initial: {
     opacity: 0,
@@ -75,7 +76,7 @@ export const roadmapArrowVariants = {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.4,
         delay: customDelay,
       },
     };

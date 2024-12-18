@@ -16,7 +16,7 @@ import { generalVariants } from "/animations";
 // data for map method
 const endorsementsMap = [
   {
-    endorsementsImageUrl: "src/assets/endorsements/face1.jpg",
+    endorsementsImageUrl: "/assets/endorsements/face1.jpg",
     name: "Pera Peric",
     job: "Policeman at  XYZ Osiguranje",
     message:
@@ -24,7 +24,7 @@ const endorsementsMap = [
     linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
   {
-    endorsementsImageUrl: "src/assets/endorsements/face3.jpg",
+    endorsementsImageUrl: "/assets/endorsements/face3.jpg",
     name: "Marko Maric",
     job: "Freelancer at Self-Employed",
     message:
@@ -32,7 +32,7 @@ const endorsementsMap = [
     linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
   {
-    endorsementsImageUrl: "src/assets/endorsements/face2.jpg",
+    endorsementsImageUrl: "/assets/endorsements/face2.jpg",
     name: "Natasa Nikic",
     job: "Coleague at XYZ company",
     message:
@@ -48,7 +48,7 @@ export default function Endorsements() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="px-5 " // padding: 0 1.3rem;
+      className="px-5"
     >
       <Swiper
         grabCursor={true}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { generalVariants } from "/animations.js";
 
 // images
-import devPhoto from "../assets/about/devPhoto.jpeg";
+import devPhoto from "/assets/about/devPhoto.jpg";
 
 export default function About() {
   return (

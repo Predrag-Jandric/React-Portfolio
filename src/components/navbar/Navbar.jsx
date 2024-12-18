@@ -1,10 +1,10 @@
 import MobileNavbar from "./MobileNavbar";
 
 const navLinks = [
-  { href: "#", label: "Link" },
-  { href: "#", label: "Link" },
-  { href: "#", label: "Link" },
-  { href: "#", label: "Link" },
+  { href: "#", label: "Consectetur" },
+  { href: "#", label: "Autem" },
+  { href: "#", label: "Numquam" },
+  { href: "#", label: "Asperiores" },
 ];
 
 function Navbar() {

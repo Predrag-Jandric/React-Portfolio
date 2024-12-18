@@ -96,16 +96,16 @@ export default function MobileNavbar() {
       <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20  z-40 text-center translate-x-full transition-colors">
         <ul className="flex flex-col gap-y-6 px-8 ">
           <li className="text-white text-3xl cursor-pointer hover:text-primary ">
-            Link
+          Consectetur
           </li>
           <li className="text-white text-3xl cursor-pointer hover:text-primary">
-            Link
+          Eveniet
           </li>
           <li className="text-white text-3xl cursor-pointer hover:text-primary">
-            Link
+          Adipisicing
           </li>
           <li className="text-white text-3xl cursor-pointer hover:text-primary">
-            Link
+          Dolor
           </li>
         </ul>
       </nav>

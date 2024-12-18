@@ -6,15 +6,15 @@ import { generalVariants } from "/animations";
 const footerMap = [
   {
     linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
-    footerImageUrl: "src/assets/all-social-icons/linkedIn.png",
+    footerImageUrl: "/assets/all-social-icons/linkedIn.png",
   },
   {
     linkUrl: "https://github.com/Predrag-Jandric",
-    footerImageUrl: "src/assets/all-social-icons/github-footer.png",
+    footerImageUrl: "/assets/all-social-icons/github-footer.png",
   },
   {
     linkUrl: "https://www.youtube.com/@predragjandric/videos",
-    footerImageUrl: "src/assets/all-social-icons/youtube.png",
+    footerImageUrl: "/assets/all-social-icons/youtube.png",
   },
 ];
 
