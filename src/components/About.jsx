@@ -1,8 +1,6 @@
-// animation imports
 import { motion } from "framer-motion";
 import { generalVariants } from "/animations.js";
-
-// images
+import Button from "./Button";
 import devPhoto from "/assets/about/devPhoto.jpg";
 
 export default function About() {
@@ -12,24 +10,22 @@ export default function About() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="px-5 flex flex-col items-center "
+      className="xs:px-5 px-3 flex flex-col items-center "
     >
-      <section className="container">
+      <section className="container text-grayText rounded-custom">
         <div className="max-w-4xl mx-auto">
           <section className="flex flex-col md:flex-row items-center gap-6">
             <img
               src={devPhoto}
-              //   width={192}
-              //   height={192}
               alt="image missing"
-              className="w-48 h-48 rounded-full object-cover "
+              className="size-48 rounded-full object-cover"
             />
 
             <div>
               <h3 className="text-2xl font-semibold mb-4">
                 Progress-oriented Front End web developer
               </h3>
-              <p className="text-lg text-light-gray-text">
+              <p className="text-lg">
                 Through three years of dedicated learning via courses, personal
                 projects, and guidance, I&apos;ve developed a strong grasp of
                 programming concepts. To solidify my understanding, I also
@@ -40,15 +36,7 @@ export default function About() {
             </div>
           </section>
 
-          
-            <a
-              href="/"
-              download
-              className="btn mx-auto mt-10"
-            >
-              Download CV
-            </a>
-          
+          <Button className="mx-auto mt-10">Download CV</Button>
         </div>
       </section>
     </motion.div>

@@ -1,6 +1,6 @@
-// animation imports
 import { motion } from "framer-motion";
 import { generalVariants } from "/animations";
+import Button from "./Button";
 
 // data for map method
 const footerMap = [
@@ -20,13 +20,13 @@ const footerMap = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center bg-dark text-dark py-14 px-6">
+    <footer className="flex flex-col mt-16 items-center bg-dark py-16 xs:px-5 px-3">
       <motion.section
         variants={generalVariants}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="container flex flex-col md:flex-row md:space-x-12"
+        className="text-grayText rounded-custom container flex flex-col md:flex-row md:space-x-12"
       >
         {/* Form Section */}
         <form
@@ -35,9 +35,9 @@ export default function Footer() {
           action="https://formsubmit.co/predrag.jandric.bg@gmail.com"
           method="POST"
         >
-          <h3 className="text-xl font-semibold relative mb-8 text-gray-800">
+          <h3 className="text-2xl font-semibold relative mb-8">
             Message Me
-            <span className="absolute w-20 h-[3px] bg-primary top-8 left-0"></span>
+            <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
 
           {/* Form Inputs */}
@@ -63,30 +63,19 @@ export default function Footer() {
             className="formInput"
           ></textarea>
 
-          <button type="submit" className="btn">
-            Send
-          </button>
+          <Button type="submit">Send</Button>
         </form>
 
-        {/* Call to Action Section */}
+        {/* get in touch section */}
         <article className="flex-1">
-          <h3 className="text-xl font-semibold relative mb-8 text-gray-800">
+          <h3 className="text-2xl font-semibold relative mb-8">
             Get in Touch
-            <span className="absolute w-20 h-[3px] bg-primary top-8 left-0"></span>
+            <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
           <p className="mb-4">
             Your feedback and insights are highly appreciated. If you&apos;d
             like to connect with me or explore more of my work, you can find me
             on LinkedIn, GitHub, and my YouTube channel. Thank you for visiting!
-          </p>
-          <p className="mb-4">
-            My Email is:{" "}
-            <a
-              className="specialLink"
-              href="mailto: predrag.jandric.bg@gmail.com"
-            >
-              predrag.jandric.bg@gmail.com
-            </a>
           </p>
 
           <div className="w-fit flex gap-4">

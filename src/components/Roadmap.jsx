@@ -1,9 +1,13 @@
+// images imports
 import php from "/assets/roadmap/php.png";
 import react from "/assets/roadmap/react.png";
 import job from "/assets/roadmap/job.png";
 import mern from "/assets/roadmap/mern.png";
 
+// icons imports
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
+
+// animations imports
 import {
   generalVariants,
   roadmapVariants,
@@ -22,14 +26,14 @@ export default function Roadmap() {
       whileInView="animate"
       viewport={{ once: true }}
     >
-      <div className="flex items-center justify-center shadow-none gap-8 text-white container bg-dark">
+      <div className="flex text-white items-center justify-center shadow-none gap-8  container bg-dark">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
           viewport={viewportConfig}
           custom={0.5}
-          className="flex items-center gap-8 text-center"
+          className="flex items-center gap-8 text-center "
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q1 2025</p>

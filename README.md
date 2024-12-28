@@ -47,3 +47,11 @@ DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to 
 
 - add Why I Code section to your github
 - add emotional intelligence as strong point
+- add user stories image to readmes for featured projects
+
+**to do now**
+look up fonts and implement them
+make card background have slight gradient
+
+
+

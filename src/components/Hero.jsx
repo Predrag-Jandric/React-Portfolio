@@ -1,9 +1,5 @@
-"use client";
-
-// animation imports
 import { motion } from "framer-motion";
 import { heroVariants } from "/animations.js";
-
 import Navbar from "./navbar/Navbar";
 
 export default function Hero() {
@@ -16,7 +12,7 @@ export default function Hero() {
           initial={heroVariants.initial}
           animate={heroVariants.animate}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-4xl font-headers text-primary sm:text-5xl"
+          className="text-4xl text-primary sm:text-5xl"
         >
           Lorem ipsum dolor sit.
         </motion.h1>

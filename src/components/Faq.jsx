@@ -25,12 +25,12 @@ export default function Faq() {
   ];
 
   return (
-    <section className="mx-auto max-w-[700px] text-gray-800  px-4">
+    <section className="mx-auto max-w-[62rem] text-gray-800  xs:px-5 px-3">
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;
         return (
           <div
-            className="mb-4 overflow-hidden rounded-lg bg-gray-100 shadow-md transition-transform  ease-in-out"
+            className="mb-4 overflow-hidden rounded-custom bg-gray-100 shadow-md transition-transform  ease-in-out"
             key={index}
           >
             <div

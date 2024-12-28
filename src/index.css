@@ -4,21 +4,19 @@
 
 @layer components {
   .btn {
-    /* px-6 py-2 text-dark rounded-standard shadow-standard bg-primary hover:bg-primaryHover transition duration-300 ease-in-out flex items-center justify-center w-[10rem]; */
-
-    @apply px-6 py-2 flex items-center justify-center w-40 shadow-md bg-slate-300 transition duration-300 ease-in-out hover:bg-slate-400;
+    @apply bg-primary font-semibold hover:bg-primaryHover px-6 py-2.5 flex text-center items-center justify-center w-40 shadow-md transition duration-300 ease-in-out;
   }
   .title {
-    @apply text-5xl mt-14 font-bold text-grayText font-headers text-center tracking-wider relative w-fit mx-auto;
+    @apply text-5xl mt-16 mb-6 font-bold text-grayText text-center tracking-wider relative w-fit mx-auto;
     /* mt-28 mb-7 */
   }
   .title::after {
     content: "";
-    @apply absolute bottom-[-20%] left-1/2 w-20 h-[8%] bg-primary;
+    @apply absolute bottom-[-50%] left-1/2 w-20 h-[8%] bg-primary;
     transform: translate(-50%);
   }
   .container {
-    @apply bg-pureWhite max-w-[60rem] text-dark shadow-md py-8 px-6 rounded-lg;
+    @apply bg-pureWhite max-w-[60rem] text-dark shadow-md p-10;
   }
   .formInput {
     @apply w-full mb-4 bg-slate-100 rounded-lg border border-stone-300 p-2 text-dark;
@@ -56,17 +54,6 @@
     background-position: 100%;
   }
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  list-style-type: none;
-  text-decoration: none;
-  outline: none;
-  border: none;
-} */
 
 body {
   overflow-x: hidden;

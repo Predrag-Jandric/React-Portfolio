@@ -9,6 +9,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+
 // animation imports
 import { motion } from "framer-motion";
 import { generalVariants } from "/animations";
@@ -21,7 +23,8 @@ const endorsementsMap = [
     job: "Policeman at  XYZ Osiguranje",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
+    linkUrl:
+      "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
   {
     endorsementsImageUrl: "/assets/endorsements/face3.jpg",
@@ -29,7 +32,8 @@ const endorsementsMap = [
     job: "Freelancer at Self-Employed",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
+    linkUrl:
+      "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
   {
     endorsementsImageUrl: "/assets/endorsements/face2.jpg",
@@ -37,7 +41,8 @@ const endorsementsMap = [
     job: "Coleague at XYZ company",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
+    linkUrl:
+      "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
   },
 ];
 
@@ -48,7 +53,7 @@ export default function Endorsements() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="px-5"
+      className="xs:px-5 px-3"
     >
       <Swiper
         grabCursor={true}
@@ -69,30 +74,38 @@ export default function Endorsements() {
         }}
         navigation={true}
         modules={[EffectCreative, Pagination, Navigation]}
-        className="container"
+        className="container rounded-custom"
       >
         {endorsementsMap.map((endorsement, index) => (
           <SwiperSlide
             key={index}
-            className="flex flex-col items-center justify-center space-y-2.5 text-center bg-pureWhite p-12 text-grayText"
+            className="flex flex-col items-center justify-center  text-center bg-pureWhite text-grayText p-10"
           >
             <img
               src={endorsement.endorsementsImageUrl}
               alt="missing"
-              className="w-16 h-16 rounded-full mx-auto"
+              className="size-24 mb-3 rounded-full mx-auto"
             />
 
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={endorsement.linkUrl}
-              className="specialLink"
+              className="specialLink text-lg "
             >
               {endorsement.name}
             </a>
-            <small className=" block italic">{endorsement.job}</small>
+            <small className="text-stone-400 block italic">
+              {endorsement.job}
+            </small>
             <p className="text-xl flex w-10/12 mx-auto py-6">
-              {endorsement.message}
+              <span className="self-start">
+                <RiDoubleQuotesL />
+              </span>
+              <span className="md:px-5">{endorsement.message}</span>
+              <span className="self-end">
+                <RiDoubleQuotesR />
+              </span>
             </p>
           </SwiperSlide>
         ))}

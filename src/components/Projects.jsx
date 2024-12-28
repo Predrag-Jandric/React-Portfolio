@@ -1,6 +1,6 @@
-// animation imports
 import { motion } from "framer-motion";
 import { projectsVariants, generalVariants } from "/animations";
+import Button from "./Button";
 
 // data for map method
 const projectsMap = [
@@ -15,8 +15,8 @@ const projectsMap = [
       "/assets/projects/techUsed/tailwind.png",
       "/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "./",
-    previewLink: "./",
+    githubLink: "https://github.com/Predrag-Jandric/NodeJS-learning",
+    previewLink: "https://peppy-profiterole-80df83.netlify.app/",
   },
   {
     name: "Project_name",
@@ -29,8 +29,8 @@ const projectsMap = [
       "/assets/projects/techUsed/tailwind.png",
       "/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "./",
-    previewLink: "./",
+    githubLink: "https://github.com/Predrag-Jandric/React-dashboard",
+    previewLink: "https://peppy-profiterole-80df83.netlify.app/",
   },
   {
     name: "Project_name",
@@ -43,8 +43,8 @@ const projectsMap = [
       "/assets/projects/techUsed/tailwind.png",
       "/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "./",
-    previewLink: "./", // You can set this to null or an appropriate value
+    githubLink: "https://github.com/Predrag-Jandric/NodeJS-learning",
+    previewLink: "https://classy-klepon-4630ee.netlify.app/",
   },
   {
     name: "Project_name",
@@ -57,8 +57,8 @@ const projectsMap = [
       "/assets/projects/techUsed/tailwind.png",
       "/assets/projects/techUsed/sass.png",
     ],
-    githubLink: "./",
-    previewLink: "./",
+    githubLink: "https://github.com/Predrag-Jandric/React-dashboard",
+    previewLink: "https://classy-klepon-4630ee.netlify.app/",
   },
 ];
 
@@ -69,10 +69,10 @@ export default function Projects() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex items-center justify-center"
+      className="flex items-center justify-center "
     >
       {/* <article className="bg-red-100 w-[80rem] mx-5 flex items-center justify-center"> */}
-      <div className="grid grid-cols-1 gap-20 place-items-center lg:grid-cols-2 ">
+      <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 ">
         {projectsMap.map((project, index) => (
           <motion.section
             key={index}
@@ -81,7 +81,7 @@ export default function Projects() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="max-w-[30rem] bg-pureWhite w-11/12 flex flex-col items-center justify-center gap-8 rounded-lg shadow-md overflow-hidden "
+            className="max-w-[30rem] bg-pureWhite w-11/12 flex flex-col items-center justify-center gap-8 rounded-custom shadow-md overflow-hidden "
           >
             <img
               src={project.projectsImageUrl}
@@ -91,15 +91,15 @@ export default function Projects() {
 
             {/* Card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-center">
-              <h3 className="text-2xl font-semibold text-gray-800">
+              <h3 className="text-2xl font-semibold">
                 {project.name}
               </h3>
-              <p className="text-gray-600">{project.description}</p>
+              <p >{project.description}</p>
             </article>
 
             {/* Technologies used */}
             <article className="flex flex-col items-center gap-2 text-lg">
-              <h4 className="text-gray-800 font-medium">Technologies used</h4>
+              <h4 className="font-medium">Technologies used</h4>
               <div className="flex flex-row items-center justify-center gap-2">
                 {project.TechUsedUrl.map((techImageUrl, techIndex) => (
                   <img
@@ -114,23 +114,23 @@ export default function Projects() {
 
             {/* Buttons */}
             <article className="flex items-center justify-center gap-7 mb-10">
-              <a
+              <Button
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn w-28 xs:w-40"
+                className="w-28 xs:w-40"
               >
                 Code
-              </a>
+              </Button>
 
-              <a
+              <Button
                 href={project.previewLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn w-28 xs:w-40"
+                className="w-28 xs:w-40"
               >
                 Preview
-              </a>
+              </Button>
             </article>
           </motion.section>
         ))}
