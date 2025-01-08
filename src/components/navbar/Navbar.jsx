@@ -1,13 +1,16 @@
 import MobileNavbar from "./MobileNavbar";
+import useScrollTo from "../../useScrollTo";
 
 const navLinks = [
-  { href: "#", label: "Skills" },
-  { href: "#", label: "Autem" },
-  { href: "#", label: "Numquam" },
-  { href: "#", label: "Asperiores" },
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "endorsements", label: "Endorsements" },
+  { href: "faq", label: "Faq" },
 ];
 
 function Navbar() {
+  const scrollToSection = useScrollTo(170);
   return (
     <>
       <nav className="flex items-center justify-center h-[10vh] px-32 w-full absolute top-0 left-0 right-0 md:px-12">
@@ -15,8 +18,12 @@ function Navbar() {
           {navLinks.map((link, index) => (
             <li key={index} className="relative flex w-full z-10 group">
               <a
-                href={link.href}
-                className="text-white text-lg py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100"
+                href={`#${link.href}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.href);
+                }}
+                className="text-white text-xl py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100"
               >
                 {link.label}
               </a>

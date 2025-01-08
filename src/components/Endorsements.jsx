@@ -54,6 +54,7 @@ export default function Endorsements() {
       whileInView="animate"
       viewport={{ once: true }}
       className="xs:px-5 px-3"
+      id="endorsements"
     >
       <Swiper
         grabCursor={true}

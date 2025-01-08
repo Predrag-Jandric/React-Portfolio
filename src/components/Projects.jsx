@@ -69,7 +69,8 @@ export default function Projects() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex items-center justify-center "
+      className="flex items-center justify-center"
+      id="projects"
     >
       {/* <article className="bg-red-100 w-[80rem] mx-5 flex items-center justify-center"> */}
       <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 ">
@@ -91,10 +92,8 @@ export default function Projects() {
 
             {/* Card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-center">
-              <h3 className="text-2xl font-semibold">
-                {project.name}
-              </h3>
-              <p >{project.description}</p>
+              <h3 className="text-2xl font-semibold">{project.name}</h3>
+              <p>{project.description}</p>
             </article>
 
             {/* Technologies used */}

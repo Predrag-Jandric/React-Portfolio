@@ -25,6 +25,7 @@ export default function Roadmap() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
+      id="roadmap"
     >
       <div className="flex text-white items-center justify-center shadow-none gap-8  container bg-dark">
         <motion.article

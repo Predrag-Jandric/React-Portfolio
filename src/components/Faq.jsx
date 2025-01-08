@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { generalVariants } from "/animations";
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -25,7 +27,14 @@ export default function Faq() {
   ];
 
   return (
-    <section className="mx-auto max-w-[62rem] text-gray-800  xs:px-5 px-3">
+    <motion.section
+      variants={generalVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      id="faq"
+      className="mx-auto max-w-[62rem] text-gray-800  xs:px-5 px-3"
+    >
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;
         return (
@@ -52,6 +61,6 @@ export default function Faq() {
           </div>
         );
       })}
-    </section>
+    </motion.section>
   );
 }

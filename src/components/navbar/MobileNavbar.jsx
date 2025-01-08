@@ -1,7 +1,15 @@
-
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
 import { MenuToggleBtn } from "./MenuToggleBtn";
+import useScrollTo from "../../useScrollTo";
+
+const navLinks = [
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "endorsements", label: "Endorsements" },
+  { href: "faq", label: "Faq" },
+];
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
@@ -57,6 +65,7 @@ function useMenuAnimation(isOpen) {
 }
 
 export default function MobileNavbar() {
+  const scrollToSection = useScrollTo(170);
   const [isOpen, setIsOpen] = useState(false);
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
@@ -84,29 +93,33 @@ export default function MobileNavbar() {
 
   const handleToggle = () => {
     if (!clickable) return;
-
     setClickable(false);
     setIsOpen((prev) => !prev);
-
     setTimeout(() => setClickable(true), 800);
   };
+
+
 
   return (
     <div ref={scope}>
       <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20  z-40 text-center translate-x-full transition-colors">
         <ul className="flex flex-col gap-y-6 px-8 ">
-          <li className="text-white text-3xl cursor-pointer hover:text-primary ">
-          Consectetur
-          </li>
-          <li className="text-white text-3xl cursor-pointer hover:text-primary">
-          Eveniet
-          </li>
-          <li className="text-white text-3xl cursor-pointer hover:text-primary">
-          Adipisicing
-          </li>
-          <li className="text-white text-3xl cursor-pointer hover:text-primary">
-          Dolor
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index} className="relative flex w-full z-10 group">
+              <a
+                href={`#${link.href}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.href);
+                  setIsOpen(false);
+                }}
+                className="text-pureWhite text-3xl w-full py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100 hover:text-primary "
+              >
+                {link.label}
+              </a>
+              <span className="absolute top-full left-[10%] w-[80%] h-[7%] bg-primary scale-0 z-[-1] transition ease-in-out duration-300 group-hover:scale-50"></span>
+            </li>
+          ))}
         </ul>
       </nav>
 

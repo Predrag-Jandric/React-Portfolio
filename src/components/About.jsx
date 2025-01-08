@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { generalVariants } from "/animations.js";
 import Button from "./Button";
 import devPhoto from "/assets/about/devPhoto.jpg";
+import { RiDownload2Fill } from "react-icons/ri";
 
 export default function About() {
   return (
@@ -36,7 +37,9 @@ export default function About() {
             </div>
           </section>
 
-          <Button className="mx-auto mt-10">Download CV</Button>
+          <Button className="mx-auto mt-10 w-56 gap-3 flex">
+            Download CV <RiDownload2Fill size={20} />
+          </Button>
         </div>
       </section>
     </motion.div>

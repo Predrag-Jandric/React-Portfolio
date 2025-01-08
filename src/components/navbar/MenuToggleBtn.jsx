@@ -11,10 +11,10 @@ export const Path = (props) => (
 
 export const MenuToggleBtn = ({ toggle }) => (
   <button
-    className="absolute z-50 top-5 right-3 w-10 h-10 sm:hidden cursor-pointer"
+    className="absolute z-50 top-8 right-8 p-3 sm:hidden cursor-pointer  transition-all flex justify-center items-center"
     onClick={toggle}
   >
-    <svg width="32" height="32" viewBox="0 0 23 18">
+    <svg width="37" height="37" viewBox="0 0 23 18">
       <Path
         d="M 2 2.5 L 20 2.5"
         className="top"

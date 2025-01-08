@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { generalVariants } from "/animations";
 import Button from "./Button";
+import { RiMailSendLine } from "react-icons/ri";
 
 // data for map method
 const footerMap = [
@@ -63,7 +64,12 @@ export default function Footer() {
             className="formInput"
           ></textarea>
 
-          <Button type="submit">Send</Button>
+          <Button
+            type="submit"
+            className=" w-44 gap-3 flex items-center justify-center"
+          >
+            Send <RiMailSendLine size={20} />
+          </Button>
         </form>
 
         {/* get in touch section */}
