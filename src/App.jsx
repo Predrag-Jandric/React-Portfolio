@@ -10,7 +10,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
-import Test from "./components/Button";
+import Test from "./components/Test";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,8 +38,9 @@ export default function App() {
           <Hero />
 
           <Title text="About" />
-          {/* <Test /> */}
+
           <About />
+
           <Title text="Skills" />
           <Skills />
           <Title text="Projects" />

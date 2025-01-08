@@ -1,7 +1,7 @@
 import MobileNavbar from "./MobileNavbar";
 
 const navLinks = [
-  { href: "#", label: "Consectetur" },
+  { href: "#", label: "Skills" },
   { href: "#", label: "Autem" },
   { href: "#", label: "Numquam" },
   { href: "#", label: "Asperiores" },

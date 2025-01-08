@@ -52,6 +52,5 @@ DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to 
 **to do now**
 look up fonts and implement them
 make card background have slight gradient
-
-
-
+add a cube in the navbar to the left that when clicked will change colors of the size
+make all text equal size

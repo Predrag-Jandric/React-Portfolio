@@ -30,7 +30,7 @@ export default function Faq() {
         const isOpen = activeIndex === index;
         return (
           <div
-            className="mb-4 overflow-hidden rounded-custom bg-gray-100 shadow-md transition-transform  ease-in-out"
+            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform  ease-in-out"
             key={index}
           >
             <div
@@ -45,7 +45,7 @@ export default function Faq() {
             <div
               className={`${
                 isOpen ? "max-h-[200px] opacity-100 py-5" : "max-h-0 opacity-0"
-              } bg-white px-5 text-base leading-relaxed transition-all duration-500 ease-in-out`}
+              } bg-pureWhite px-5 text-base leading-relaxed transition-all duration-500 ease-in-out`}
             >
               {faq.answer}
             </div>

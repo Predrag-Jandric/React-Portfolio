@@ -84,7 +84,7 @@ export default function Endorsements() {
             <img
               src={endorsement.endorsementsImageUrl}
               alt="missing"
-              className="size-24 mb-3 rounded-full mx-auto"
+              className="size-24 object-cover mb-3 rounded-full mx-auto"
             />
 
             <a
