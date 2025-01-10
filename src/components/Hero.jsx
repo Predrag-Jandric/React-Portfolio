@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { heroVariants } from "/animations.js";
 import Navbar from "./navbar/Navbar";
-import img from "../../public/assets/hero/profile.png";
+// import img from "../../public/assets/hero/profile.png";
+import Test from "./Test";
 
 export default function Hero() {
   return (
@@ -36,7 +37,7 @@ export default function Hero() {
             src={svg}
             alt=""
           /> */}
-        <img src={img} alt="" />
+        <Test />
         {/* </div> */}
       </div>
     </header>

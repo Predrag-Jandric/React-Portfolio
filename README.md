@@ -44,3 +44,6 @@ Footer section
   3 how can you help me
 
 in SKILLS remove sass and figma
+
+hero pattern got from
+https://patternico.com/#meM0W5EUKUjVsnNY
