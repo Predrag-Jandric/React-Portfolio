@@ -14,7 +14,7 @@ export default function Hero() {
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="lg:text-[66px] text-[40px] font-bold whitespace-wrap"
+            className="lg:text-[66px] font-headings text-[40px] font-bold whitespace-wrap"
           >
             <span className="text-primary">Lorem</span> Lorem, ipsum dolor.{" "}
           </motion.h2>

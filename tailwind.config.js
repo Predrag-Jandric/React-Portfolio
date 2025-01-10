@@ -19,20 +19,17 @@ export default {
         primary: "#ffc654",
         primaryHover: "#FFD685",
       },
-      fontFamily: {
-        primary: ['"PT Sans Caption"', "sans-serif"],
-        secondary: ['"Poppins"', "sans-serif"],
-      },
 
-      animation: {
-        ripple: "ripple 0.6s linear",
+      // "Comic Sans MS" for testing
+      fontFamily: {
+        headings: ["Work Sans", "serif"],
+        body: ["Nunito", "serif"],
       },
-      keyframes: {
-        ripple: {
-          "0%": { transform: "scale(0)", opacity: "1" },
-          "100%": { transform: "scale(2)", opacity: "0" },
-        },
-      },
+      // fontWeight: {
+      //   regular: 400,
+      //   bold: 700,
+      //   extrabold: 900,
+      // },
       borderRadius: {
         custom: "5px",
       },

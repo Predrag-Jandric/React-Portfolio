@@ -79,7 +79,7 @@ export default function Projects() {
 
             {/* Card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-center">
-              <h3 className="text-2xl font-semibold">{project.name}</h3>
+              <h3 className="text-2xl font-semibold font-headings">{project.name}</h3>
               <p>{project.description}</p>
             </article>
 

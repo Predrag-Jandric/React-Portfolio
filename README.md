@@ -4,16 +4,16 @@ Hero section =
 
 - DESIGN: bg image needs changing
 
-Skills section = NEEDS COMPLETE REWORK !
-include skills in html, css, JS, react, next, redux toolkit, sass, tailwind, git, styled components, framer motion
-
+Skills section = re-write content
 About section = re-write content
 
 Projects section =
 
 - in projects section add gifs so that when user hovers over a card gif becomes active
 
-Endorsements section = re-write content
+Roadmap = re-write content
+Endorsements = re-write content
+Faq = needs styling and re-write content
 
 Footer section
 
@@ -35,12 +35,6 @@ Footer section
 - add Why I Code section to your github
 - add emotional intelligence as strong point
 - add user stories image to readmes for featured projects
-
-**ideas**
-look up fonts and implement them
-make card background have slight gradient
-add a cube in the navbar to the left that when clicked will change colors of the size
-
 - emphasize how you have experience building production level apps
 - write about yourself in first person
 

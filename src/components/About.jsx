@@ -22,7 +22,7 @@ export default function About() {
           />
 
           <div className="md:w-2/3 w-full">
-            <h3 className="text-2xl font-semibold mb-4">
+            <h3 className="text-2xl font-semibold mb-4 font-headings">
               Progress-oriented Front End web developer
             </h3>
             <p className="text-lg">

@@ -36,7 +36,7 @@ export default function Footer() {
           action="https://formsubmit.co/predrag.jandric.bg@gmail.com"
           method="POST"
         >
-          <h3 className="text-2xl font-semibold relative mb-8">
+          <h3 className="text-2xl font-semibold relative mb-8 font-headings">
             Message Me
             <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
@@ -66,7 +66,7 @@ export default function Footer() {
 
           <Button
             type="submit"
-            className=" w-44 gap-3 flex items-center justify-center"
+            className="w-44 gap-3 flex items-center justify-center"
           >
             Send <RiMailSendLine size={20} />
           </Button>
@@ -74,7 +74,7 @@ export default function Footer() {
 
         {/* get in touch section */}
         <article className="flex-1">
-          <h3 className="text-2xl font-semibold relative mb-8">
+          <h3 className="text-2xl font-semibold relative mb-8 font-headings">
             Get in Touch
             <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
