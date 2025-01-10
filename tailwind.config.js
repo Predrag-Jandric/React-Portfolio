@@ -17,7 +17,7 @@ export default {
 
         // primary colors
         primary: "#ffc654",
-        primaryHover: "#f7b42d",
+        primaryHover: "#FFD685",
       },
       fontFamily: {
         primary: ['"PT Sans Caption"', "sans-serif"],

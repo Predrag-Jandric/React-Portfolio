@@ -1,19 +1,7 @@
 done things
 
-<Title text="About"/>
-<About />
-<Skills />
-<Projects />
-<Roadmap />
-<Endorsements /> 
-<Faq />
-<Footer />
-
-Navbar and MOBILE navbar section = make anchor point jumps WORK with needed offset
-
 Hero section =
 
-- add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this
 - DESIGN: bg image needs changing
 
 Skills section = NEEDS COMPLETE REWORK !
@@ -32,8 +20,6 @@ Footer section
 - use 3rd party to make form functional
 - implement MODAL that will let user know the msg in the form has been sent
 
-DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to them), everything
-
 ========== CHECKS BEFORE PRODUCTION ===========
 
 - make sure all <a> tags have rel="noopener noreferrer"
@@ -42,6 +28,7 @@ DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to 
 - test navbar, especially mobile navbar version for all bug possibilities
 - make sure all text is not pure black but dark gray
 - double check do shadows appear on all sides especially on the bottom, on all container classes
+- make all text equal size
 
 ========== FOR GITHUB PROFILE DESC ===========
 
@@ -49,8 +36,17 @@ DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to 
 - add emotional intelligence as strong point
 - add user stories image to readmes for featured projects
 
-**to do now**
+**ideas**
 look up fonts and implement them
 make card background have slight gradient
 add a cube in the navbar to the left that when clicked will change colors of the size
-make all text equal size
+
+- emphasize how you have experience building production level apps
+- write about yourself in first person
+
+- landing page, hero section should immediatelly answer
+  1 who you are
+  2 what do you do
+  3 how can you help me
+
+in SKILLS remove sass and figma

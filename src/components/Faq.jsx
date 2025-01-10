@@ -33,13 +33,13 @@ export default function Faq() {
       whileInView="animate"
       viewport={{ once: true }}
       id="faq"
-      className="mx-auto max-w-[62rem] text-gray-800  xs:px-5 px-3"
+      className="mx-auto  max-w-[65rem] text-gray-800 xs:px-5 px-3"
     >
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;
         return (
           <div
-            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform  ease-in-out"
+            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out"
             key={index}
           >
             <div

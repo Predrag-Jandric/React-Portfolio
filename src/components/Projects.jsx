@@ -9,12 +9,8 @@ const projectsMap = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
     projectsImageUrl: "/assets/projects/placeholder.png",
-    TechUsedUrl: [
-      "/assets/projects/techUsed/nextjs.png",
-      "/assets/projects/techUsed/react.png",
-      "/assets/projects/techUsed/tailwind.png",
-      "/assets/projects/techUsed/sass.png",
-    ],
+    effort: "Solo project",
+    TechUsed: ["Javascript", "Css", "Sass", "Html"],
     githubLink: "https://github.com/Predrag-Jandric/NodeJS-learning",
     previewLink: "https://peppy-profiterole-80df83.netlify.app/",
   },
@@ -23,12 +19,8 @@ const projectsMap = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
     projectsImageUrl: "/assets/projects/placeholder.png",
-    TechUsedUrl: [
-      "/assets/projects/techUsed/nextjs.png",
-      "/assets/projects/techUsed/react.png",
-      "/assets/projects/techUsed/tailwind.png",
-      "/assets/projects/techUsed/sass.png",
-    ],
+    effort: "Group project",
+    TechUsed: ["React", "Tailwind", "Redux Toolkit", "MongoDB"],
     githubLink: "https://github.com/Predrag-Jandric/React-dashboard",
     previewLink: "https://peppy-profiterole-80df83.netlify.app/",
   },
@@ -37,12 +29,8 @@ const projectsMap = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
     projectsImageUrl: "/assets/projects/placeholder.png",
-    TechUsedUrl: [
-      "/assets/projects/techUsed/nextjs.png",
-      "/assets/projects/techUsed/react.png",
-      "/assets/projects/techUsed/tailwind.png",
-      "/assets/projects/techUsed/sass.png",
-    ],
+    effort: "Group project",
+    TechUsed: ["MongoDB", "React", "Tailwind", "MongoDB"],
     githubLink: "https://github.com/Predrag-Jandric/NodeJS-learning",
     previewLink: "https://classy-klepon-4630ee.netlify.app/",
   },
@@ -51,12 +39,8 @@ const projectsMap = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
     projectsImageUrl: "/assets/projects/placeholder.png",
-    TechUsedUrl: [
-      "/assets/projects/techUsed/nextjs.png",
-      "/assets/projects/techUsed/react.png",
-      "/assets/projects/techUsed/tailwind.png",
-      "/assets/projects/techUsed/sass.png",
-    ],
+    effort: "Group project",
+    TechUsed: ["MoongoDB", "Next.js", "Redux Toolkit", "Tailwind"],
     githubLink: "https://github.com/Predrag-Jandric/React-dashboard",
     previewLink: "https://classy-klepon-4630ee.netlify.app/",
   },
@@ -73,7 +57,7 @@ export default function Projects() {
       id="projects"
     >
       {/* <article className="bg-red-100 w-[80rem] mx-5 flex items-center justify-center"> */}
-      <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 ">
+      <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 xs:px-5 px-3">
         {projectsMap.map((project, index) => (
           <motion.section
             key={index}
@@ -82,13 +66,16 @@ export default function Projects() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="max-w-[30rem] bg-pureWhite w-11/12 flex flex-col items-center justify-center gap-8 rounded-custom shadow-md overflow-hidden "
+            className="relative max-w-[32.5rem] bg-pureWhite flex flex-col items-center justify-center gap-8 rounded-custom shadow-md overflow-hidden"
           >
             <img
               src={project.projectsImageUrl}
               alt="image missing"
               className=""
             />
+            <span className="absolute bg-primary rounded-full py-1 px-4 top-6 right-6">
+              {project.effort}
+            </span>
 
             {/* Card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-center">
@@ -97,16 +84,16 @@ export default function Projects() {
             </article>
 
             {/* Technologies used */}
-            <article className="flex flex-col items-center gap-2 text-lg">
+            <article className="flex flex-col items-center gap-4 text-lg">
               <h4 className="font-medium">Technologies used</h4>
               <div className="flex flex-row items-center justify-center gap-2">
-                {project.TechUsedUrl.map((techImageUrl, techIndex) => (
-                  <img
+                {project.TechUsed.map((techused, techIndex) => (
+                  <p
+                    className="border border-1 border-grayBorder  rounded-full py-0.1 px-4 flex flex-wrap"
                     key={techIndex}
-                    src={techImageUrl}
-                    alt="image missing"
-                    className="size-14"
-                  />
+                  >
+                    {techused}
+                  </p>
                 ))}
               </div>
             </article>

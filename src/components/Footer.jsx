@@ -27,7 +27,7 @@ export default function Footer() {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="text-grayText rounded-custom container flex flex-col md:flex-row md:space-x-12"
+        className="text-grayText rounded-custom container flex flex-col md:flex-row md:gap-10 gap-6"
       >
         {/* Form Section */}
         <form
@@ -82,6 +82,10 @@ export default function Footer() {
             Your feedback and insights are highly appreciated. If you&apos;d
             like to connect with me or explore more of my work, you can find me
             on LinkedIn, GitHub, and my YouTube channel. Thank you for visiting!
+          </p>
+          <p className="mb-5">
+            Email:{" "}
+            <span className="font-semibold">predrag.jandric.bg@gmail.com</span>{" "}
           </p>
 
           <div className="w-fit flex gap-4">

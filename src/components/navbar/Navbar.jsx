@@ -1,5 +1,7 @@
 import MobileNavbar from "./MobileNavbar";
 import useScrollTo from "../../useScrollTo";
+import { useState } from "react";
+import { CgMenu } from "react-icons/cg";
 
 const navLinks = [
   { href: "skills", label: "Skills" },
@@ -11,12 +13,14 @@ const navLinks = [
 
 function Navbar() {
   const scrollToSection = useScrollTo(170);
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
     <>
       <nav className="flex items-center justify-center h-[10vh] px-32 w-full absolute top-0 left-0 right-0 md:px-12">
-        <ul className="hidden sm:flex items-center justify-center gap-0 transition ease-in-out duration-200">
+        <ul className="relative hidden sm:flex items-center justify-center gap-0 transition ease-in-out duration-200">
           {navLinks.map((link, index) => (
-            <li key={index} className="relative flex w-full z-10 group">
+            <li key={index} className="flex w-full group">
               <a
                 href={`#${link.href}`}
                 onClick={(e) => {
@@ -31,9 +35,13 @@ function Navbar() {
             </li>
           ))}
         </ul>
+        <CgMenu
+          className="absolute sm:hidden size-10 top-[30%] right-[7%] cursor-pointer hover:text-primary transition-colors"
+          onClick={() => setIsOpen(true)}
+        />
       </nav>
 
-      <MobileNavbar />
+      <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 }

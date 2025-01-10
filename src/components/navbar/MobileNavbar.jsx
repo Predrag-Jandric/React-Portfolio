@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import { MenuToggleBtn } from "./MenuToggleBtn";
 import useScrollTo from "../../useScrollTo";
+import { IoCloseOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { href: "skills", label: "Skills" },
@@ -64,9 +65,8 @@ function useMenuAnimation(isOpen) {
   return scope;
 }
 
-export default function MobileNavbar() {
+export default function MobileNavbar({ isOpen, setIsOpen }) {
   const scrollToSection = useScrollTo(170);
-  const [isOpen, setIsOpen] = useState(false);
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
 
@@ -89,7 +89,7 @@ export default function MobileNavbar() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isOpen]);
+  }, [isOpen, setIsOpen]);
 
   const handleToggle = () => {
     if (!clickable) return;
@@ -98,12 +98,23 @@ export default function MobileNavbar() {
     setTimeout(() => setClickable(true), 800);
   };
 
-
-
   return (
     <div ref={scope}>
-      <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20  z-40 text-center translate-x-full transition-colors">
-        <ul className="flex flex-col gap-y-6 px-8 ">
+      <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20 z-40 text-center translate-x-full transition-colors">
+        <ul className="flex flex-col gap-y-6 px-8 relative">
+          <motion.div
+            className="absolute right-[5%] -top-[16%] cursor-pointer"
+            onClick={handleToggle}
+            initial={{ scale: 1, opacity: 1 }}
+            animate={
+              isOpen
+                ? { scale: 1, opacity: 1, rotate: 0 }
+                : { scale: 0.7, opacity: 0, rotate: 90 }
+            }
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <IoCloseOutline className="size-12 hover:text-primary transition-colors" />
+          </motion.div>
           {navLinks.map((link, index) => (
             <li key={index} className="relative flex w-full z-10 group">
               <a
@@ -122,8 +133,6 @@ export default function MobileNavbar() {
           ))}
         </ul>
       </nav>
-
-      <MenuToggleBtn toggle={handleToggle} />
     </div>
   );
 }

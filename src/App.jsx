@@ -35,11 +35,11 @@ export default function App() {
         <main className="flex flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
           <Hero />
           <Title text="About" />
-          <About />
-          <Title text="Skills" />
-          <Skills />
+          {/* <About /> */}
+          {/* <Title text="Skills" /> */}
+          {/* <Skills /> */}
           <Title text="Projects" />
-          <Projects />
+          {/* <Projects /> */}
           <Title text="Roadmap" />
           <Roadmap />
           <Title text="Endorsements" />
