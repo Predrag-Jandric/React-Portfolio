@@ -6,11 +6,11 @@ import Test from "./Test";
 
 export default function Hero() {
   return (
-    <header className="bg-cover text-pureWhite min-h-screen bg-[url('../../public/assets/hero/background.png')] lg:px-[100px] lg:py-[60px] p-[40px]">
+    <header className="bg-cover text-pureWhite min-h-screen bg-[url('../../public/assets/hero/background.png')] xl:px-30 lg:px-20 px-5 lg:py-[60px] p-[40px] ">
       <Navbar />
 
-      <div className="pt-[110px] flex justify-between lg:flex-row flex-col-reverse lg:mx-[30px] lg:gap-[160px] gap-[20px] lg:text-start items-center text-center">
-        <div className="lg:w-[50%] w-full">
+      <div className="pt-[110px]  flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
+        <div className="lg:w-[75%] px-3 xl:w-[60%] w-full">
           <motion.h2
             initial={heroVariants.initial}
             animate={heroVariants.animate}
@@ -31,14 +31,7 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* <div className="lg:relative">
-          <img
-            className="lg:absolute lg:block hidden top-0 right-0 w-[90px]"
-            src={svg}
-            alt=""
-          /> */}
         <Test />
-        {/* </div> */}
       </div>
     </header>
   );

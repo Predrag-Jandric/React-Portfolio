@@ -1,11 +1,6 @@
-done things
-
-Hero section =
-
-- DESIGN: bg image needs changing
-
-Skills section = re-write content
+Hero section = re-write content
 About section = re-write content
+Skills section = re-write content
 
 Projects section =
 
@@ -45,5 +40,10 @@ Footer section
 
 in SKILLS remove sass and figma
 
+ensure all padding on mobile and desktop is EQUAL
+
 hero pattern got from
 https://patternico.com/#meM0W5EUKUjVsnNY
+
+3d got from
+https://sketchfab.com

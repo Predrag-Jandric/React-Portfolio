@@ -17,7 +17,7 @@ function RotatingModel() {
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.007; // Smooth rotation
+      modelRef.current.rotation.y -= 0.007; // Smooth rotation
     }
   });
 
@@ -30,7 +30,7 @@ export default function Test() {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.4 }}
-      className="w-fit border h-80 border-red-300 cursor-grab"
+      className="size-96 cursor-grab"
     >
       <Canvas>
         <ambientLight />

@@ -18,7 +18,7 @@ export default function About() {
           <img
             src={devPhoto}
             alt="image missing"
-            className="w-80  object-cover rounded-custom"
+            className="w-80 object-cover rounded-custom"
           />
 
           <div className="md:w-2/3 w-full">

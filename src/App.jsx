@@ -37,7 +37,7 @@ export default function App() {
           <Hero />
           <Title text="About" />
           <About />
-          {/* <Title text="Skills" />
+          <Title text="Skills" />
           <Skills />
           <Title text="Projects" />
           <Projects />
@@ -47,7 +47,7 @@ export default function App() {
           <Endorsements />
           <Title text="Faq" />
           <Faq />
-          <Footer /> */}
+          <Footer />
         </main>
       )}
     </>
