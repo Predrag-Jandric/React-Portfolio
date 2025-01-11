@@ -17,15 +17,15 @@ export default function About() {
         <section className="flex flex-col md:flex-row items-center md:items-start gap-10">
           <img
             src={devPhoto}
-            alt="image missing"
+            alt="developer photo"
             className="w-80 object-cover rounded-custom"
           />
 
           <div className="md:w-2/3 w-full">
-            <h3 className="text-2xl font-semibold mb-4 font-headings">
+            <h3 className="text-headings font-medium mb-4 font-headings">
               Progress-oriented Front End web developer
             </h3>
-            <p className="text-lg">
+            <p className="text-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
               voluptates ipsam repudiandae excepturi cumque, culpa magni sed
               iusto sint expedita.
@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </section>
 
-        <Button className="mx-auto mt-10 w-56 gap-3 flex">
+        <Button className="mx-auto mt-10 w-52 gap-3 flex">
           Download CV <RiDownload2Fill size={20} />
         </Button>
       </section>

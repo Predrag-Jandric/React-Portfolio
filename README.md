@@ -15,16 +15,6 @@ Footer section
 - use 3rd party to make form functional
 - implement MODAL that will let user know the msg in the form has been sent
 
-========== CHECKS BEFORE PRODUCTION ===========
-
-- make sure all <a> tags have rel="noopener noreferrer"
-- make sure all the animations trigger only when the element in fully or partially in view, with viewport={{ once: true, amount: "all" }} or amount: 0.5 for fine tuning
-- check paddings on X axis when resizing on most of the sections. are they equal for all sections on small screen
-- test navbar, especially mobile navbar version for all bug possibilities
-- make sure all text is not pure black but dark gray
-- double check do shadows appear on all sides especially on the bottom, on all container classes
-- make all text equal size
-
 ========== FOR GITHUB PROFILE DESC ===========
 
 - add Why I Code section to your github

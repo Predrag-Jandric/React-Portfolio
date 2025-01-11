@@ -43,18 +43,18 @@ export default function Faq() {
             key={index}
           >
             <div
-              className="flex items-center justify-between bg-blue-500 px-5 py-4 text-white font-medium text-lg cursor-pointer transition-all  hover:bg-blue-600"
+              className="flex items-center justify-between bg-blue-500 px-5 py-4 text-white font-medium text-body cursor-pointer transition-all  hover:bg-blue-600"
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
-              <button className="text-2xl bg-transparent border-none cursor-pointer transition-transform ">
+              <button className="text-body bg-transparent border-none cursor-pointer transition-transform ">
                 {isOpen ? "-" : "+"}
               </button>
             </div>
             <div
               className={`${
                 isOpen ? "max-h-[200px] opacity-100 py-5" : "max-h-0 opacity-0"
-              } bg-pureWhite px-5 text-base leading-relaxed transition-all duration-500 ease-in-out`}
+              } bg-pureWhite px-5 text-body leading-relaxed transition-all duration-500 ease-in-out`}
             >
               {faq.answer}
             </div>

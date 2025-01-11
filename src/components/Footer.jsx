@@ -20,6 +20,33 @@ const footerMap = [
 ];
 
 export default function Footer() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      description: e.target.description.value,
+    };
+
+    try {
+      const response = await fetch(
+        "https://nodejs-backend-portfolio.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+      alert(data.message); // Show success or error message
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to send email.");
+    }
+  };
+
   return (
     <footer className="flex flex-col mt-16 items-center bg-dark py-16 xs:px-5 px-3">
       <motion.section
@@ -33,10 +60,9 @@ export default function Footer() {
         <form
           className="flex-1 mb-6 md:mb-0"
           id="myform"
-          action="https://formsubmit.co/predrag.jandric.bg@gmail.com"
-          method="POST"
+          onSubmit={handleSubmit}
         >
-          <h3 className="text-2xl font-semibold relative mb-8 font-headings">
+          <h3 className="text-headings font-medium relative mb-8 font-headings">
             Message Me
             <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
@@ -47,21 +73,21 @@ export default function Footer() {
             name="name"
             placeholder="Your name"
             required
-            className="formInput"
+            className="formInput text-body"
           />
           <input
             type="email"
             name="email"
             placeholder="Email Address"
             required
-            className="formInput"
+            className="formInput text-body"
           />
           <textarea
             placeholder="Message"
             rows="5"
             name="description"
             required
-            className="formInput"
+            className="formInput text-body"
           ></textarea>
 
           <Button
@@ -74,16 +100,16 @@ export default function Footer() {
 
         {/* get in touch section */}
         <article className="flex-1">
-          <h3 className="text-2xl font-semibold relative mb-8 font-headings">
+          <h3 className="text-headings font-medium relative mb-8 font-headings">
             Get in Touch
             <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
-          <p className="mb-4">
+          <p className="mb-4 text-body">
             Your feedback and insights are highly appreciated. If you&apos;d
             like to connect with me or explore more of my work, you can find me
             on LinkedIn, GitHub, and my YouTube channel. Thank you for visiting!
           </p>
-          <p className="mb-5">
+          <p className="mb-5 text-body">
             Email:{" "}
             <span className="font-semibold">predrag.jandric.bg@gmail.com</span>{" "}
           </p>
@@ -99,7 +125,7 @@ export default function Footer() {
               >
                 <img
                   src={item.footerImageUrl}
-                  alt="image missing"
+                  alt="social media photo"
                   className="w-10 h-10"
                 />
               </a>

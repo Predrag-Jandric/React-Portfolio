@@ -84,7 +84,7 @@ export default function Endorsements() {
           >
             <img
               src={endorsement.endorsementsImageUrl}
-              alt="missing"
+              alt="user photo"
               className="size-24 object-cover mb-3 rounded-full mx-auto"
             />
 
@@ -92,19 +92,19 @@ export default function Endorsements() {
               target="_blank"
               rel="noopener noreferrer"
               href={endorsement.linkUrl}
-              className="specialLink text-lg "
+              className="specialLink"
             >
               {endorsement.name}
             </a>
             <small className="text-stone-400 block italic">
               {endorsement.job}
             </small>
-            <p className="text-xl flex w-10/12 mx-auto py-6">
-              <span className="self-start">
+            <p className="flex md:w-10/12 mx-auto py-6">
+              <span className="self-start px-2 text-body">
                 <RiDoubleQuotesL />
               </span>
-              <span className="md:px-5">{endorsement.message}</span>
-              <span className="self-end">
+              <span className="md:px-5 text-body">{endorsement.message}</span>
+              <span className="self-end px-2 text-body">
                 <RiDoubleQuotesR />
               </span>
             </p>

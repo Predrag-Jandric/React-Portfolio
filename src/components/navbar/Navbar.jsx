@@ -22,6 +22,7 @@ function Navbar() {
           {navLinks.map((link, index) => (
             <li key={index} className="relative flex w-full z-10 group">
               <a
+                rel="noopener noreferrer"
                 href={`#${link.href}`}
                 onClick={(e) => {
                   e.preventDefault();

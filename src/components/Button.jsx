@@ -3,7 +3,6 @@ const Button = ({
   className = "",
   type = "button",
   target,
-  rel,
   href,
   onClick,
   download,
@@ -13,7 +12,7 @@ const Button = ({
       <a
         href={href}
         target={target}
-        rel={rel}
+        rel="noopener noreferrer"
         download={download}
         onClick={onClick}
         className={`btn ${className}`}

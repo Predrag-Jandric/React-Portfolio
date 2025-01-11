@@ -29,7 +29,7 @@ export default function Skills() {
       id="skills"
     >
       <section className="flex flex-col items-center justify-center gap-16 py-16 bg-dark shadow-md">
-        <article className="grid gap-8 text-center text-lg font-normal md:grid-cols-5 grid-cols-2">
+        <article className="grid gap-8 text-center text-body font-normal md:grid-cols-5 grid-cols-2">
           {skillsMap.map((skill, index) => (
             <motion.div
               className="flex flex-col items-center justify-center gap-0 text-white"
@@ -42,7 +42,7 @@ export default function Skills() {
             >
               <img
                 src={skill.skillsImageUrl}
-                alt="image missing"
+                alt="skill photo"
                 className="w-[7rem] h-[7rem]"
               />
               <p>{skill.name}</p>

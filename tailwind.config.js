@@ -10,9 +10,7 @@ export default {
 
         // solid color variables
         white: "#f1f1f1",
-        lightGrayText: "#d3d3d3",
         grayText: "#575b60",
-        grayBorder: "#a7a7a7",
         dark: "#2d3142",
 
         // primary colors
@@ -25,11 +23,10 @@ export default {
         headings: ["Work Sans", "serif"],
         body: ["Nunito", "serif"],
       },
-      // fontWeight: {
-      //   regular: 400,
-      //   bold: 700,
-      //   extrabold: 900,
-      // },
+      fontSize: {
+        headings: "1.5rem",
+        body: "1.05rem",
+      },
       borderRadius: {
         custom: "5px",
       },

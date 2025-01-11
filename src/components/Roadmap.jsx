@@ -15,8 +15,6 @@ import {
 } from "/animations";
 import { motion } from "framer-motion";
 
-const viewportConfig = { once: true, };
-
 export default function Roadmap() {
   return (
     <motion.section
@@ -27,12 +25,12 @@ export default function Roadmap() {
       viewport={{ once: true }}
       id="roadmap"
     >
-      <div className="flex text-white items-center justify-center shadow-none gap-8  container bg-dark">
+      <div className="flex text-white items-center justify-center shadow-none gap-8 container bg-dark">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={viewportConfig}
+          viewport={{ once: true }}
           custom={0.5}
           className="flex items-center gap-8 text-center "
         >
@@ -41,16 +39,16 @@ export default function Roadmap() {
             <img
               className="size-32 object-contain "
               src={php}
-              alt="asdasdasdas"
+              alt="symbol of goal"
             />
-            <p className=" text-lg">Learn PHP</p>
+            <p className="text-body">Learn PHP</p>
           </div>
 
           <motion.span
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={viewportConfig}
+            viewport={{ once: true }}
             custom={0.5}
           >
             <HiOutlineArrowLongRight size={40} className=" text-white" />
@@ -62,7 +60,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           custom={1}
-          viewport={viewportConfig}
+          viewport={{ once: true }}
           className="flex items-center gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
@@ -70,16 +68,16 @@ export default function Roadmap() {
             <img
               className="size-32 object-contain "
               src={react}
-              alt="asdasdasdas"
+              alt="symbol of goal"
             />
-            <p className=" text-lg">Perfect React</p>
+            <p className="text-body">Perfect React</p>
           </div>
 
           <motion.span
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={viewportConfig}
+            viewport={{ once: true }}
             custom={1}
           >
             <HiOutlineArrowLongRight size={40} className=" text-white" />
@@ -90,7 +88,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={viewportConfig}
+          viewport={{ once: true }}
           custom={1.5}
           className="flex items-center gap-8  text-center"
         >
@@ -99,15 +97,15 @@ export default function Roadmap() {
             <img
               className="size-32 object-contain "
               src={job}
-              alt="asdasdasdas"
+              alt="symbol of goal"
             />
-            <p className=" text-lg">Land a job</p>
+            <p className="text-body">Land a job</p>
           </div>
           <motion.span
             variants={roadmapArrowVariants}
             initial="initial"
             whileInView="animate"
-            viewport={viewportConfig}
+            viewport={{ once: true }}
             custom={1.5}
           >
             <HiOutlineArrowLongRight size={40} className=" text-white" />
@@ -118,7 +116,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          viewport={viewportConfig}
+          viewport={{ once: true }}
           custom={2}
           className="flex items-center gap-8  text-center"
         >
@@ -127,9 +125,9 @@ export default function Roadmap() {
             <img
               className="size-32 object-contain "
               src={mern}
-              alt="asdasdasdas"
+              alt="symbol of goal"
             />
-            <p className=" text-lg">MERN stack</p>
+            <p className="text-body">MERN stack</p>
           </div>
         </motion.article>
       </div>

@@ -16,7 +16,7 @@
     transform: translate(-50%);
   }
   .container {
-    @apply bg-pureWhite max-w-[70rem] text-dark shadow-md p-10;
+    @apply bg-pureWhite max-w-[70rem] text-dark shadow-md sm:p-10 p-6;
   }
   .formInput {
     @apply w-full mb-4 bg-slate-100 rounded-custom border border-stone-300 p-2 text-dark;
@@ -93,12 +93,24 @@ body {
   opacity: 0.9;
 }
 
-.front  { transform: rotateY(  0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.right  { transform: rotateY( 90deg) translateZ(100px); }
-.top    { transform: rotateX( 90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
+.front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
 
 @keyframes rotate {
   from {

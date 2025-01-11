@@ -118,13 +118,14 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
           {navLinks.map((link, index) => (
             <li key={index} className="relative flex w-full z-10 group">
               <a
+                rel="noopener noreferrer"
                 href={`#${link.href}`}
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(link.href);
                   setIsOpen(false);
                 }}
-                className="text-pureWhite text-3xl w-full py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100 hover:text-primary "
+                className="text-white text-3xl w-full py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100 hover:text-primary "
               >
                 {link.label}
               </a>
