@@ -24,7 +24,7 @@ function RotatingModel() {
   return <Model ref={modelRef} />;
 }
 
-export default function Test() {
+export default function ThreeDObject() {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}

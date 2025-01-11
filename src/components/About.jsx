@@ -11,7 +11,8 @@ export default function About() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="xs:px-5 px-3 flex flex-col items-center "
+      className="xs:px-5 px-3 flex flex-col items-center"
+      id="about"
     >
       <section className="container text-grayText rounded-custom">
         <section className="flex flex-col md:flex-row items-center md:items-start gap-10">

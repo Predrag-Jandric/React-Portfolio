@@ -1,10 +1,13 @@
+Roadmap = MAKE RESPONSIVE
+Projects = ADD DEDICATED PAGE
+FAQ = make it two cols
+in SKILLS remove sass and figma
+
 Hero section = re-write content
 About section = re-write content
 Skills section = re-write content
 
-Projects section =
-
-- in projects section add gifs so that when user hovers over a card gif becomes active
+Projects section = fill the data
 
 Roadmap = re-write content
 Endorsements = re-write content
@@ -13,7 +16,7 @@ Faq = needs styling and re-write content
 Footer section
 
 - use 3rd party to make form functional
-- implement MODAL that will let user know the msg in the form has been sent
+- implement MODAL that will let user know the msg in the form has been sent, from https://sweetalert2.github.io/
 
 ========== FOR GITHUB PROFILE DESC ===========
 
@@ -27,10 +30,6 @@ Footer section
   1 who you are
   2 what do you do
   3 how can you help me
-
-in SKILLS remove sass and figma
-
-ensure all padding on mobile and desktop is EQUAL
 
 hero pattern got from
 https://patternico.com/#meM0W5EUKUjVsnNY

@@ -10,7 +10,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
-import Test from "./components/Test";
+import Test from "./components/ThreeDObject";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
