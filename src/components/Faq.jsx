@@ -10,6 +10,11 @@ export default function Faq() {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  // Function to split the answer by newlines and return it as separate <p> elements
+  const formatAnswer = (answer) => {
+    return answer.split("\n").map((line, index) => <p key={index}>{line}</p>);
+  };
+
   return (
     <motion.section
       variants={generalVariants}
@@ -17,31 +22,33 @@ export default function Faq() {
       whileInView="animate"
       viewport={{ once: true }}
       id="faq"
-      className="mx-auto  max-w-[65rem] text-gray-800 xs:px-5 px-3"
+      className="mx-auto max-w-[65rem] text-dark xs:px-5 px-3"
     >
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;
         return (
           <div
-            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out"
+            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out "
             key={index}
           >
-            <div
-              className="flex items-center justify-between bg-blue-500 px-5 py-4 text-white font-medium text-body cursor-pointer transition-all  hover:bg-blue-600"
+            <p
+              className="flex items-center justify-between bg-pureWhite px-5 py-4 font-medium text-body cursor-pointer transition-all hover:bg-slate-100"
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
-              <button className="text-body bg-transparent border-none cursor-pointer transition-transform ">
+              <button className="text-body bg-transparent border-none cursor-pointer transition-transform">
                 {isOpen ? "-" : "+"}
               </button>
-            </div>
-            <div
+            </p>
+            <p
               className={`${
-                isOpen ? "max-h-[200px] opacity-100 py-5" : "max-h-0 opacity-0"
-              } bg-pureWhite px-5 text-body leading-relaxed transition-all duration-500 ease-in-out`}
+                isOpen
+                  ? "max-h-[25rem] opacity-100 py-5 overflow-y-auto"
+                  : "max-h-0 opacity-0"
+              } px-5 text-body leading-relaxed bg-pureWhite transition-all duration-500 ease-in-out border-neutral-200 border-t-2`}
             >
-              {faq.answer}
-            </div>
+              {formatAnswer(faq.answer)}
+            </p>
           </div>
         );
       })}

@@ -1,4 +1,4 @@
-import { FaPeopleGroup, FaArrowLeft } from "react-icons/fa6";
+import { FaPeopleGroup } from "react-icons/fa6";
 import { IoMdTimer } from "react-icons/io";
 import Button from "./Button";
 import { Link, useParams } from "react-router-dom";
@@ -17,9 +17,16 @@ function ProjectDetails() {
   return (
     <div className="xs:px-5 px-3 my-12 flex flex-col items-center">
       <section className="container">
-        <p className="text-[2.3rem] font-medium font-headings text-center mb-3">
+        <p className="text-[2.3rem] font-medium font-headings text-center ">
           {project.name}
         </p>
+
+        <Link
+          to="/"
+          className="hover:no-underline w-fit underline flex transition-all text-blue-500 my-1 mx-auto"
+        >
+          Go back
+        </Link>
 
         <div className="flex gap-5 items-center justify-center">
           <span className="flex items-center gap-2">
@@ -35,11 +42,6 @@ function ProjectDetails() {
         </div>
 
         <hr className="mt-5" />
-
-        <Link to="/" className="flex items-center gap-2 text-blue-500">
-          <FaArrowLeft />
-          Back
-        </Link>
 
         <img
           className="my-10 md:w-2/3 w-full mx-auto  object-cover"
@@ -150,6 +152,10 @@ function ProjectDetails() {
           <br />
           Live Demo/Link to Project Code Repository Link Awards or Recognition:
           If the project received any awards or recognition, mention them here.
+          <br />
+          Remember: The goal is to demonstrate your technical expertise,
+          problem-solving abilities, and ability to deliver high-quality
+          projects.
         </p>
       </section>
     </div>
