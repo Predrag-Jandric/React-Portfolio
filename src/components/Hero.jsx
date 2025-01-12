@@ -3,7 +3,7 @@ import { heroVariants } from "../utils/animations.js";
 import Navbar from "./navbar/Navbar";
 import { SlArrowDown } from "react-icons/sl";
 import ThreeDObject from "./ThreeDObject";
-import useScrollTo from "../useScrollTo";
+import useScrollTo from "../utils/useScrollTo.js";
 
 export default function Hero() {
   const scrollToSection = useScrollTo(170);

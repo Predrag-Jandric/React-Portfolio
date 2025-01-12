@@ -1,50 +1,12 @@
-// import "swiper/swiper.min.css";
-// import "swiper/modules/navigation/navigation.min.css";
-// import "swiper/modules/pagination/pagination.min.css";
-
-// imports required Swiper components, modules and styles
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectCreative } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import { endorsementsMap } from "../utils/data.js";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
-
-// animation imports
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
-
-// data for map method
-const endorsementsMap = [
-  {
-    endorsementsImageUrl: "/assets/endorsements/face1.jpg",
-    name: "Pera Peric",
-    job: "Policeman at  XYZ Osiguranje",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl:
-      "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
-  },
-  {
-    endorsementsImageUrl: "/assets/endorsements/face3.jpg",
-    name: "Marko Maric",
-    job: "Freelancer at Self-Employed",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl:
-      "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
-  },
-  {
-    endorsementsImageUrl: "/assets/endorsements/face2.jpg",
-    name: "Natasa Nikic",
-    job: "Coleague at XYZ company",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
-    linkUrl:
-      "https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen",
-  },
-];
 
 export default function Endorsements() {
   return (
@@ -91,7 +53,7 @@ export default function Endorsements() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={endorsement.linkUrl}
+              href="https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen"
               className="specialLink"
             >
               {endorsement.name}

@@ -1,13 +1,8 @@
-// images imports
 import php from "/assets/roadmap/php.png";
 import react from "/assets/roadmap/react.png";
 import job from "/assets/roadmap/job.png";
 import mern from "/assets/roadmap/mern.png";
-
-// icons imports
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-
-// animations imports
 import {
   generalVariants,
   roadmapVariants,

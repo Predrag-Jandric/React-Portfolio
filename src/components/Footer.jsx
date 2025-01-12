@@ -2,22 +2,7 @@ import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 import { RiMailSendLine } from "react-icons/ri";
-
-// data for map method
-const footerMap = [
-  {
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
-    footerImageUrl: "/assets/all-social-icons/linkedIn.png",
-  },
-  {
-    linkUrl: "https://github.com/Predrag-Jandric",
-    footerImageUrl: "/assets/all-social-icons/github-footer.png",
-  },
-  {
-    linkUrl: "https://www.youtube.com/@predragjandric/videos",
-    footerImageUrl: "/assets/all-social-icons/youtube.png",
-  },
-];
+import { footerMap } from "../utils/data.js";
 
 export default function Footer() {
   const handleSubmit = async (e) => {

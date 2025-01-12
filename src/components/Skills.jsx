@@ -1,23 +1,6 @@
-// animation imports
 import { motion } from "framer-motion";
 import { skillsVariants, generalVariants } from "../utils/animations.js";
-
-// data for map method
-const skillsMap = [
-  { name: "Html", skillsImageUrl: "/assets/skills/html.png" },
-  { name: "Css", skillsImageUrl: "/assets/skills/css.png" },
-  { name: "JavaScript", skillsImageUrl: "/assets/skills/js.png" },
-  { name: "React", skillsImageUrl: "/assets/skills/react.png" },
-  {
-    name: "Redux Toolkit",
-    skillsImageUrl: "/assets/skills/redux-toolkit.png",
-  },
-  { name: "Next.js", skillsImageUrl: "/assets/skills/nextjs.png" },
-  { name: "Sass", skillsImageUrl: "/assets/skills/sass.png" },
-  { name: "Tailwind", skillsImageUrl: "/assets/skills/tailwind.png" },
-  { name: "Git", skillsImageUrl: "/assets/skills/git.png" },
-  { name: "Figma", skillsImageUrl: "/assets/skills/figma.png" },
-];
+import { skillsMap } from "../utils/data.js";
 
 export default function Skills() {
   return (

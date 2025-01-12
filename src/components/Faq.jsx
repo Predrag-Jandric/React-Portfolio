@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
+import { faqMap } from "../utils/data.js";
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -8,23 +9,6 @@ export default function Faq() {
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
-  const faqMap = [
-    {
-      question: "What is React?",
-      answer: "React is a JavaScript library for building user interfaces.",
-    },
-    {
-      question: "How does useState work?",
-      answer:
-        "The useState hook lets you add state to functional components. It returns an array with two values: the current state and a function to update it.",
-    },
-    {
-      question: "What is JSX?",
-      answer:
-        "JSX stands for JavaScript XML. It allows you to write HTML-like syntax directly in your JavaScript code.",
-    },
-  ];
 
   return (
     <motion.section

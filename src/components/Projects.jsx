@@ -1,35 +1,8 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom";
 import { projectsVariants, generalVariants } from "../utils/animations.js";
 import Button from "./Button";
-
-// data for map method
-export const projectsMap = [
-  {
-    name: "1Project_name1",
-    description:
-      "1111Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-    projectsImageUrl: "/assets/projects/frame.png",
-    effort: "Solo project",
-    TechUsed: ["Javascript", "Css", "Sass", "Html"],
-    githubLink: "./",
-    previewLink: "./",
-    id: 456264,
-    buildTime: "5 weeks",
-    teamSize: "3 people",
-  },
-  {
-    name: "2Project_name2",
-    description:
-      "2222Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-    projectsImageUrl: "/assets/projects/frame.png",
-    effort: "Team effort",
-    TechUsed: ["React", "Tailwind", "Redux Toolkit", "MongoDB"],
-    githubLink: "./",
-    previewLink: "./",
-    id: 234234,
-  },
-];
+import { projectsMap } from "../utils/data.js";
 
 export default function Projects() {
   return (
@@ -42,7 +15,7 @@ export default function Projects() {
       id="projects"
     >
       <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 xs:px-5 px-3">
-        {projectsMap.map((project, index,) => (
+        {projectsMap.map((project, index) => (
           <motion.section
             key={project.id}
             variants={projectsVariants}

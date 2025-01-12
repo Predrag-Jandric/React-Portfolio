@@ -2,10 +2,10 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { IoMdTimer } from "react-icons/io";
 import Button from "./Button";
 import { useParams } from "react-router-dom";
-import { projectsMap } from "./Projects";
+import { projectsMap } from "../utils/data";
 
 function ProjectDetails() {
-  const { id } = useParams(); // Get the project ID from the URL
+  const { id } = useParams();
   const project = projectsMap.find((proj) => proj.id === parseInt(id));
 
   if (!project) return <p>Project not found.</p>;

@@ -34,7 +34,6 @@ export default function App() {
       ) : (
         <Router>
           <Routes>
-            {/* Main page with all sections */}
             <Route
               path="/"
               element={
@@ -56,7 +55,6 @@ export default function App() {
                 </main>
               }
             />
-            {/* Route for ProjectDetails */}
             <Route path="/projects/:id" element={<ProjectDetails />} />
           </Routes>
         </Router>

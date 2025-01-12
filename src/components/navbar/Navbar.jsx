@@ -1,15 +1,8 @@
 import MobileNavbar from "./MobileNavbar";
-import useScrollTo from "../../useScrollTo";
+import useScrollTo from "../../utils/useScrollTo";
 import { useState } from "react";
 import { CgMenu } from "react-icons/cg";
-
-const navLinks = [
-  { href: "skills", label: "Skills" },
-  { href: "projects", label: "Projects" },
-  { href: "roadmap", label: "Roadmap" },
-  { href: "endorsements", label: "Endorsements" },
-  { href: "faq", label: "Faq" },
-];
+import { navLinks } from "../../utils/data";
 
 function Navbar() {
   const scrollToSection = useScrollTo(170);

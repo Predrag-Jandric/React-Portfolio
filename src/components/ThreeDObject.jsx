@@ -3,13 +3,11 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useRef, forwardRef } from "react";
 import { motion } from "framer-motion";
 
-// Use forwardRef to allow ref to be applied to the Model component
 const Model = forwardRef((props, ref) => {
-  const { scene } = useGLTF("/assets/react_logo.glb"); // Ensure GLB file is in your public folder
+  const { scene } = useGLTF("/assets/react_logo.glb");
   return <primitive object={scene} ref={ref} {...props} />;
 });
 
-// Set displayName for the component to avoid the warning
 Model.displayName = "Model";
 
 function RotatingModel() {
@@ -17,7 +15,7 @@ function RotatingModel() {
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y -= 0.007; // Smooth rotation
+      modelRef.current.rotation.y -= 0.007;
     }
   });
 

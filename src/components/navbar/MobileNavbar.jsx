@@ -1,16 +1,9 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import useScrollTo from "../../useScrollTo";
+import useScrollTo from "../../utils/useScrollTo";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-
-const navLinks = [
-  { href: "skills", label: "Skills" },
-  { href: "projects", label: "Projects" },
-  { href: "roadmap", label: "Roadmap" },
-  { href: "endorsements", label: "Endorsements" },
-  { href: "faq", label: "Faq" },
-];
+import { navLinks } from "../../utils/data";
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
