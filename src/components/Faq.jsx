@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { generalVariants } from "/animations";
+import { generalVariants } from "../utils/animations.js";
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);

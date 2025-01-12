@@ -20,8 +20,8 @@ export default {
 
       // "Comic Sans MS" for testing
       fontFamily: {
-        headings: ["Work Sans", "serif"],
-        body: ["Nunito", "serif"],
+        headings: ["Work Sans", "sans-serif"],
+        body: ["Nunito", "sans-serif"],
       },
       fontSize: {
         headings: "1.5rem",

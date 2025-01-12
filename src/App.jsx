@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Title from "./components/Title";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,7 +10,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
-import Test from "./components/ThreeDObject";
+import ProjectDetails from "./components/ProjectDetails";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,23 +32,34 @@ export default function App() {
       {isLoading ? (
         <Preloader />
       ) : (
-        <main className="flex font-body flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
-          {/* <Test /> */}
-          <Hero />
-          <Title text="About" />
-          <About />
-          <Title text="Skills" />
-          <Skills />
-          <Title text="Projects" />
-          <Projects />
-          <Title text="Roadmap" />
-          <Roadmap />
-          <Title text="Endorsements" />
-          <Endorsements />
-          <Title text="Faq" />
-          <Faq />
-          <Footer />
-        </main>
+        <Router>
+          <Routes>
+            {/* Main page with all sections */}
+            <Route
+              path="/"
+              element={
+                <main className="flex font-body flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
+                  <Hero />
+                  <Title text="About" />
+                  <About />
+                  <Title text="Skills" />
+                  <Skills />
+                  <Title text="Projects" />
+                  <Projects />
+                  <Title text="Roadmap" />
+                  <Roadmap />
+                  <Title text="Endorsements" />
+                  <Endorsements />
+                  <Title text="Faq" />
+                  <Faq />
+                  <Footer />
+                </main>
+              }
+            />
+            {/* Route for ProjectDetails */}
+            <Route path="/projects/:id" element={<ProjectDetails />} />
+          </Routes>
+        </Router>
       )}
     </>
   );

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { generalVariants } from "/animations.js";
+import { generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 import devPhoto from "/assets/about/devPhoto.jpg";
 import { RiDownload2Fill } from "react-icons/ri";

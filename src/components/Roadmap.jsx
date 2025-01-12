@@ -12,7 +12,7 @@ import {
   generalVariants,
   roadmapVariants,
   roadmapArrowVariants,
-} from "/animations";
+} from "../utils/animations.js";
 import { motion } from "framer-motion";
 
 export default function Roadmap() {

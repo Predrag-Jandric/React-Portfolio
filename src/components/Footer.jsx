@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { generalVariants } from "/animations";
+import { generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 import { RiMailSendLine } from "react-icons/ri";
 

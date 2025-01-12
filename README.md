@@ -36,3 +36,19 @@ https://patternico.com/#meM0W5EUKUjVsnNY
 
 3d got from
 https://sketchfab.com
+
+PROJECT DEDICATED PAGE
+
+## Focus on user value, keep it brief
+
+4. Your Role & Contributions:
+
+   Specific Responsibilities: Clearly outline your specific roles and responsibilities within the project. Did you work independently or as part of a team? What were your contributions to the project's success?
+
+   Teamwork & Collaboration: If it was a team project, describe your experiences with teamwork and collaboration. How did you effectively communicate and coordinate with other team members?
+
+    Live Demo/Link to Project
+   Code Repository Link
+   Awards or Recognition: If the project received any awards or recognition, mention them here.
+
+Remember: The goal is to demonstrate your technical expertise, problem-solving abilities, and ability to deliver high-quality projects.

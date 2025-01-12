@@ -1,49 +1,34 @@
 import { motion } from "framer-motion";
-import { projectsVariants, generalVariants } from "/animations";
+import { Link } from "react-router-dom"; // Import Link
+import { projectsVariants, generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 
 // data for map method
-const projectsMap = [
+export const projectsMap = [
   {
-    name: "Project_name",
+    name: "1Project_name1",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-    projectsImageUrl: "/assets/projects/placeholder.png",
+      "1111Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "/assets/projects/frame.png",
     effort: "Solo project",
     TechUsed: ["Javascript", "Css", "Sass", "Html"],
-    githubLink: "https://github.com/Predrag-Jandric/NodeJS-learning",
-    previewLink: "https://peppy-profiterole-80df83.netlify.app/",
+    githubLink: "./",
+    previewLink: "./",
+    id: 456264,
+    buildTime: "5 weeks",
+    teamSize: "3 people",
   },
   {
-    name: "Project_name",
+    name: "2Project_name2",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-    projectsImageUrl: "/assets/projects/placeholder.png",
-    effort: "Group project",
+      "2222Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "/assets/projects/frame.png",
+    effort: "Team effort",
     TechUsed: ["React", "Tailwind", "Redux Toolkit", "MongoDB"],
-    githubLink: "https://github.com/Predrag-Jandric/React-dashboard",
-    previewLink: "https://peppy-profiterole-80df83.netlify.app/",
+    githubLink: "./",
+    previewLink: "./",
+    id: 234234,
   },
-  // {
-  //   name: "Project_name",
-  //   description:
-  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-  //   projectsImageUrl: "/assets/projects/placeholder.png",
-  //   effort: "Group project",
-  //   TechUsed: ["MongoDB", "React", "Tailwind", "MongoDB"],
-  //   githubLink: "https://github.com/Predrag-Jandric/NodeJS-learning",
-  //   previewLink: "https://classy-klepon-4630ee.netlify.app/",
-  // },
-  // {
-  //   name: "Project_name",
-  //   description:
-  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-  //   projectsImageUrl: "/assets/projects/placeholder.png",
-  //   effort: "Group project",
-  //   TechUsed: ["MoongoDB", "Next.js", "Redux Toolkit", "Tailwind"],
-  //   githubLink: "https://github.com/Predrag-Jandric/React-dashboard",
-  //   previewLink: "https://classy-klepon-4630ee.netlify.app/",
-  // },
 ];
 
 export default function Projects() {
@@ -57,9 +42,9 @@ export default function Projects() {
       id="projects"
     >
       <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 xs:px-5 px-3">
-        {projectsMap.map((project, index) => (
+        {projectsMap.map((project, index,) => (
           <motion.section
-            key={index}
+            key={project.id}
             variants={projectsVariants}
             initial="initial"
             whileInView="animate"
@@ -100,24 +85,10 @@ export default function Projects() {
             </article>
 
             {/* Buttons */}
-            <article className="flex items-center justify-center gap-6 xs:gap-7 mb-10">
-              <Button
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-28 xs:w-40"
-              >
-                Code
-              </Button>
-
-              <Button
-                href={project.previewLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-28 xs:w-40"
-              >
-                Preview
-              </Button>
+            <article className="px-6 flex items-center justify-center  mb-10">
+              <Link to={`/projects/${project.id}`}>
+                <Button className="w-full">View Details</Button>
+              </Link>
             </article>
           </motion.section>
         ))}

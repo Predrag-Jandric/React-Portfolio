@@ -13,7 +13,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 // animation imports
 import { motion } from "framer-motion";
-import { generalVariants } from "/animations";
+import { generalVariants } from "../utils/animations.js";
 
 // data for map method
 const endorsementsMap = [

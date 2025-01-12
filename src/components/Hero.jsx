@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { heroVariants } from "/animations.js";
+import { heroVariants } from "../utils/animations.js";
 import Navbar from "./navbar/Navbar";
 import { SlArrowDown } from "react-icons/sl";
 import ThreeDObject from "./ThreeDObject";

@@ -1,6 +1,6 @@
 // animation imports
 import { motion } from "framer-motion";
-import { skillsVariants, generalVariants } from "/animations";
+import { skillsVariants, generalVariants } from "../utils/animations.js";
 
 // data for map method
 const skillsMap = [
