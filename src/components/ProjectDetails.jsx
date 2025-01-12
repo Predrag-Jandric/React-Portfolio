@@ -1,12 +1,17 @@
-import { FaPeopleGroup } from "react-icons/fa6";
+import { FaPeopleGroup, FaArrowLeft } from "react-icons/fa6";
 import { IoMdTimer } from "react-icons/io";
 import Button from "./Button";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projectsMap } from "../utils/data";
+import { useEffect } from "react";
 
 function ProjectDetails() {
   const { id } = useParams();
   const project = projectsMap.find((proj) => proj.id === parseInt(id));
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when ProjectDetails is mounted
+  }, []);
 
   if (!project) return <p>Project not found.</p>;
   return (
@@ -30,6 +35,11 @@ function ProjectDetails() {
         </div>
 
         <hr className="mt-5" />
+
+        <Link to="/" className="flex items-center gap-2 text-blue-500">
+          <FaArrowLeft />
+          Back
+        </Link>
 
         <img
           className="my-10 md:w-2/3 w-full mx-auto  object-cover"

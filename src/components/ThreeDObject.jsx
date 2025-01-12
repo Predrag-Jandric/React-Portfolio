@@ -2,6 +2,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useRef, forwardRef } from "react";
 import { motion } from "framer-motion";
+import { heroVariants } from "../utils/animations";
 
 const Model = forwardRef((props, ref) => {
   const { scene } = useGLTF("/assets/react_logo.glb");
@@ -25,9 +26,9 @@ function RotatingModel() {
 export default function ThreeDObject() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.4 }}
+      initial={heroVariants.initial}
+      animate={heroVariants.animate}
+      transition={{ duration: 0.5, delay: 0.7 }}
       className="size-96 cursor-grab"
     >
       <Canvas>

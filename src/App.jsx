@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
 import ProjectDetails from "./components/ProjectDetails";
+import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ export default function App() {
         <Preloader />
       ) : (
         <Router>
+          <ScrollToTop />
           <Routes>
             <Route
               path="/"

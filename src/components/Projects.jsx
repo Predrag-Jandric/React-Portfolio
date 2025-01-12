@@ -3,8 +3,27 @@ import { Link } from "react-router-dom";
 import { projectsVariants, generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 import { projectsMap } from "../utils/data.js";
+import { useEffect } from "react";
+
+// import { useEffect } from "react";
 
 export default function Projects() {
+  useEffect(() => {
+    // Scroll to previous position if available
+    const savedScrollPosition = sessionStorage.getItem(
+      "projectsScrollPosition"
+    );
+    if (savedScrollPosition) {
+      window.scrollTo(0, parseInt(savedScrollPosition));
+      sessionStorage.removeItem("projectsScrollPosition"); // Clear after restoring
+    }
+  }, []);
+
+  const handleLinkClick = () => {
+    // Save current scroll position before navigating away
+    sessionStorage.setItem("projectsScrollPosition", window.scrollY);
+  };
+
   return (
     <motion.div
       variants={generalVariants}
@@ -59,7 +78,7 @@ export default function Projects() {
 
             {/* Buttons */}
             <article className="px-6 flex items-center justify-center  mb-10">
-              <Link to={`/projects/${project.id}`}>
+              <Link to={`/projects/${project.id}`} onClick={handleLinkClick}>
                 <Button className="w-full">View Details</Button>
               </Link>
             </article>
