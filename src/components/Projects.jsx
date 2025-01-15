@@ -61,15 +61,12 @@ export default function Projects() {
               <p>{project.description}</p>
             </article>
 
-            {/* Technologies used */}
-            <article className="flex flex-col gap-2 px-6 text-body">
-              <h4 className="font-medium">Technologies used</h4>
+            {/* technologies used */}
+            <article className="flex flex-col px-6 text-body">
+              <h4 className="font-medium">Technologies used:</h4>
               <div className="flex flex-wrap flex-row items-center justify-start gap-2">
                 {project.TechUsed.map((techused, techIndex) => (
-                  <p
-                    className="border border-1 border-grayBorder  rounded-full py-0.1 px-4 flex flex-wrap"
-                    key={techIndex}
-                  >
+                  <p className="flex-wrap" key={techIndex}>
                     {techused}
                   </p>
                 ))}
@@ -78,7 +75,11 @@ export default function Projects() {
 
             {/* Buttons */}
             <article className="px-6 flex items-center justify-center  mb-10">
-              <Link to={`/projects/${project.id}`} onClick={handleLinkClick}>
+              <Link
+                target="_blank"
+                to={`/projects/${project.id}`}
+                onClick={handleLinkClick}
+              >
                 <Button className="w-full">View Details</Button>
               </Link>
             </article>

@@ -24,7 +24,7 @@ export default function About() {
 
           <div className="md:w-2/3 w-full">
             <h3 className="text-headings font-medium mb-4 font-headings">
-              Progress-oriented Front End web developer
+              Voluptates ipsam repudiandae excepturi
             </h3>
             <p className="text-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic

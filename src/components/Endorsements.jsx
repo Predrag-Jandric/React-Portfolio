@@ -42,7 +42,7 @@ export default function Endorsements() {
         {endorsementsMap.map((endorsement, index) => (
           <SwiperSlide
             key={index}
-            className="flex flex-col items-center justify-center  text-center bg-pureWhite text-grayText p-10"
+            className="flex flex-col items-center justify-center text-center bg-pureWhite text-grayText p-10"
           >
             <img
               src={endorsement.endorsementsImageUrl}

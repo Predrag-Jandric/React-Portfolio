@@ -76,7 +76,8 @@ export default function Footer() {
           ></textarea>
 
           <Button
-            type="submit"
+            // type="submit"
+            onClick={() => alert("Not functional in this version")}
             className="w-44 gap-3 flex items-center justify-center"
           >
             Send <RiMailSendLine size={20} />
@@ -96,7 +97,9 @@ export default function Footer() {
           </p>
           <p className="mb-5 text-body">
             Email:{" "}
-            <span className="font-semibold">predrag.jandric.bg@gmail.com</span>{" "}
+            <span className="font-semibold italic">
+              predrag.jandric.bg@gmail.com
+            </span>{" "}
           </p>
 
           <div className="w-fit flex gap-4">

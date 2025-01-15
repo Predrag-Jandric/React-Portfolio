@@ -28,11 +28,11 @@ export default function Faq() {
         const isOpen = activeIndex === index;
         return (
           <div
-            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out "
+            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out"
             key={index}
           >
             <p
-              className="flex items-center justify-between bg-pureWhite px-5 py-4 font-medium text-body cursor-pointer transition-all hover:bg-slate-100"
+              className="flex items-center justify-between bg-pureWhite px-5 py-4 font-medium text-body cursor-pointer transition-all hover:bg-blue-50"
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
@@ -40,15 +40,15 @@ export default function Faq() {
                 {isOpen ? "-" : "+"}
               </button>
             </p>
-            <p
+            <div
               className={`${
                 isOpen
-                  ? "max-h-[25rem] opacity-100 py-5 overflow-y-auto"
+                  ? "max-h-[25rem] opacity-100 py-5 overflow-y-none"
                   : "max-h-0 opacity-0"
               } px-5 text-body leading-relaxed bg-pureWhite transition-all duration-500 ease-in-out border-neutral-200 border-t-2`}
             >
               {formatAnswer(faq.answer)}
-            </p>
+            </div>
           </div>
         );
       })}

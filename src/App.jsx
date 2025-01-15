@@ -40,20 +40,20 @@ export default function App() {
               path="/"
               element={
                 <main className="flex font-body flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
-                  <Hero />
+                  {/* <Hero />
                   <Title text="About" />
                   <About />
                   <Title text="Skills" />
                   <Skills />
                   <Title text="Projects" />
-                  <Projects />
+                  <Projects /> */}
                   <Title text="Roadmap" />
                   <Roadmap />
-                  <Title text="Endorsements" />
+                  {/* <Title text="Endorsements" />
                   <Endorsements />
                   <Title text="Faq" />
                   <Faq />
-                  <Footer />
+                  <Footer /> */}
                 </main>
               }
             />

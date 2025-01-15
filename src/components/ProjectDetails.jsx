@@ -21,12 +21,6 @@ function ProjectDetails() {
           {project.name}
         </p>
 
-        <Link
-          to="/"
-          className="hover:no-underline w-fit underline flex transition-all text-blue-500 my-1 mx-auto"
-        >
-          Go back
-        </Link>
 
         <div className="flex gap-5 items-center justify-center">
           <span className="flex items-center gap-2">
@@ -41,15 +35,15 @@ function ProjectDetails() {
           </span>
         </div>
 
-        <hr className="mt-5" />
+        <hr className="my-10" />
 
         <img
-          className="my-10 md:w-2/3 w-full mx-auto  object-cover"
+          className="mb-10 md:w-2/3 w-full mx-auto object-cover"
           src="/assets/projects/frame.png"
           alt=""
         />
 
-        <article className="flex items-center justify-center gap-6 xs:gap-7 mb-10">
+        <article className="flex items-center justify-center gap-6 xs:gap-7 ">
           <Button
             href={projectsMap.previewLink}
             target="_blank"
@@ -68,7 +62,7 @@ function ProjectDetails() {
           </Button>
         </article>
 
-        <hr className="mb-5" />
+        <hr className="my-10" />
 
         <p className="text-[2rem] font-medium font-headings text-center mb-5">
           Introduction
@@ -102,7 +96,7 @@ function ProjectDetails() {
           would you do differently next time? How did this project contribute to
           your professional growth?
         </p>
-        <hr className="mt-5" />
+        <hr className="my-10" />
 
         <p className="text-[2rem] font-medium font-headings text-center mb-5">
           How it works
@@ -135,7 +129,7 @@ function ProjectDetails() {
             alt=""
           />
         </p>
-        <hr className="mb-5" />
+        <hr className="my-10" />
         <p className="text-[2rem] font-medium font-headings text-center mb-5">
           Teamwork
         </p>
@@ -157,7 +151,15 @@ function ProjectDetails() {
           problem-solving abilities, and ability to deliver high-quality
           projects.
         </p>
+        <hr className="my-10" />
+      <Link
+          to="/"
+          className="btn mx-auto "
+        >
+          Go back
+        </Link>
       </section>
+
     </div>
   );
 }

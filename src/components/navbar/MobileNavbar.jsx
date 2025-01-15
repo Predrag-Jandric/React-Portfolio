@@ -93,7 +93,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
 
   return (
     <div ref={scope}>
-      <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20 z-40 text-center translate-x-full transition-colors">
+      <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20 z-40 translate-x-full transition-colors">
         <ul className="flex flex-col gap-y-6 px-8 relative">
           <motion.div
             className="absolute right-[5%] -top-[16%] cursor-pointer"
@@ -122,7 +122,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
               >
                 {link.label}
               </a>
-              <span className="absolute top-full left-[10%] w-[80%] h-[7%] bg-primary scale-0 z-[-1] transition ease-in-out duration-300 group-hover:scale-50"></span>
+              <span className="absolute top-full left-5 w-32 h-[3px] bg-primary scale-x-0 origin-left z-[-1] transition-transform ease-in-out duration-300 group-hover:scale-x-100"></span>
             </li>
           ))}
         </ul>

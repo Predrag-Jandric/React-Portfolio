@@ -20,14 +20,14 @@ export default function Roadmap() {
       viewport={{ once: true }}
       id="roadmap"
     >
-      <div className="flex text-white items-center justify-center shadow-none gap-8 container bg-dark">
+      <div className="flex text-white flex-col md:flex-row items-center justify-center shadow-none gap-8 container bg-dark">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          custom={0.5}
-          className="flex items-center gap-8 text-center "
+          custom={0.3}
+          className="flex md:flex-row flex-col items-center gap-8 text-center "
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q1 2025</p>
@@ -44,9 +44,12 @@ export default function Roadmap() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={0.5}
+            custom={0.45}
           >
-            <HiOutlineArrowLongRight size={40} className=" text-white" />
+            <HiOutlineArrowLongRight
+              size={40}
+              className="md:rotate-0 rotate-90 text-white"
+            />
           </motion.span>
         </motion.article>
 
@@ -54,9 +57,9 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          custom={1}
+          custom={0.6}
           viewport={{ once: true }}
-          className="flex items-center gap-8  text-center"
+          className="flex md:flex-row flex-col items-center gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q2 2025</p>
@@ -73,9 +76,12 @@ export default function Roadmap() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={1}
+            custom={0.75}
           >
-            <HiOutlineArrowLongRight size={40} className=" text-white" />
+            <HiOutlineArrowLongRight
+              size={40}
+              className="md:rotate-0 rotate-90 text-white"
+            />
           </motion.span>
         </motion.article>
 
@@ -84,8 +90,8 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          custom={1.5}
-          className="flex items-center gap-8  text-center"
+          custom={0.9}
+          className="flex md:flex-row flex-col items-center gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q3 2025</p>
@@ -101,9 +107,12 @@ export default function Roadmap() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={1.5}
+            custom={1.05}
           >
-            <HiOutlineArrowLongRight size={40} className=" text-white" />
+            <HiOutlineArrowLongRight
+              size={40}
+              className="md:rotate-0 rotate-90 text-white"
+            />
           </motion.span>
         </motion.article>
 
@@ -112,7 +121,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          custom={2}
+          custom={1.2}
           className="flex items-center gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
