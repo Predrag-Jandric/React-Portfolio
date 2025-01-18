@@ -8,18 +8,20 @@ import useScrollTo from "../utils/useScrollTo.js";
 export default function Hero() {
   const scrollToSection = useScrollTo(170);
   return (
-    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-30 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
+    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background2-resize.png')] xl:px-30 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
       <Navbar />
 
-      <div className="pt-[110px]  flex justify-between lg:flex-row flex-col lg:text-start items-center text-center ">
-        <div className="lg:w-[75%] px-3 xl:w-[60%] w-full">
+      <div className="pt-[110px]  flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
+        <div className="font-headings lg:w-[75%] px-3 xl:w-[60%] w-full">
+          <p className="text-neutral-200 italic">Hi, I&apos;m..</p>
           <motion.h2
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="lg:text-[66px] font-headings text-[40px] font-bold whitespace-wrap text-white"
+            className="lg:text-[66px] text-[40px] font-bold whitespace-wrap text-white"
           >
-            <span className="text-primary">Lorem</span> Lorem, ipsum dolor.{" "}
+            <span className="text-primary">Frontend</span> developer who builds
+            apps that shine.
           </motion.h2>
           <motion.p
             initial={heroVariants.initial}
@@ -41,21 +43,22 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}
         animate={{
-          opacity: [0, 1, 1], // Appear, stay, then disappear
-          y: [0, -20, 0],
-          x: "-50%",
+          opacity: [0, 1, 1], // Appear, stay, then stay
+          y: [0, -20, 0], // Bounce animation
+          x: "-50%", // Center horizontally
         }}
         transition={{
           opacity: {
-            duration: 7, // Total duration for opacity animation (fade-in + fade-out)
+            duration: 1, // Total duration for opacity animation
             delay: 3.4, // Delay before appearing
-            times: [0, 0.1, 0.9, 1], // Controls timing of opacity keyframes
+            times: [0, 0.5, 1], // Controls timing of opacity keyframes
           },
           y: {
             duration: 1.2, // Bounce duration for one cycle
             delay: 3.4, // Starts bouncing after 3.4 seconds
-            repeat: 2, // Repeats twice (total of 3 bounces)
+            repeat: 3, // Repeats twice (total of 3 bounces)
             repeatType: "loop", // Ensures smooth looping
+            yoyo: true, // Ensures the bounce goes up and down
           },
         }}
         viewport={{ once: true }}

@@ -1,5 +1,5 @@
-import php from "/assets/roadmap/php.png";
-import react from "/assets/roadmap/react.png";
+import leetcode from "/assets/roadmap/leetcode.png";
+import projects from "/assets/roadmap/projects.png";
 import job from "/assets/roadmap/job.png";
 import mern from "/assets/roadmap/mern.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
@@ -20,23 +20,25 @@ export default function Roadmap() {
       viewport={{ once: true }}
       id="roadmap"
     >
-      <div className="flex text-white flex-col md:flex-row items-center justify-center shadow-none gap-8 container bg-dark">
+      <div className="flex text-white flex-col md:flex-row items-center justify-center shadow-none gap-8 md:gap-5 lg:gap-8 container bg-dark px-0">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           custom={0.3}
-          className="flex md:flex-row flex-col items-center gap-8 text-center "
+          className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
         >
-          <div className="flex flex-col items-center justify-center gap-3  w-fit">
+          <div className="flex flex-col items-center justify-center gap-3 w-fit">
             <p className="text-sm font-semibold italic">Q1 2025</p>
             <img
-              className="size-32 object-contain "
-              src={php}
+              className="size-32 md:size-20 lg:size-32 object-contain"
+              src={projects}
               alt="symbol of goal"
             />
-            <p className="text-body">Learn PHP</p>
+            <p className="text-body">
+              Finish 4 super <br /> group projects{" "}
+            </p>
           </div>
 
           <motion.span
@@ -59,16 +61,18 @@ export default function Roadmap() {
           whileInView="animate"
           custom={0.6}
           viewport={{ once: true }}
-          className="flex md:flex-row flex-col items-center gap-8  text-center"
+          className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q2 2025</p>
             <img
-              className="size-32 object-contain "
-              src={react}
+              className="size-32 md:size-20 lg:size-32 object-contain"
+              src={leetcode}
               alt="symbol of goal"
             />
-            <p className="text-body">Perfect React</p>
+            <p className="text-body">
+              Do 200 Leet <br /> code challenges
+            </p>
           </div>
 
           <motion.span
@@ -91,16 +95,18 @@ export default function Roadmap() {
           whileInView="animate"
           viewport={{ once: true }}
           custom={0.9}
-          className="flex md:flex-row flex-col items-center gap-8  text-center"
+          className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
             <p className="text-sm font-semibold italic">Q3 2025</p>
             <img
-              className="size-32 object-contain "
+              className="size-32 md:size-20 lg:size-32 object-contain"
               src={job}
               alt="symbol of goal"
             />
-            <p className="text-body">Land a job</p>
+            <p className="text-body w-24">
+              Appy and <br /> land a job
+            </p>
           </div>
           <motion.span
             variants={roadmapArrowVariants}
@@ -122,16 +128,18 @@ export default function Roadmap() {
           whileInView="animate"
           viewport={{ once: true }}
           custom={1.2}
-          className="flex items-center gap-8  text-center"
+          className="flex items-center gap-8 md:gap-5 lg:gap-8  text-center"
         >
-          <div className="flex flex-col items-center justify-center gap-3  w-fit">
+          <div className="flex flex-col items-center justify-center gap-3 w-fit">
             <p className="text-sm font-semibold italic">2026+</p>
             <img
-              className="size-32 object-contain "
+              className="size-32 md:size-20 lg:size-32 object-contain"
               src={mern}
               alt="symbol of goal"
             />
-            <p className="text-body">MERN stack</p>
+            <p className="text-body">
+              Continue working on <br /> MERN stack skills
+            </p>
           </div>
         </motion.article>
       </div>

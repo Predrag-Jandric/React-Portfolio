@@ -40,8 +40,8 @@ export default function App() {
               path="/"
               element={
                 <main className="flex font-body flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
-                  {/* <Hero />
-                  <Title text="About" />
+                  {/* <Hero /> */}
+                  {/* <Title text="About" />
                   <About />
                   <Title text="Skills" />
                   <Skills />
