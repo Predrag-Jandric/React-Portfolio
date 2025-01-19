@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { heroVariants } from "../utils/animations";
 
 const Model = forwardRef((props, ref) => {
-  const { scene } = useGLTF("/assets/hero/react_logo.glb");
+  const { scene } = useGLTF("/assets/hero/react_logo2.glb");
   return <primitive object={scene} ref={ref} {...props} />;
 });
 

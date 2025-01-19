@@ -8,7 +8,7 @@ import useScrollTo from "../utils/useScrollTo.js";
 export default function Hero() {
   const scrollToSection = useScrollTo(170);
   return (
-    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background2-resize.png')] xl:px-30 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
+    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-30 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
       <Navbar />
 
       <div className="pt-[110px]  flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">

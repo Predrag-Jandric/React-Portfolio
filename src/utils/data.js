@@ -13,23 +13,31 @@ export const endorsementsMap = [
     endorsementsImageUrl: "/assets/endorsements/fari.jpg",
     name: "Farzaneh Falakrou",
     job: "UI/UX Designer",
-    message: `Predrag and I were part of a dedicated team on a "Chingu" project, where we worked together to build an app from the scratch in six weeks. As a developer, he made important contributions with his technical skills and dedication.
-
-    Predrag showed a good understanding of development, followed our design guidelines, and kept communication open. His active participation and constructive feedback enhanced our teamwork.`,
+    message:
+      "Predrag and I were part of a dedicated team on a ‘‘Chingu’’ project, where we worked together to build an app from the scratch in six weeks. As a developer, he made important contributions with his technical skills and dedication.",
+    message2:
+      "Predrag showed a good understanding of development, followed our design guidelines, and kept communication open. His active participation and constructive feedback enhanced our teamwork.",
+    message3: "ㅤ",
   },
   {
     endorsementsImageUrl: "/assets/endorsements/afrah.jpg",
     name: "Afrah Ali",
     job: "Scrum Master",
     message:
-      "I had the pleasure of working alongside Predrag at Chingu, where we collaborated on developing an app from the ground up. As the Scrum Master and Predrag as the developer, I was consistently impressed by his dedication to delivering high-quality work. His commitment was unparalleled, always ensuring that tasks were completed to the highest standard.\\n\\nPredrag was incredibly supportive when team members encountered challenges, often creating video tutorials to explain complex concepts. He consistently prioritized quality over quantity, demonstrating excellent communication skills by keeping the team updated and maintaining transparency throughout the project.\\n\\nHe was highly proficient with GitHub and other development tools, adhering to design guidelines while remaining open to constructive feedback from the team and other developers. Predrag’s expertise in front-end development, coupled with his willingness to offer assistance in his areas of strength, made him an invaluable team member.",
+      "I had the pleasure of working alongside Predrag at Chingu, where we collaborated on developing an app from the ground up. As the Scrum Master and Predrag as the developer, I was consistently impressed by his dedication to delivering high-quality work. His commitment was unparalleled, always ensuring that tasks were completed to the highest standard.",
+    message2:
+      "Predrag was incredibly supportive when team members encountered challenges, often creating video tutorials to explain complex concepts. He consistently prioritized quality over quantity, demonstrating excellent communication skills by keeping the team updated and maintaining transparency throughout the project.",
+    message3: "",
   },
   {
     endorsementsImageUrl: "/assets/endorsements/anitta.jpg",
     name: "Anita Boakye-Yiadom",
     job: "Product owner and Agile coach",
     message: `Predrag was an outstanding front-end developer in my Chingu scrum team. As a scrum master during the 6-week Solar Panel Planner app project, his problem-solving skills and attention to detail were instrumental. 
-    Predrag is a committed and dedicated professional who constantly shows outstanding leadership with teammates as a senior developer, guiding and initiating pair programming sessions. He proved himself well-versed in technical skills and frameworks like HTML, React, and JavaScript. In addition to his technical proficiency, he was a fantastic team player who shared his expansive knowledge and worked collaboratively. He was willing to take on extra tasks to keep the team focused on accomplishing the goal. Predrag did not hesitate to work in the PO role when the team needed guidance on the product, ensuring that the product backlog was well-ordered. He will be a valuable asset to any team.`,
+    Predrag is a committed and dedicated professional who constantly shows outstanding leadership with teammates as a senior developer, guiding and initiating pair programming sessions. `,
+    message2:
+      "He proved himself well-versed in technical skills and frameworks like HTML, React, and JavaScript. In addition to his technical proficiency, he was a fantastic team player who shared his expansive knowledge and worked collaboratively. He was willing to take on extra tasks to keep the team focused on accomplishing the goal. ",
+    message3: "",
   },
 ];
 

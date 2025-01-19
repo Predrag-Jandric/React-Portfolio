@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { endorsementsMap } from "../utils/data.js";
-import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+// import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 
@@ -61,15 +61,13 @@ export default function Endorsements() {
             <small className="text-stone-400 block italic">
               {endorsement.job}
             </small>
-            <p className="flex md:w-10/12 mx-auto py-6">
-              <span className="self-start px-2 text-body">
-                <RiDoubleQuotesL />
-              </span>
+            <div className="flex text-start flex-col md:w-10/12 mx-auto p-6">
               <span className="md:px-5 text-body">{endorsement.message}</span>
-              <span className="self-end px-2 text-body">
-                <RiDoubleQuotesR />
+              <span className="md:px-5 my-5 text-body">
+                {endorsement.message2}
               </span>
-            </p>
+              <span className="md:px-5 text-body">{endorsement.message3}</span>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -21,7 +21,6 @@ function ProjectDetails() {
           {project.name}
         </p>
 
-
         <div className="flex gap-5 items-center justify-center">
           <span className="flex items-center gap-2">
             {" "}
@@ -45,6 +44,7 @@ function ProjectDetails() {
 
         <article className="flex items-center justify-center gap-6 xs:gap-7 ">
           <Button
+            onClick={() => alert("Coming soon")}
             href={projectsMap.previewLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -53,6 +53,7 @@ function ProjectDetails() {
             Demo
           </Button>
           <Button
+            onClick={() => alert("Coming soon")}
             href={projectsMap.githubLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -152,14 +153,10 @@ function ProjectDetails() {
           projects.
         </p>
         <hr className="my-10" />
-      <Link
-          to="/"
-          className="btn mx-auto "
-        >
+        <Link to="/" className="btn mx-auto ">
           Go back
         </Link>
       </section>
-
     </div>
   );
 }

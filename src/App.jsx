@@ -8,31 +8,31 @@ import Roadmap from "./components/Roadmap";
 import Endorsements from "./components/Endorsements";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
-import Preloader from "./components/Preloader";
+// import { useEffect, useState } from "react";
+// import Preloader from "./components/Preloader";
 import ProjectDetails from "./components/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setIsLoading(false);
+  //   };
 
-    window.addEventListener("load", handleLoad);
+  //   window.addEventListener("load", handleLoad);
 
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("load", handleLoad);
+  //   };
+  // }, []);
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Preloader />
-      ) : (
+      ) : ( */}
         <Router>
           <ScrollToTop />
           <Routes>
@@ -60,7 +60,7 @@ export default function App() {
             <Route path="/projects/:id" element={<ProjectDetails />} />
           </Routes>
         </Router>
-      )}
+       {/* )} */}
     </>
   );
 }
