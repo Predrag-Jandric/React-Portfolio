@@ -13,11 +13,10 @@ export default function Hero() {
 
       <div className="pt-[110px]  flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
         <div className="font-headings lg:w-[75%] px-3 xl:w-[60%] w-full">
-          <p className="text-neutral-200 italic">Hi, I&apos;m..</p>
           <motion.h2
             initial={heroVariants.initial}
             animate={heroVariants.animate}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="lg:text-[66px] text-[40px] font-bold whitespace-wrap text-white"
           >
             <span className="text-primary">Frontend</span> developer who builds
@@ -26,12 +25,13 @@ export default function Hero() {
           <motion.p
             initial={heroVariants.initial}
             animate={heroVariants.animate}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             className="py-[40px] text-lg text-neutral-200"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            corporis necessitatibus iusto ex impedit perferendis unde, corrupti
-            aut fugit facere?{" "}
+            I’ve worked with over 15 colleagues from diverse tech backgrounds to
+            build production-ready applications in a professional setting. My
+            contributions and team-first mindset were crucial in delivering
+            results across multiple open-source projects.
           </motion.p>
         </div>
 
@@ -50,12 +50,12 @@ export default function Hero() {
         transition={{
           opacity: {
             duration: 1, // Total duration for opacity animation
-            delay: 3.4, // Delay before appearing
+            delay: 7, // Delay before appearing
             times: [0, 0.5, 1], // Controls timing of opacity keyframes
           },
           y: {
             duration: 1.2, // Bounce duration for one cycle
-            delay: 3.4, // Starts bouncing after 3.4 seconds
+            delay: 7, // Starts bouncing after X seconds
             repeat: 3, // Repeats twice (total of 3 bounces)
             repeatType: "loop", // Ensures smooth looping
             yoyo: true, // Ensures the bounce goes up and down

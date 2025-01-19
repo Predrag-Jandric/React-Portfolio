@@ -28,7 +28,7 @@ export default function ThreeDObject() {
     <motion.div
       initial={heroVariants.initial}
       animate={heroVariants.animate}
-      transition={{ duration: 0.5, delay: 0.7 }}
+      transition={{ duration: 0.5, delay: 1 }}
       className="size-96 cursor-grab"
     >
       <Canvas>

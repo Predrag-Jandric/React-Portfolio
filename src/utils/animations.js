@@ -25,7 +25,7 @@ export const skillsVariants = {
       scale: 1,
       transition: {
         duration: 0.2,
-        delay: 0.1 * index,
+        delay: 0.140 * index,
       },
     };
   },

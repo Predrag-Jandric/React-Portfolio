@@ -15,36 +15,44 @@ export default function About() {
       id="about"
     >
       <section className="container text-grayText rounded-custom">
-        <section className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <section className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
           <img
             src={devPhoto}
             alt="developer photo"
             className="w-80 object-cover rounded-custom"
           />
 
-          <div className="md:w-2/3 w-full">
+          <div className="lg:w-2/3 w-full">
             <h3 className="text-headings font-medium mb-4 font-headings">
-              Voluptates ipsam repudiandae excepturi
+              Hi, I’m Predrag – a Frontend Developer with Big Goals
             </h3>
             <p className="text-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              voluptates ipsam repudiandae excepturi cumque, culpa magni sed
-              iusto sint expedita.
+              Volunteering for a year with Chingu.io was a game-changer for me.
+              It helped me refine my work ethic and gain invaluable real-world
+              experience building complex applications in an Agile environment
+              using Scrum practices.
               <br />
               <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              voluptates ipsam repudiandae excepturi cumque, culpa magni sed
-              iusto sint expedita.
+              Work consistency, clean and scalable code, and well-written
+              documentation are the cornerstones of my work. I think that great
+              code doesn’t just work, it should be easy to read, maintain, and
+              build upon by other members. I’ve been sharing my coding journey
+              on GitHub and YouTube, documenting lessons learned.
               <br />
               <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              voluptates ipsam repudiandae excepturi cumque, culpa magni sed
-              iusto sint expedita.
+              My long-term goal is to deepen my understanding of backend
+              technologies, including Node.js, Express, and MongoDB. I’m excited
+              to expand my skill set beyond front-end development, enabling me
+              to build seamless full-stack applications and tackle more complex
+              challenges.
             </p>
           </div>
         </section>
 
-        <Button className="mx-auto mt-10 w-52 gap-3 flex">
+        <Button
+          onClick={() => alert("Coming soon")}
+          className="mx-auto mt-10 w-52 gap-3 flex"
+        >
           Download CV <RiDownload2Fill size={20} />
         </Button>
       </section>

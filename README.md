@@ -1,8 +1,6 @@
 Hero section = re-write content add viginette
 About section = re-write content
-Skills section = re-write content
 Projects section = fill the data
-Roadmap = re-write content MAKE RESPONSIVE
 Endorsements = re-write content
 
 Footer section
@@ -31,4 +29,3 @@ https://sketchfab.com
 
 ## Focus on user value, keep it brief
 
-I think it's best to describe Chingu as a volunteer organization that you participated in to build team projects using Scrum over 6 sprints.

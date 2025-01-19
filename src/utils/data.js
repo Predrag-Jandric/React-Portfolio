@@ -8,28 +8,28 @@ export const navLinks = [
   { href: "endorsements", label: "Endorsements" },
   { href: "faq", label: "Faq" },
 ];
-
 export const endorsementsMap = [
   {
-    endorsementsImageUrl: "/assets/endorsements/face1.jpg",
-    name: "Pera Peric",
-    job: "Policeman at  XYZ",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
+    endorsementsImageUrl: "/assets/endorsements/fari.jpg",
+    name: "Farzaneh Falakrou",
+    job: "UI/UX Designer",
+    message: `Predrag and I were part of a dedicated team on a "Chingu" project, where we worked together to build an app from the scratch in six weeks. As a developer, he made important contributions with his technical skills and dedication.
+
+    Predrag showed a good understanding of development, followed our design guidelines, and kept communication open. His active participation and constructive feedback enhanced our teamwork.`,
   },
   {
-    endorsementsImageUrl: "/assets/endorsements/face3.jpg",
-    name: "Marko Maric",
-    job: "Freelancer at Self-Employed",
+    endorsementsImageUrl: "/assets/endorsements/afrah.jpg",
+    name: "Afrah Ali",
+    job: "Scrum Master",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
+      "I had the pleasure of working alongside Predrag at Chingu, where we collaborated on developing an app from the ground up. As the Scrum Master and Predrag as the developer, I was consistently impressed by his dedication to delivering high-quality work. His commitment was unparalleled, always ensuring that tasks were completed to the highest standard.\\n\\nPredrag was incredibly supportive when team members encountered challenges, often creating video tutorials to explain complex concepts. He consistently prioritized quality over quantity, demonstrating excellent communication skills by keeping the team updated and maintaining transparency throughout the project.\\n\\nHe was highly proficient with GitHub and other development tools, adhering to design guidelines while remaining open to constructive feedback from the team and other developers. Predrag’s expertise in front-end development, coupled with his willingness to offer assistance in his areas of strength, made him an invaluable team member.",
   },
   {
-    endorsementsImageUrl: "/assets/endorsements/face2.jpg",
-    name: "Natasa Nikic",
-    job: "Coleague at XYZ company",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus eaque aspernatur ratione sint, maiores esse magnam quia perferendis assumenda?",
+    endorsementsImageUrl: "/assets/endorsements/anitta.jpg",
+    name: "Anita Boakye-Yiadom",
+    job: "Product owner and Agile coach",
+    message: `Predrag was an outstanding front-end developer in my Chingu scrum team. As a scrum master during the 6-week Solar Panel Planner app project, his problem-solving skills and attention to detail were instrumental. 
+    Predrag is a committed and dedicated professional who constantly shows outstanding leadership with teammates as a senior developer, guiding and initiating pair programming sessions. He proved himself well-versed in technical skills and frameworks like HTML, React, and JavaScript. In addition to his technical proficiency, he was a fantastic team player who shared his expansive knowledge and worked collaboratively. He was willing to take on extra tasks to keep the team focused on accomplishing the goal. Predrag did not hesitate to work in the PO role when the team needed guidance on the product, ensuring that the product backlog was well-ordered. He will be a valuable asset to any team.`,
   },
 ];
 
@@ -38,12 +38,12 @@ export const faqMap = [
     question:
       "How much experience do you have as a frontend developer, and what kinds of projects have you worked on?",
     answer:
-      "I’ve been coding for a few years and have worked on 100+ projects (check out my GitHub) of various sizes and complexity. I follow scalable, responsive design principles and prioritize best practices to ensure code quality, readability, and long-term maintainability.",
+      "I’ve been coding for a few years and have worked on 100+ projects (available on my GitHub) of various sizes and complexity. I follow scalable, responsive, pixel-perfect design principles and prioritize best practices to ensure code quality, readability, and long-term maintainability.",
   },
   {
     question: "Do you have experience with [specific framework/tool]?",
     answer:
-      "Even if I don’t have direct experience with a specific tool, I’m a quick learner and eager to expand my skill set to meet project requirements. Staying curious, continuously learning, and keeping up with the latest tech trends is a key part of my approach to development.",
+      "I may not always have direct experience with every tool, but I’m a quick learner and eager to expand my skill set to meet project requirements. I think programming is not about syntax memorisation but problem solving skills and concept understanding. Staying curious, continuously learning, and keeping up with the latest tech trends is a key part of my approach to development.",
   },
   {
     question:
@@ -57,9 +57,9 @@ export const faqMap = [
       "I’ve worked on open-source projects with developers from diverse backgrounds, which has helped me become a better team player. I value collaboration, communication, and I adapt quickly to different team dynamics. I appreciate constructive feedback because it’s an opportunity to improve and grow as a developer.",
   },
   {
-    question: "Can you meet deadlines and handle pressure?",
+    question: "How do you meet deadlines and handle challenges?",
     answer:
-      "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user.",
+      "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user.\n When challenges arise, my go-to approach is to break the problem into smaller, more manageable pieces. Usually, stepping away for a quick walk clears my mind and brings fresh ideas. In the next team brainstorming session, we then all present our solutions and choose the best combination of ideas together.",
   },
   {
     question: "What makes you stand out from other developers?",

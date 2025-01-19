@@ -26,7 +26,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          custom={0.3}
+          custom={0.35}
           className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3 w-fit">
@@ -46,7 +46,7 @@ export default function Roadmap() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={0.45}
+            custom={0.5}
           >
             <HiOutlineArrowLongRight
               size={40}
@@ -59,7 +59,7 @@ export default function Roadmap() {
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
-          custom={0.6}
+          custom={0.65}
           viewport={{ once: true }}
           className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
         >
@@ -80,7 +80,7 @@ export default function Roadmap() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={0.75}
+            custom={0.8}
           >
             <HiOutlineArrowLongRight
               size={40}
@@ -94,7 +94,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          custom={0.9}
+          custom={1.05}
           className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3  w-fit">
@@ -113,7 +113,7 @@ export default function Roadmap() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={1.05}
+            custom={1.2}
           >
             <HiOutlineArrowLongRight
               size={40}
@@ -127,7 +127,7 @@ export default function Roadmap() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          custom={1.2}
+          custom={1.35}
           className="flex items-center gap-8 md:gap-5 lg:gap-8  text-center"
         >
           <div className="flex flex-col items-center justify-center gap-3 w-fit">
