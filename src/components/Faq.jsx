@@ -22,7 +22,7 @@ export default function Faq() {
       whileInView="animate"
       viewport={{ once: true }}
       id="faq"
-      className="mx-auto max-w-[65rem] text-dark xs:px-5 px-3"
+      className="mx-auto max-w-[65rem] text-dark xs:px-6 px-4"
     >
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;
@@ -32,7 +32,7 @@ export default function Faq() {
             key={index}
           >
             <p
-              className="flex items-center justify-between bg-pureWhite px-5 py-4 font-medium text-body cursor-pointer transition-all hover:bg-blue-50"
+              className="flex items-center justify-between bg-pureWhite px-6 py-4 font-medium text-body cursor-pointer transition-all hover:bg-blue-50"
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}

@@ -3,6 +3,8 @@ Endorsements = add new lines and consistency
 
 Footer section
 
+- add a way for a user to see all Endorsements
+
 - use 3rd party to make form functional
 - implement MODAL that will let user know the msg in the form has been sent, from https://sweetalert2.github.io/
 

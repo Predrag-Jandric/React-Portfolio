@@ -30,7 +30,7 @@ export default function Projects() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex items-center justify-center"
+      className="flex items-center justify-center mx-1"
       id="projects"
     >
       <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 xs:px-5 px-3">

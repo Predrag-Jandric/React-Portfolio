@@ -8,10 +8,10 @@ import useScrollTo from "../utils/useScrollTo.js";
 export default function Hero() {
   const scrollToSection = useScrollTo(170);
   return (
-    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-30 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
+    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-36 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
       <Navbar />
 
-      <div className="pt-[110px]  flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
+      <div className="md:pt-[6rem] pt-[4.5rem] flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
         <div className="font-headings lg:w-[75%] px-3 xl:w-[60%] w-full">
           <motion.h2
             initial={heroVariants.initial}
@@ -26,7 +26,7 @@ export default function Hero() {
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="py-[40px] text-lg text-neutral-200"
+            className="pt-[40px] pb-3 text-lg text-neutral-200"
           >
             I’ve worked with over 15 colleagues from diverse tech backgrounds to
             build production-ready applications in a professional setting. My
@@ -40,7 +40,7 @@ export default function Hero() {
       <motion.a
         onClick={() => scrollToSection("about")}
         rel="noopener noreferrer"
-        className="absolute bottom-8 left-1/2 text-primary"
+        className="absolute z-50 bottom-8 left-1/2 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}
         animate={{
           opacity: [0, 1, 1], // Appear, stay, then stay

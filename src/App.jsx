@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 // import Preloader from "./components/Preloader";
 import ProjectDetails from "./components/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -54,6 +55,7 @@ export default function App() {
                   <Title text="Faq" />
                   <Faq />
                   <Footer />
+                  <ScrollToTopButton />
                 </main>
               }
             />

@@ -34,7 +34,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex flex-col mt-16 items-center bg-dark py-16 xs:px-5 px-3">
+    <footer className="flex flex-col mt-16 items-center bg-dark py-16 xs:px-6 px-4">
       <motion.section
         variants={generalVariants}
         initial="initial"

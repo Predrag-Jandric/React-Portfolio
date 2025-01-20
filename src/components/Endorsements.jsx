@@ -15,7 +15,7 @@ export default function Endorsements() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="xs:px-5 px-3"
+      className="xs:px-5 px-3 mx-1"
       id="endorsements"
     >
       <Swiper
@@ -61,7 +61,7 @@ export default function Endorsements() {
             <small className="text-stone-400 block italic">
               {endorsement.job}
             </small>
-            <div className="flex text-start flex-col md:w-10/12 mx-auto p-6">
+            <div className="flex text-start flex-col md:px-10 w-full mx-auto p-6">
               <span className="md:px-5 text-body">{endorsement.message}</span>
               <span className="md:px-5 my-5 text-body">
                 {endorsement.message2}
