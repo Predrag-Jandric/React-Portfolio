@@ -18,18 +18,16 @@ export default function ScrollToTopButton() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  function handleJumpToTop(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0 });
+  }
 
   return (
     <button
       type="button"
-      onClick={scrollToTop}
-      className={`fixed bottom-10 right-1 p-2.5 rounded-full bg-pureWhite transition-all  hover:bg-primary text-black border border-gray-400 z-50 shadow-md  duration-300 ${
+      onClick={handleJumpToTop}
+      className={`fixed bottom-10 right-1 p-3 rounded-full bg-pureWhite transition-all sm:hover:bg-primary hover:bg-pureWhite text-black border border-gray-400 z-50 shadow-md duration-300 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       aria-label="Scroll to top"

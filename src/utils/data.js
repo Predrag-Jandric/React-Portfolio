@@ -106,20 +106,20 @@ export const projectsMap = [
     teamSize: "3 people",
     type: "Front-end",
   },
-  // {
-  //   name: "2Project_name2",
-  //   description:
-  //     "2222Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-  //   projectsImageUrl: "/assets/projects/frame.png",
-  //   effort: "Team effort",
-  //   TechUsed: ["React,", "Tailwind,", "Redux Toolkit,", "MongoDB"],
-  //   githubLink: "./",
-  //   previewLink: "./",
-  //   id: 434667264,
-  //   buildTime: "7 weeks",
-  //   teamSize: "10 people",
-  //   type: "Full stack",
-  // },
+  {
+    name: "2Project_name2",
+    description:
+      "2222Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
+    projectsImageUrl: "/assets/projects/frame.png",
+    effort: "Team effort",
+    TechUsed: ["React,", "Tailwind,", "Redux Toolkit,", "MongoDB"],
+    githubLink: "./",
+    previewLink: "./",
+    id: 434667264,
+    buildTime: "7 weeks",
+    teamSize: "10 people",
+    type: "Full stack",
+  },
   // {
   //   name: "3Project_name3",
   //   description:

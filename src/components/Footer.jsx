@@ -123,8 +123,8 @@ export default function Footer() {
         </article>
       </motion.section>
 
-      <p className="text-slate-300 mt-5 flex items-center justify-center">
-        &copy; {new Date().getFullYear()} Chingu. All rights reserved.
+      <p className="text-slate-500 mt-5 text-sm flex items-center justify-center">
+        &copy; {new Date().getFullYear()} Predrag. All rights reserved.
       </p>
     </footer>
   );

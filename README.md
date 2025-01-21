@@ -12,7 +12,7 @@ Footer section
 
 - add Why I Code section to your github
 - add emotional intelligence as strong point
-- add user stories image to readmes for featured projects
+- add diagrams image to readmes for featured projects
 
 hero pattern got from
 https://patternico.com/#meM0W5EUKUjVsnNY
