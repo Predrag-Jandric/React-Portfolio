@@ -42,7 +42,7 @@ export default function Faq() {
             </p>
             <div
               className={`faq-answer transition-all duration-500 ease-in-out overflow-hidden ${
-                isOpen ? "max-h-screen opacity-100 py-5" : "max-h-0 opacity-0"
+                isOpen ? "max-h-full opacity-100 py-5" : "max-h-0 opacity-0"
               } px-5 text-body leading-relaxed bg-pureWhite border-neutral-200 border-t-2`}
             >
               {formatAnswer(faq.answer)}

@@ -67,12 +67,12 @@ export const faqMap = [
   {
     question: "How do you meet deadlines and handle challenges?",
     answer:
-      "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user.\n When challenges arise, my go-to approach is to break the problem into smaller, more manageable pieces. Usually, stepping away for a quick walk clears my mind and brings fresh ideas. In the next team brainstorming session, we then all present our solutions and choose the best combination of ideas together.",
+      "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user. When challenges arise, my go-to approach is to break the problem into smaller, more manageable pieces. Usually, stepping away for a quick walk clears my mind and brings fresh ideas. In the next team brainstorming session, we then all present our solutions and choose the best combination of ideas together.",
   },
   {
     question: "What makes you stand out from other developers?",
     answer:
-      "- I have a strong drive to keep learning, which is essential in a fast-paced, ever-evolving tech field.\n- I bring diverse experience from working on various projects with different teams, always maintaining a solution-driven mindset.\n- I’m disciplined, focused on writing clean, maintainable code, and committed to promoting a positive, team-oriented work environment.\n- I  enjoy writing documentation, giving presentations, and contributing to a collaborative learning culture. For me, these things are not a chore.",
+      "- I have a strong drive to keep learning, which is essential in a fast-paced, ever-evolving tech field.- I bring diverse experience from working on various projects with different teams, always maintaining a solution-driven mindset.- I’m disciplined, focused on writing clean, maintainable code, and committed to promoting a positive, team-oriented work environment.- I  enjoy writing documentation, giving presentations, and contributing to a collaborative learning culture. For me, these things are not a chore.",
   },
 ];
 
@@ -93,18 +93,27 @@ export const footerMap = [
 
 export const projectsMap = [
   {
-    name: "1Project_name1",
+    name: "Split Smart",
     description:
-      "1111Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officiis fuga magni exercitationem! Temporibus aspernatur eum ab ipsa blanditiis, excepturi recusandae dignissimos accusantium minus debitis ipsam voluptas ipsum veniam nobis!",
-    projectsImageUrl: "/assets/projects/frame.png",
-    effort: "Solo project",
+      "Split Smart is a dashboard web application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the simplest way to settle debts among group members.",
+    projectsImageUrl: "/assets/projects/splitSmartprev.png",
+    effort: "Team effort",
     TechUsed: ["Javascript,", "Css,", "Sass,", "Html,"],
-    githubLink: "./",
-    previewLink: "./",
-    id: 456264,
-    buildTime: "5 weeks",
-    teamSize: "3 people",
+    githubLink: "https://github.com/chingu-voyages/v51-tier2-team-22",
+    previewLink: "https://split-smart.netlify.app/",
+    id: 3456264,
+    buildTime: "7 weeks",
+    teamSize: "5 people",
     type: "Front-end",
+    textOne:
+      "Split Smart is a front-end only application that aims to make splitting expenses among friends, family, or colleagues easy. Whether planning a trip, organizing a group dinner, or managing shared expenses, Split Smart helps you keep track of who owes what and ensures that everyone pays their equal or unequal share. Your data is automatically saved in your browser locally so that you can always come back to where you left off.",
+    textTwo: `Building Split Smart taught me valuable lessons about listening to feedback and improving the app with in-depth testing. I also learned the importance of clear documentation for future development and maintenance. One of the major technical challenges was implementing the logic for accurate contribution changes for each member and ensuring that the app was user-friendly and intuitive.
+`,
+    textThree: `Our team consisted of 1 Product Owner, 2 Developers, 1 UX/UI Designer, and 1 Scrum Master. We followed Agile methodologies, with regular sprints, iterations, and backlog management. Design and implementation decisions were made collaboratively, ensuring a simple and efficient approach.`,
+    textFour: `My role included implementing complex logic, managing state with Redux, turning designs into a fully responsive user interface, fixing bugs and optimizing. I also worked on integrating animations and charts, writing documentation, testing and implementing the dark mode. `,
+    textFive: `Users can: 1. Create groups for different events or activities. 2. Add members to the groups and assign expenses. 3. Track total budget, expenses, and remaining budget. 4. Customize contributions for each member. 5. Edit group details, such as name, description, and image. 6. Search for groups using the search bar. 7. Toggle between light and dark modes for a comfortable viewing experience.`,
+    textSix: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. Framer Motion for animations. Recharts for pie chart visualization. React Icons and React Toastify for icons and notifications.`,
+    textSeven: ``,
   },
   {
     name: "2Project_name2",

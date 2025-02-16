@@ -1,0 +1,4 @@
+- integrate SPLIT SMART into project card
+- replace react logo with you picture
+- remove your picture from about section
+- make contact form functionable

@@ -40,7 +40,7 @@ export default function Hero() {
       <motion.a
         onClick={() => scrollToSection("about")}
         rel="noopener noreferrer"
-        className="absolute z-50 bottom-8 left-1/2 text-primary"
+        className="absolute z-30 bottom-8 left-1/2 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}
         animate={{
           opacity: [0, 1, 1], // Appear, stay, then stay
