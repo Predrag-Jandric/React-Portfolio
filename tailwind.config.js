@@ -8,7 +8,7 @@ export default {
         pureWhite: "#ffffff",
         pureBlack: "#000000",
 
-        // solid color variables
+        // variables
         white: "#f1f1f1",
         grayText: "#575b60",
         dark: "#2d3142",

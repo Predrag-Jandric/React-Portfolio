@@ -21,14 +21,12 @@ function ProjectDetails() {
           {project.name}
         </p>
 
-        <div className="flex gap-5 items-center justify-center">
+        <div className="flex mt-3 flex-col xs:flex-row gap-2 xs:gap-5 items-center justify-center">
           <span className="flex items-center gap-2">
-            {" "}
             <IoMdTimer size={20} />
             <p>Build Time: {project.buildTime}</p>
           </span>
           <span className="flex items-center gap-2">
-            {" "}
             <FaPeopleGroup size={20} />
             <p>Team size: {project.teamSize}</p>
           </span>
@@ -47,7 +45,7 @@ function ProjectDetails() {
             href={project.previewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-28 xs:w-40"
+            className=" xs:w-56"
           >
             Demo
           </Button>
@@ -55,7 +53,7 @@ function ProjectDetails() {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-28 xs:w-40"
+            className=" xs:w-56"
           >
             Code
           </Button>
@@ -85,9 +83,15 @@ function ProjectDetails() {
         <p>{project.textSix}</p>
 
         <img
-          className="my-10 md:w-2/3 w-full mx-auto  object-cover"
-          src="/assets/projects/flowchart.png"
-          alt=""
+          className="mt-10 mb-3 md:w-[80%] w-full mx-auto object-cover"
+          src={project.flowchartOne}
+          alt="flowchart"
+        />
+        <hr className="border border-gray-300" />
+        <img
+          className=" mt-3 md:w-[80%] w-full mx-auto object-cover"
+          src={project.flowchartTwo}
+          alt="flowchart"
         />
 
         {/* <hr className="my-10" /> */}

@@ -51,7 +51,7 @@ export default function About() {
 
         <Button
           onClick={() => alert("Coming soon")}
-          className="mx-auto mt-10 w-52 gap-3 flex"
+          className="mx-auto mt-10 w-56 gap-3 flex"
         >
           Download CV <RiDownload2Fill size={20} />
         </Button>

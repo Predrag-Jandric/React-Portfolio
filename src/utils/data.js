@@ -96,10 +96,13 @@ export const projectsMap = [
     name: "Split Smart",
     description:
       "Split Smart is a dashboard web application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the simplest way to settle debts among group members.",
-    projectsImageUrl: "/assets/projects/splitSmartprev.png",
+    projectsImageUrl: "/assets/projects/splitsmartpreview.png",
+    flowchartOne: "/assets/projects/splitsmartflowchartone.png",
+    flowchartTwo: "/assets/projects/splitsmartflowcharttwo.png",
     effort: "Team effort",
-    TechUsed: ["Javascript,", "Css,", "Sass,", "Html,"],
-    githubLink: "https://github.com/chingu-voyages/v51-tier2-team-22",
+    TechUsed: ["React,", "Tailwind,", "Redux,", "React Router,"],
+    githubLink:
+      "https://github.com/chingu-voyages/v51-tier2-team-22/tree/development",
     previewLink: "https://split-smart.netlify.app/",
     id: 3456264,
     buildTime: "7 weeks",

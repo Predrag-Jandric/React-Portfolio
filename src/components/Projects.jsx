@@ -49,7 +49,7 @@ export default function Projects() {
               alt="project photo"
               className=""
             />
-            <span className="absolute bg-primary rounded-full py-1 px-4 top-6 right-6 text-body">
+            <span className="absolute border border-gray-300 bg-primary rounded-full py-1 text-sm font-semibold px-4 top-6 right-6 ">
               {project.effort}
             </span>
 
@@ -74,15 +74,16 @@ export default function Projects() {
             </article>
 
             {/* Buttons */}
-            <article className="px-6 flex items-center justify-center  mb-10">
+           
               <Link
                 target="_blank"
                 to={`/projects/${project.id}`}
                 onClick={handleLinkClick}
+                className="flex w-56 mx-auto items-center justify-center  mb-10"
               >
-                <Button className="w-full">View Details</Button>
+                <Button className="w-56">View Details</Button>
               </Link>
-            </article>
+            
           </motion.section>
         ))}
       </div>

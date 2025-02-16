@@ -37,7 +37,7 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Finish 4 super <br /> group projects{" "}
+              Finish 3 mega <br /> projects{" "}
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Do 200 Leet <br /> code challenges
+              Do 200 code<br /> challenges
             </p>
           </div>
 
@@ -138,7 +138,7 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Continue working on <br /> MERN stack skills
+              Continue learning<br /> MERN stack
             </p>
           </div>
         </motion.article>
