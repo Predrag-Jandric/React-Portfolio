@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import Button from "./Button";
-import devPhoto from "/assets/about/devPhoto.jpg";
+// import devPhoto from "/assets/about/devPhoto.jpg";
 import { RiDownload2Fill } from "react-icons/ri";
 
 export default function About() {
@@ -15,14 +15,14 @@ export default function About() {
       id="about"
     >
       <section className="container text-grayText rounded-custom">
-        <section className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
-          <img
+        <section className="flex flex-col">
+          {/* <img
             src={devPhoto}
             alt="developer photo"
             className="w-80 object-cover rounded-custom"
-          />
+          /> */}
 
-          <div className="lg:w-2/3 w-full">
+          {/* <div className="lg:w-2/3 w-full"> */}
             <h3 className="text-headings font-medium mb-4 font-headings">
               Hi, I’m Predrag – a Frontend Developer with Big Goals
             </h3>
@@ -46,7 +46,7 @@ export default function About() {
               to build seamless full-stack applications and tackle more complex
               challenges.
             </p>
-          </div>
+          {/* </div> */}
         </section>
 
         <Button

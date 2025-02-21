@@ -50,14 +50,7 @@ export default function Endorsements() {
               className="size-24 object-cover mb-3 rounded-full mx-auto"
             />
 
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen"
-              className="specialLink"
-            >
-              {endorsement.name}
-            </a>
+            <p className="font-semibold">{endorsement.name}</p>
             <small className="text-stone-400 block italic">
               {endorsement.job}
             </small>
@@ -67,6 +60,14 @@ export default function Endorsements() {
                 {endorsement.message2}
               </span>
               <span className="md:px-5 text-body">{endorsement.message3}</span>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen"
+                className="specialLink italic text-sm text-center"
+              >
+                View more on Linkedin
+              </a>
             </div>
           </SwiperSlide>
         ))}

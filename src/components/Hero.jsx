@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 import { heroVariants } from "../utils/animations.js";
 import Navbar from "./navbar/Navbar";
 import { SlArrowDown } from "react-icons/sl";
-import ThreeDObject from "./ThreeDObject";
 import useScrollTo from "../utils/useScrollTo.js";
+import devPhoto from "/assets/hero/devPhoto.jpg";
 
 export default function Hero() {
   const scrollToSection = useScrollTo(170);
   return (
-    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-36 lg:px-20 px-5 lg:py-[60px] p-[40px] shadow-md relative">
+    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-36 lg:px-20 px-5 lg:py-[3.75rem] p-[2.5rem] shadow-md relative">
       <Navbar />
 
-      <div className="md:pt-[6rem] pt-[4.5rem] flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
+      <div className="md:pt-[7rem] gap-6 pt-[4.5rem] flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
         <div className="font-headings lg:w-[75%] px-3 xl:w-[60%] w-full">
           <motion.h2
             initial={heroVariants.initial}
@@ -19,7 +19,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="lg:text-[66px] text-[40px] font-bold whitespace-wrap text-white"
           >
-            <span className="text-primary">Frontend</span> developer who builds
+            <span className="text-primary">Frontend</span> developer building
             apps that shine.
           </motion.h2>
           <motion.p
@@ -28,14 +28,18 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="pt-[40px] pb-3 text-lg text-neutral-200"
           >
-            I’ve worked with over 15 colleagues from diverse tech backgrounds to
+            I’ve worked with over 20 colleagues from diverse tech backgrounds to
             build production-ready applications in a professional setting. My
             contributions and team-first mindset were crucial in delivering
             results across multiple open-source projects.
           </motion.p>
         </div>
 
-        <ThreeDObject />
+        <img
+          src={devPhoto}
+          className="w-80 lg:mb-0 mb-20 object-cover rounded-full"
+          alt="developer photo"
+        />
       </div>
       <motion.a
         onClick={() => scrollToSection("about")}

@@ -49,7 +49,7 @@ export default function Footer() {
           onSubmit={handleSubmit}
         >
           <h3 className="text-headings font-medium relative mb-8 font-headings">
-            Message Me
+            Message Me <span className="text-sm text-red-500">(Not functional in this version)</span>
             <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
           </h3>
 

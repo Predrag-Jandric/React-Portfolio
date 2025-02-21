@@ -17,7 +17,7 @@ export default {
         primary: "#ffc654",
         primaryHover: "#FFD685",
       },
-
+// Nunito
       // "Comic Sans MS" for testing
       fontFamily: {
         headings: ["Work Sans", "sans-serif"],
