@@ -2,7 +2,7 @@ import preloader from "/assets/preloader-animation.gif";
 
 function Preloader() {
   return (
-    <div className="flex fixed top-0 left-0 w-full h-full items-center justify-center flex-col z-[99999]">
+    <div className="fixed left-0 top-0 z-[99999] flex h-full w-full flex-col items-center justify-center">
       <img src={preloader} alt="preloader" className="w-32" />
       <h1 className="text-2xl text-grayText">Loading...</h1>
     </div>

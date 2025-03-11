@@ -13,26 +13,26 @@ import { motion } from "framer-motion";
 export default function Roadmap() {
   return (
     <motion.section
-      className="overflow-x-auto px-6 flex flex-col py-16 items-center shadow-md bg-dark"
+      className="flex flex-col items-center overflow-x-auto bg-gradient-to-br from-bgGradientOne to-bgGradientTwo px-6 py-16 shadow-md"
       variants={generalVariants}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
       id="roadmap"
     >
-      <div className="flex text-white flex-col md:flex-row items-center justify-center shadow-none gap-8 md:gap-5 lg:gap-8 container bg-dark px-0">
+      <div className="container flex flex-col items-center justify-center gap-8 bg-transparent px-0 text-white shadow-none md:flex-row md:gap-5 lg:gap-8">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           custom={0.35}
-          className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
+          className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
-          <div className="flex flex-col items-center justify-center gap-3 w-fit">
+          <div className="flex w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Q1 2025</p>
             <img
-              className="size-32 md:size-20 lg:size-32 object-contain"
+              className="size-32 object-contain md:size-20 lg:size-32"
               src={projects}
               alt="symbol of goal"
             />
@@ -50,7 +50,7 @@ export default function Roadmap() {
           >
             <HiOutlineArrowLongRight
               size={40}
-              className="md:rotate-0 rotate-90 text-white"
+              className="rotate-90 text-white md:rotate-0"
             />
           </motion.span>
         </motion.article>
@@ -61,17 +61,18 @@ export default function Roadmap() {
           whileInView="animate"
           custom={0.65}
           viewport={{ once: true }}
-          className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
+          className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
-          <div className="flex flex-col items-center justify-center gap-3  w-fit">
+          <div className="flex w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Q2 2025</p>
             <img
-              className="size-32 md:size-20 lg:size-32 object-contain"
+              className="size-32 object-contain md:size-20 lg:size-32"
               src={leetcode}
               alt="symbol of goal"
             />
             <p className="text-body">
-              Do 200 code<br /> challenges
+              Do 200 code
+              <br /> challenges
             </p>
           </div>
 
@@ -84,7 +85,7 @@ export default function Roadmap() {
           >
             <HiOutlineArrowLongRight
               size={40}
-              className="md:rotate-0 rotate-90 text-white"
+              className="rotate-90 text-white md:rotate-0"
             />
           </motion.span>
         </motion.article>
@@ -95,16 +96,16 @@ export default function Roadmap() {
           whileInView="animate"
           viewport={{ once: true }}
           custom={1.05}
-          className="flex md:flex-row flex-col items-center gap-8 md:gap-5 lg:gap-8 text-center"
+          className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
-          <div className="flex flex-col items-center justify-center gap-3  w-fit">
+          <div className="flex w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Q3 2025</p>
             <img
-              className="size-32 md:size-20 lg:size-32 object-contain"
+              className="size-32 object-contain md:size-20 lg:size-32"
               src={job}
               alt="symbol of goal"
             />
-            <p className="text-body w-24">
+            <p className="w-24 text-body">
               Appy and <br /> land a job
             </p>
           </div>
@@ -117,7 +118,7 @@ export default function Roadmap() {
           >
             <HiOutlineArrowLongRight
               size={40}
-              className="md:rotate-0 rotate-90 text-white"
+              className="rotate-90 text-white md:rotate-0"
             />
           </motion.span>
         </motion.article>
@@ -128,17 +129,18 @@ export default function Roadmap() {
           whileInView="animate"
           viewport={{ once: true }}
           custom={1.35}
-          className="flex items-center gap-8 md:gap-5 lg:gap-8  text-center"
+          className="flex items-center gap-8 text-center md:gap-5 lg:gap-8"
         >
-          <div className="flex flex-col items-center justify-center gap-3 w-fit">
+          <div className="flex w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">2026+</p>
             <img
-              className="size-32 md:size-20 lg:size-32 object-contain"
+              className="size-32 object-contain md:size-20 lg:size-32"
               src={mern}
               alt="symbol of goal"
             />
             <p className="text-body">
-              Continue learning<br /> MERN stack
+              Continue learning
+              <br /> MERN stack
             </p>
           </div>
         </motion.article>

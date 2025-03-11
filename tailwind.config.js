@@ -13,11 +13,14 @@ export default {
         grayText: "#575b60",
         dark: "#2d3142",
 
+        bgGradientOne: "#2F4575",
+        bgGradientTwo: "#344D83",
+
         // primary colors
         primary: "#ffc654",
         primaryHover: "#FFD685",
       },
-// Nunito
+      // Nunito
       // "Comic Sans MS" for testing
       fontFamily: {
         headings: ["Work Sans", "sans-serif"],

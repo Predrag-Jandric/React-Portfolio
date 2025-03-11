@@ -10,10 +10,10 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex pt-3 items-center justify-center h-[10vh] px-32 w-full absolute top-0 left-0 right-0 md:px-12">
-        <ul className="relative hidden sm:flex items-center justify-center gap-0 transition ease-in-out duration-200">
+      <nav className="absolute left-0 right-0 top-0 flex h-[10vh] w-full items-center justify-center px-32 pt-3 md:px-12">
+        <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out sm:flex">
           {navLinks.map((link, index) => (
-            <li key={index} className="relative flex w-full z-10 group">
+            <li key={index} className="group relative z-10 flex w-full">
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
@@ -21,16 +21,16 @@ function Navbar() {
                   e.preventDefault();
                   scrollToSection(link.href);
                 }}
-                className="text-white text-xl py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100"
+                className="relative cursor-pointer px-5 py-2 text-xl text-white transition duration-200 ease-in-out group-hover:before:scale-100"
               >
                 {link.label}
               </a>
-              <span className="absolute top-full left-[10%] w-[80%] h-[5%] bg-primary scale-0 z-[-1] transition ease-in-out duration-300 group-hover:scale-100"></span>
+              <span className="absolute left-[10%] top-full z-[-1] h-[5%] w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
             </li>
           ))}
         </ul>
         <CgMenu
-          className="absolute sm:hidden size-10 top-[30%] right-[7%] cursor-pointer hover:text-primary transition-colors"
+          className="absolute right-[7%] top-[30%] size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"
           onClick={() => setIsOpen(true)}
         />
       </nav>

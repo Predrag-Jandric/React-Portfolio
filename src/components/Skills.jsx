@@ -11,8 +11,8 @@ export default function Skills() {
       viewport={{ once: true }}
       id="skills"
     >
-      <section className="flex flex-col items-center justify-center gap-16 py-16 bg-dark shadow-md">
-        <article className="grid gap-8 text-center text-body font-normal md:grid-cols-5 grid-cols-2">
+      <section className="flex flex-col items-center justify-center gap-16 bg-gradient-to-br from-bgGradientOne to-bgGradientTwo py-16 shadow-md">
+        <article className="grid grid-cols-2 gap-8 text-center text-body font-normal md:grid-cols-5">
           {skillsMap.map((skill, index) => (
             <motion.div
               className="flex flex-col items-center justify-center gap-0 text-white"
@@ -26,7 +26,7 @@ export default function Skills() {
               <img
                 src={skill.skillsImageUrl}
                 alt="skill photo"
-                className="w-[7rem] h-[7rem]"
+                className="h-[7rem] w-[7rem]"
               />
               <p>{skill.name}</p>
             </motion.div>

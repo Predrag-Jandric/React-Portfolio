@@ -22,7 +22,7 @@ export default function Faq() {
       whileInView="animate"
       viewport={{ once: true }}
       id="faq"
-      className="mx-auto max-w-[65rem] text-dark xs:px-6 px-4"
+      className="mx-auto max-w-[65rem] px-4 text-dark xs:px-6"
     >
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;
@@ -32,18 +32,18 @@ export default function Faq() {
             key={index}
           >
             <p
-              className="flex items-center justify-between bg-pureWhite px-6 py-4 font-medium text-body cursor-pointer transition-all hover:bg-blue-50"
+              className="flex cursor-pointer items-center justify-between bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-blue-50"
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
-              <button className="text-body bg-transparent border-none cursor-pointer transition-transform">
+              <button className="cursor-pointer border-none bg-transparent text-body transition-transform">
                 {isOpen ? "-" : "+"}
               </button>
             </p>
             <div
-              className={`faq-answer transition-all duration-500 ease-in-out overflow-hidden ${
-                isOpen ? "max-h-full opacity-100 py-5" : "max-h-0 opacity-0"
-              } px-5 text-body leading-relaxed bg-pureWhite border-neutral-200 border-t-2`}
+              className={`faq-answer overflow-hidden transition-all duration-500 ease-in-out ${
+                isOpen ? "max-h-full py-5 opacity-100" : "max-h-0 opacity-0"
+              } border-t-2 border-neutral-200 bg-pureWhite px-5 text-body leading-relaxed`}
             >
               {formatAnswer(faq.answer)}
             </div>

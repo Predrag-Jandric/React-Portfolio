@@ -22,7 +22,7 @@ export default function Footer() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
-        }
+        },
       );
 
       const data = await response.json();
@@ -34,23 +34,26 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex flex-col mt-16 items-center bg-dark py-16 xs:px-6 px-4">
+    <footer className="mt-16 flex flex-col items-center bg-gradient-to-br from-bgGradientOne to-bgGradientTwo px-4 py-16 xs:px-6">
       <motion.section
         variants={generalVariants}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="text-grayText rounded-custom container flex flex-col md:flex-row md:gap-10 gap-6"
+        className="container flex flex-col gap-6 rounded-custom text-grayText md:flex-row md:gap-10"
       >
         {/* Form Section */}
         <form
-          className="flex-1 mb-6 md:mb-0"
+          className="mb-6 flex-1 md:mb-0"
           id="myform"
           onSubmit={handleSubmit}
         >
-          <h3 className="text-headings font-medium relative mb-8 font-headings">
-            Message Me <span className="text-sm text-red-500">(Not functional in this version)</span>
-            <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
+          <h3 className="relative mb-8 font-headings text-headings font-medium">
+            Message Me{" "}
+            <span className="text-sm text-red-500">
+              (Not functional in this version)
+            </span>
+            <span className="absolute left-0 top-10 h-[3px] w-20 bg-primary"></span>
           </h3>
 
           {/* Form Inputs */}
@@ -79,7 +82,7 @@ export default function Footer() {
           <Button
             // type="submit"
             onClick={() => alert("Not functional in this version")}
-            className="w-44 gap-3 flex items-center justify-center"
+            className="flex w-44 items-center justify-center gap-3"
           >
             Send <RiMailSendLine size={20} />
           </Button>
@@ -87,9 +90,9 @@ export default function Footer() {
 
         {/* get in touch section */}
         <article className="flex-1">
-          <h3 className="text-headings font-medium relative mb-8 font-headings">
+          <h3 className="relative mb-8 font-headings text-headings font-medium">
             Get in Touch
-            <span className="absolute w-20 h-[3px] bg-primary top-10 left-0"></span>
+            <span className="absolute left-0 top-10 h-[3px] w-20 bg-primary"></span>
           </h3>
           <p className="mb-4 text-body">
             Your feedback and insights are highly appreciated. If you&apos;d
@@ -103,19 +106,19 @@ export default function Footer() {
             </span>{" "}
           </p>
 
-          <div className="w-fit flex gap-4">
+          <div className="flex w-fit gap-4">
             {footerMap.map((item, index) => (
               <a
                 key={index}
                 href={item.linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full transition transform hover:scale-125 "
+                className="transform rounded-full transition hover:scale-125"
               >
                 <img
                   src={item.footerImageUrl}
                   alt="social media photo"
-                  className="w-10 h-10"
+                  className="h-10 w-10"
                 />
               </a>
             ))}
@@ -123,7 +126,7 @@ export default function Footer() {
         </article>
       </motion.section>
 
-      <p className="text-slate-500 mt-5 text-sm flex items-center justify-center">
+      <p className="mt-5 flex items-center justify-center text-sm text-slate-500">
         &copy; {new Date().getFullYear()} Predrag. All rights reserved.
       </p>
     </footer>

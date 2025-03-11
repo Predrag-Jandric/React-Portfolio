@@ -15,7 +15,7 @@ export default function Endorsements() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="xs:px-5 px-3 mx-1"
+      className="mx-1 px-3 xs:px-5"
       id="endorsements"
     >
       <Swiper
@@ -42,29 +42,29 @@ export default function Endorsements() {
         {endorsementsMap.map((endorsement, index) => (
           <SwiperSlide
             key={index}
-            className="flex flex-col items-center justify-center text-center bg-pureWhite text-grayText p-10"
+            className="flex flex-col items-center justify-center bg-pureWhite p-10 text-center text-grayText"
           >
             <img
               src={endorsement.endorsementsImageUrl}
               alt="user photo"
-              className="size-24 object-cover mb-3 rounded-full mx-auto"
+              className="mx-auto mb-3 size-24 rounded-full object-cover"
             />
 
             <p className="font-semibold">{endorsement.name}</p>
-            <small className="text-stone-400 block italic">
+            <small className="block italic text-stone-400">
               {endorsement.job}
             </small>
-            <div className="flex text-start flex-col md:px-10 w-full mx-auto p-6">
-              <span className="md:px-5 text-body">{endorsement.message}</span>
-              <span className="md:px-5 my-5 text-body">
+            <div className="mx-auto flex w-full flex-col p-6 text-start md:px-10">
+              <span className="text-body md:px-5">{endorsement.message}</span>
+              <span className="my-5 text-body md:px-5">
                 {endorsement.message2}
               </span>
-              <span className="md:px-5 text-body">{endorsement.message3}</span>
+              <span className="text-body md:px-5">{endorsement.message3}</span>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen"
-                className="specialLink italic text-sm text-center"
+                className="specialLink text-center text-sm italic"
               >
                 View more on Linkedin
               </a>

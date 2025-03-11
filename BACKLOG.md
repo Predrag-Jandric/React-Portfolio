@@ -1,4 +1,2 @@
-- integrate SPLIT SMART into project card
-- replace react logo with you picture
-- remove your picture from about section
 - make contact form functionable
+- on individual project page, make zoom hover effect on flowchart to make users easier to see, just like eccomerce websites have zoom in on mouse hover on item image

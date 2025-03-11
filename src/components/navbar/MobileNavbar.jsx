@@ -93,10 +93,10 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
 
   return (
     <div ref={scope}>
-      <nav className="fixed h-full top-0 left-0 w-full bg-gray-800 pt-20 z-50 translate-x-full transition-colors">
-        <ul className="flex flex-col gap-y-6 px-8 relative">
+      <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-gray-800 pt-20 transition-colors">
+        <ul className="relative flex flex-col gap-y-6 px-8">
           <motion.div
-            className="absolute right-[5%] -top-[16%] cursor-pointer"
+            className="absolute -top-[16%] right-[5%] cursor-pointer"
             onClick={handleToggle}
             initial={{ scale: 1, opacity: 1 }}
             animate={
@@ -106,10 +106,10 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
             }
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <IoCloseOutline className="size-12 hover:text-primary transition-colors" />
+            <IoCloseOutline className="size-12 transition-colors hover:text-primary" />
           </motion.div>
           {navLinks.map((link, index) => (
-            <li key={index} className="relative flex w-full z-10 group">
+            <li key={index} className="group relative z-10 flex w-full">
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
@@ -118,11 +118,11 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
                   scrollToSection(link.href);
                   setIsOpen(false);
                 }}
-                className="text-white text-3xl w-full py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100 hover:text-primary "
+                className="relative w-full cursor-pointer px-5 py-2 text-3xl text-white transition duration-200 ease-in-out hover:text-primary group-hover:before:scale-100"
               >
                 {link.label}
               </a>
-              <span className="absolute top-full left-5 w-32 h-[3px] bg-primary scale-x-0 origin-left z-[-1] transition-transform ease-in-out duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute left-5 top-full z-[-1] h-[3px] w-32 origin-left scale-x-0 bg-primary transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </li>
           ))}
         </ul>

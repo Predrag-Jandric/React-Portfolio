@@ -16,23 +16,23 @@ function ProjectDetails() {
   if (!project) return <p>Project not found.</p>;
   return (
     <>
-      <nav className="bg-dark flex items-center justify-center shadow-md font-normal text-white w-screen h-[8vh] font-body">
+      <nav className="flex h-[8vh] w-screen items-center justify-center bg-dark font-body font-normal text-white shadow-md">
         <Link
           to="/"
-          className="hover:text-primary w-full max-w-[70rem] mr-4 p-2.5 xl:pl-0 transition text-xl flex items-center"
+          className="mr-4 flex w-full max-w-[70rem] items-center p-2.5 text-xl transition hover:text-primary xl:pl-0"
         >
           <IoIosArrowBack className="size-7" />
           Back
         </Link>
       </nav>
 
-      <div className="xs:px-5 px-3 my-12 flex flex-col items-center font-headings">
+      <div className="my-12 flex flex-col items-center px-3 font-headings xs:px-5">
         <section className="container text-grayText">
-          <p className="text-[2.3rem] font-medium  text-center">
+          <p className="text-center text-[2.3rem] font-medium">
             {project.name}
           </p>
 
-          <div className="flex mt-3 flex-col xs:flex-row gap-2 font-body xs:gap-5 items-center justify-center">
+          <div className="mt-3 flex flex-col items-center justify-center gap-2 font-body xs:flex-row xs:gap-5">
             <span className="flex items-center gap-2">
               <IoMdTimer size={20} />
               <p>Build Time: {project.buildTime}</p>
@@ -46,12 +46,12 @@ function ProjectDetails() {
           <hr className="my-10" />
 
           <img
-            className="mb-10 md:w-[80%] w-full mx-auto object-cover"
+            className="mx-auto mb-10 w-full object-cover md:w-[80%]"
             src={project.projectsImageUrl}
             alt={project.name}
           />
 
-          <article className="flex items-center justify-center font-body gap-6 xs:gap-7 ">
+          <article className="flex items-center justify-center gap-6 font-body xs:gap-7">
             <Button
               href={project.previewLink}
               target="_blank"
@@ -72,7 +72,7 @@ function ProjectDetails() {
 
           <hr className="my-10" />
 
-          <h5 className="text-[2rem] font-medium text-center mb-5">About</h5>
+          <h5 className="mb-5 text-center text-[2rem] font-medium">About</h5>
           <div className="flex flex-col gap-6 font-body">
             <p>{project.textOne}</p>
             <p>{project.textTwo}</p>
@@ -82,7 +82,7 @@ function ProjectDetails() {
 
           <hr className="my-10" />
 
-          <h5 className="text-[2rem] font-medium text-center mb-5">
+          <h5 className="mb-5 text-center text-[2rem] font-medium">
             How it works
           </h5>
 
@@ -91,14 +91,13 @@ function ProjectDetails() {
             <p>{project.textSix}</p>
           </div>
 
-          <img
-            className="mt-10 mb-3 md:w-[80%] w-full mx-auto object-cover"
-            src={project.flowchartOne}
-          />
-          <img
-            className=" mt-3 md:w-[80%] w-full mx-auto object-cover"
-            src={project.flowchartTwo}
-          />
+          {project.flowchart.map((flowchart, index) => (
+            <img
+              key={index}
+              className="mx-auto mb-3 mt-10 w-full object-cover md:w-[80%]"
+              src={flowchart}
+            />
+          ))}
 
           {/* <hr className="my-10" /> */}
 

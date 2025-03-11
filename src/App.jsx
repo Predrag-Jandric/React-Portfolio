@@ -34,35 +34,35 @@ export default function App() {
       {/* {isLoading ? (
         <Preloader />
       ) : ( */}
-        <Router>
-          <ScrollToTop />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <main className="flex font-body flex-col gap-10 m-0 p-0 box-border scroll-smooth list-none no-underline outline-none">
-                  <Hero />
-                  <Title text="About" />
-                  <About />
-                  <Title text="Skills" />
-                  <Skills />
-                  <Title text="Projects" />
-                  <Projects />
-                  <Title text="Roadmap" />
-                  <Roadmap />
-                  <Title text="Endorsements" />
-                  <Endorsements />
-                  <Title text="Faq" />
-                  <Faq />
-                  <Footer />
-                  <ScrollToTopButton />
-                </main>
-              }
-            />
-            <Route path="/projects/:id" element={<ProjectDetails />} />
-          </Routes>
-        </Router>
-       {/* )} */}
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <main className="m-0 box-border flex list-none flex-col gap-10 scroll-smooth p-0 font-body no-underline outline-none">
+                <Hero />
+                <Title text="About" />
+                <About />
+                <Title text="Skills" />
+                <Skills />
+                <Title text="Projects" />
+                <Projects />
+                <Title text="Roadmap" />
+                <Roadmap />
+                <Title text="Endorsements" />
+                <Endorsements />
+                <Title text="Faq" />
+                <Faq />
+                <Footer />
+                <ScrollToTopButton />
+              </main>
+            }
+          />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
+        </Routes>
+      </Router>
+      {/* )} */}
     </>
   );
 }

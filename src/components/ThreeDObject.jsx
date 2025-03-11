@@ -31,7 +31,7 @@ export default function ThreeDObject() {
       initial={heroVariants.initial}
       animate={heroVariants.animate}
       transition={{ duration: 0.5, delay: 1 }}
-      className="relative md:mb-0 mb-10 size-80 lg:size-96" // Make it a relative container for overlay
+      className="relative mb-10 size-80 md:mb-0 lg:size-96" // Make it a relative container for overlay
     >
       {/* 3D Canvas */}
       <Canvas className="absolute inset-0">

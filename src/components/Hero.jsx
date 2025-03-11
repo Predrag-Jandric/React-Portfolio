@@ -8,16 +8,16 @@ import devPhoto from "/assets/hero/devPhoto.jpg";
 export default function Hero() {
   const scrollToSection = useScrollTo(170);
   return (
-    <header className="bg-cover text-pureWhite min-h-screen bg-[url('/assets/hero/background.png')] xl:px-36 lg:px-20 px-5 lg:py-[3.75rem] p-[2.5rem] shadow-md relative">
+    <header className="relative min-h-screen bg-[url('/assets/hero/background.png')] bg-cover p-[2.5rem] px-5 text-pureWhite shadow-md lg:px-20 lg:py-[3.75rem] xl:px-36">
       <Navbar />
 
-      <div className="md:pt-[7rem] gap-6 pt-[4.5rem] flex justify-between lg:flex-row flex-col lg:text-start items-center text-center">
-        <div className="font-headings lg:w-[75%] px-3 xl:w-[60%] w-full">
+      <div className="flex flex-col items-center justify-between gap-6 pt-[4.5rem] text-center md:pt-[7rem] lg:flex-row lg:text-start">
+        <div className="w-full px-3 font-headings lg:w-[75%] xl:w-[60%]">
           <motion.h2
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="lg:text-[66px] text-[40px] font-bold whitespace-wrap text-white"
+            className="whitespace-wrap text-[40px] font-bold text-white lg:text-[66px]"
           >
             <span className="text-primary">Frontend</span> developer building
             apps that shine.
@@ -26,7 +26,7 @@ export default function Hero() {
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="pt-[40px] pb-3 text-lg text-neutral-200"
+            className="pb-3 pt-[40px] text-lg text-neutral-200"
           >
             I’ve worked with over 20 colleagues from diverse tech backgrounds to
             build production-ready applications in a professional setting. My
@@ -37,14 +37,14 @@ export default function Hero() {
 
         <img
           src={devPhoto}
-          className="w-80 lg:mb-0 mb-20 object-cover rounded-full"
+          className="mb-20 w-80 rounded-full object-cover lg:mb-0"
           alt="developer photo"
         />
       </div>
       <motion.a
         onClick={() => scrollToSection("about")}
         rel="noopener noreferrer"
-        className="absolute z-30 bottom-8 left-1/2 text-primary"
+        className="absolute bottom-8 left-1/2 z-30 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}
         animate={{
           opacity: [0, 1, 1], // Appear, stay, then stay

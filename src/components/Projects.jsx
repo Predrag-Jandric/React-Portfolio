@@ -11,7 +11,7 @@ export default function Projects() {
   useEffect(() => {
     // Scroll to previous position if available
     const savedScrollPosition = sessionStorage.getItem(
-      "projectsScrollPosition"
+      "projectsScrollPosition",
     );
     if (savedScrollPosition) {
       window.scrollTo(0, parseInt(savedScrollPosition));
@@ -30,10 +30,10 @@ export default function Projects() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex items-center justify-center mx-1"
+      className="mx-1 flex items-center justify-center"
       id="projects"
     >
-      <div className="grid grid-cols-1 text-grayText gap-20 place-items-center lg:grid-cols-2 xs:px-5 px-3">
+      <div className="grid grid-cols-1 place-items-center gap-20 px-3 text-grayText xs:px-5 lg:grid-cols-2">
         {projectsMap.map((project, index) => (
           <motion.section
             key={project.id}
@@ -42,20 +42,20 @@ export default function Projects() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="relative w-full max-w-[32.5rem] bg-pureWhite flex flex-col gap-8 rounded-custom shadow-md overflow-hidden"
+            className="relative flex w-full max-w-[32.5rem] flex-col gap-8 overflow-hidden rounded-custom bg-pureWhite shadow-md"
           >
             <img
               src={project.projectsImageUrl}
               alt="project photo"
               className=""
             />
-            <span className="absolute border border-gray-300 bg-primary rounded-full py-1 text-sm font-semibold px-4 top-6 right-6 ">
+            <span className="absolute right-6 top-6 rounded-full border border-gray-300 bg-primary px-4 py-1 text-sm font-semibold">
               {project.effort}
             </span>
 
             {/* Card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-body">
-              <h3 className="text-headings font-medium font-headings">
+              <h3 className="font-headings text-headings font-medium">
                 {project.name}
               </h3>
               <p>{project.description}</p>
@@ -64,7 +64,7 @@ export default function Projects() {
             {/* technologies used */}
             <article className="flex flex-col px-6 text-body">
               <h4 className="font-medium">Technologies used:</h4>
-              <div className="flex flex-wrap flex-row items-center justify-start gap-2">
+              <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                 {project.TechUsed.map((techused, techIndex) => (
                   <p className="flex-wrap" key={techIndex}>
                     {techused}
@@ -74,16 +74,15 @@ export default function Projects() {
             </article>
 
             {/* Buttons */}
-           
-              <Link
-                target="_blank"
-                to={`/projects/${project.id}`}
-                onClick={handleLinkClick}
-                className="flex w-56 mx-auto items-center justify-center  mb-10"
-              >
-                <Button className="w-56">View Details</Button>
-              </Link>
-            
+
+            <Link
+              target="_blank"
+              to={`/projects/${project.id}`}
+              onClick={handleLinkClick}
+              className="mx-auto mb-10 flex w-56 items-center justify-center"
+            >
+              <Button className="w-56">View Details</Button>
+            </Link>
           </motion.section>
         ))}
       </div>

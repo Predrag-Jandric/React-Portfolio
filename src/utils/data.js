@@ -96,8 +96,7 @@ export const projectsMap = [
     description:
       "Split Smart is a dashboard web application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the simplest way to settle debts among group members.",
     projectsImageUrl: "/assets/projects/splitsmartpreview.png",
-    flowchartOne: "/assets/projects/splitsmartflowchartone.png",
-    flowchartTwo: "/assets/projects/splitsmartflowcharttwo.png",
+    flowchart: ["/assets/projects/splitsmartflowchartone.png", "/assets/projects/splitsmartflowcharttwo.png"],
     effort: "Team effort",
     TechUsed: ["React,", "Tailwind,", "Redux,", "React Router"],
     githubLink: "https://github.com/Predrag-Jandric/Split-Smart",
@@ -121,8 +120,7 @@ export const projectsMap = [
     description:
       "Crusty's pizza online simulates a local pizza business where people can order pizza easily, to be delivered to their location. Users can choose from a variety of pizzas, add them to their cart, and input their details for delivery. The app also has a search feature to find orders quickly.",
     projectsImageUrl: "/assets/projects/pizzaprev.png",
-    flowchartOne: "/assets/projects/pizzaflowchart.png",
-    flowchartTwo: null,
+    flowchart: ["/assets/projects/pizzaflowchart.png"],
     effort: "Solo effort",
     TechUsed: ["React,", "Tailwind,", "Redux Toolkit,", "API,", "React Router"],
     githubLink: "https://github.com/Predrag-Jandric/Crustys-Pizza",
