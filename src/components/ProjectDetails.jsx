@@ -4,13 +4,14 @@ import Button from "./Button";
 import { Link, useParams } from "react-router-dom";
 import { projectsMap } from "../utils/data";
 import { useEffect } from "react";
+import ZoomImage from "../utils/ZoomImage";
 
 function ProjectDetails() {
   const { id } = useParams();
   const project = projectsMap.find((proj) => proj.id === parseInt(id));
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top when ProjectDetails is mounted
+    window.scrollTo(0, 0); // scroll to the top when route is changed
   }, []);
 
   if (!project) return <p>Project not found.</p>;
@@ -46,7 +47,7 @@ function ProjectDetails() {
           <hr className="my-10" />
 
           <img
-            className="mx-auto mb-10 w-full object-cover md:w-[80%]"
+            className="mx-auto mb-10 w-full object-cover md:w-[85%]"
             src={project.projectsImageUrl}
             alt={project.name}
           />
@@ -91,12 +92,11 @@ function ProjectDetails() {
             <p>{project.textSix}</p>
           </div>
 
+          <p className="mb-4 mt-8 text-center font-body text-sm italic text-grayText/65">
+            Hover or Tap to zoom in
+          </p>
           {project.flowchart.map((flowchart, index) => (
-            <img
-              key={index}
-              className="mx-auto mb-3 mt-10 w-full object-cover md:w-[80%]"
-              src={flowchart}
-            />
+            <ZoomImage key={index} src={flowchart} alt={`Flowchart ${index}`} />
           ))}
 
           {/* <hr className="my-10" /> */}

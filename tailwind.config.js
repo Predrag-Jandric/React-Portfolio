@@ -42,6 +42,10 @@ export default {
       xl: "1280px",
       xxl: "1536px",
     },
+    backgroundSize: {
+      bigzoom: '200%', 
+      normalzoom: '150%' 
+    }
   },
   plugins: [],
 };

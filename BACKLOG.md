@@ -1,2 +1,4 @@
 - make contact form functionable
-- on individual project page, make zoom hover effect on flowchart to make users easier to see, just like eccomerce websites have zoom in on mouse hover on item image
+- on project cards, tech stack has big gap when tech listed go into next line
+- remake hero bg to fit the new colors
+- add CV
