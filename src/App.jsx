@@ -59,7 +59,8 @@ export default function App() {
               </main>
             }
           />
-          <Route path="/projects/:id" element={<ProjectDetails />} />
+         <Route path="/projects/:projectName" element={<ProjectDetails />} />
+
         </Routes>
       </Router>
       {/* )} */}

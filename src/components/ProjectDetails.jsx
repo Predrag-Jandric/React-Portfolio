@@ -8,8 +8,13 @@ import { useEffect } from "react";
 import ZoomImage from "../utils/ZoomImage";
 
 function ProjectDetails() {
-  const { id } = useParams();
-  const project = projectsMap.find((proj) => proj.id === parseInt(id));
+  const { projectName } = useParams();
+  const decodedProjectName = decodeURIComponent(projectName);
+
+  const project = projectsMap.find(
+    (proj) =>
+      proj.name.toLowerCase().replace(/\s+/g, "-") === decodedProjectName,
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0); // scroll to the top when route is changed

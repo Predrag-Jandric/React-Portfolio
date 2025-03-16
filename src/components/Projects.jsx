@@ -46,21 +46,17 @@ export default function Projects() {
 
             {/* technologies used */}
             <article className="flex flex-col px-6 text-body">
-              <h4 className="font-medium">Technologies used:</h4>
-              <div className="flex flex-row flex-wrap items-center justify-start gap-2">
+              <h4 className="mb-1 font-bold">Technologies used:</h4>
+              <div>
                 {project.TechUsed.map((techused, techIndex) => (
-                  <p className="flex-wrap" key={techIndex}>
-                    {techused}
-                  </p>
+                  <span key={techIndex}>{techused}</span>
                 ))}
               </div>
             </article>
 
-            {/* Buttons */}
-
             <Link
               target="_blank"
-              to={`/projects/${project.id}`}
+              to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
               className="mx-auto mb-10 mt-auto flex w-56 items-center justify-center"
             >
               <Button className="w-56">View Details</Button>
