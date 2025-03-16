@@ -1,5 +1,6 @@
 import { FaPeopleGroup } from "react-icons/fa6";
 import { IoMdTimer, IoIosArrowBack } from "react-icons/io";
+import { VscTypeHierarchySub } from "react-icons/vsc";
 import Button from "./Button";
 import { Link, useParams } from "react-router-dom";
 import { projectsMap } from "../utils/data";
@@ -33,18 +34,29 @@ function ProjectDetails() {
             {project.name}
           </p>
 
-          <div className="mt-3 flex flex-col items-center justify-center gap-2 font-body xs:flex-row xs:gap-5">
+          <div className="mt-3 flex flex-col items-center justify-center gap-2 font-body md:flex-row md:gap-5">
             <span className="flex items-center gap-2">
               <IoMdTimer size={20} />
-              <p>Build Time: {project.buildTime}</p>
+              <p>
+                Build Time:{" "}
+                <span className="font-bold">{project.buildTime}</span>
+              </p>
             </span>
             <span className="flex items-center gap-2">
               <FaPeopleGroup size={20} />
-              <p>Team size: {project.teamSize}</p>
+              <p>
+                Team size: <span className="font-bold">{project.teamSize}</span>
+              </p>
+            </span>
+            <span className="flex items-center gap-2">
+              <VscTypeHierarchySub size={20} />
+              <p>
+                Type: <span className="font-bold">{project.type}</span>
+              </p>
             </span>
           </div>
 
-          <hr className="my-10" />
+          <hr className="mb-8 mt-6" />
 
           <img
             className="mx-auto mb-10 w-full object-cover md:w-[85%]"
@@ -98,8 +110,6 @@ function ProjectDetails() {
           {project.flowchart.map((flowchart, index) => (
             <ZoomImage key={index} src={flowchart} alt={`Flowchart ${index}`} />
           ))}
-
-          {/* <hr className="my-10" /> */}
 
           {/* <Link to="/" className="btn mx-auto ">
           Go back

@@ -93,8 +93,9 @@ export const footerMap = [
 export const projectsMap = [
   {
     name: "Split Smart",
+    // brief description
     description:
-      "Split Smart is a dashboard web application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the simplest way to settle debts among group members.",
+      "Split Smart is a dashboard type of application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the ways to settle debts among group members.",
     projectsImageUrl: "/assets/projects/splitsmartpreview.png",
     flowchart: [
       "/assets/projects/splitsmartflowchartone.png",
@@ -108,15 +109,19 @@ export const projectsMap = [
     buildTime: "7 weeks",
     teamSize: "5 people",
     type: "Front-end only",
+    // explaining more about the project
     textOne:
-      "Split Smart is a front-end only application that aims to make splitting expenses among friends, family, or colleagues easy. Whether planning a trip, organizing a group dinner, or managing shared expenses, Split Smart helps you keep track of who owes what and ensures that everyone pays their equal or unequal share. Your data is automatically saved in your browser locally so that you can always come back to where you left off.",
-    textTwo: `Building Split Smart taught me valuable lessons about listening to feedback and improving the app with in-depth testing. I also learned the importance of clear documentation for future development and maintenance. One of the major technical challenges was implementing the logic for accurate contribution changes for each member and ensuring that the app was user-friendly and intuitive.
-`,
+      "Split Smart is an application that aims to make splitting expenses among friends, family, or colleagues easy. Whether planning a trip, organizing a group dinner, or managing shared expenses, Split Smart helps you keep track of who owes what and ensures that everyone pays their equal or unequal share. Your data is automatically saved in your browser locally so that you can always come back to where you left off.",
+    // what you learned
+    textTwo: `Building Split Smart taught me valuable lessons about listening to feedback and improving the app with in-depth testing. I also learned the importance of clear documentation for future development and maintenance. One of the major technical challenges was implementing the logic for accurate contribution changes for each member and ensuring that the app was user-friendly and intuitive.`,
+    // about team, project management and collaboration
     textThree: `Our team consisted of 1 Product Owner, 2 Developers, 1 UX/UI Designer, and 1 Scrum Master. We followed Agile methodologies, with regular sprints, iterations, and backlog management. Design and implementation decisions were made collaboratively, ensuring a simple and efficient approach.`,
+    // what was your role, what did you do
     textFour: `My role included implementing complex logic, managing state with Redux, turning designs into a fully responsive user interface, fixing bugs and optimizing. I also worked on integrating animations and charts, writing documentation, testing and implementing the dark mode.`,
+    // features
     textFive: `Users can: 1. Create groups for different events or activities. 2. Add members to the groups and assign expenses. 3. Track total budget, expenses, and remaining budget. 4. Customize contributions for each member. 5. Edit group details, such as name, description, and image. 6. Search for groups using the search bar. 7. Toggle between light and dark modes for a comfortable viewing experience.`,
+    // technologogies
     textSix: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. Framer Motion for animations. Recharts for pie chart visualization. React Icons and React Toastify for icons and notifications.`,
-    textSeven: ``,
   },
   {
     name: "Crusty's pizza",
@@ -125,7 +130,13 @@ export const projectsMap = [
     projectsImageUrl: "/assets/projects/pizzaprev.png",
     flowchart: ["/assets/projects/pizzaflowchart.png"],
     effort: null,
-    TechUsed: ["React,", "Tailwind,", "Redux Toolkit,", "React Router", "API fetch"],
+    TechUsed: [
+      "React,",
+      "Tailwind,",
+      "Redux Toolkit,",
+      "React Router",
+      "API fetch",
+    ],
     githubLink: "https://github.com/Predrag-Jandric/Crustys-Pizza",
     previewLink: "https://crusty-pizza.netlify.app/",
     id: 43466798264,
@@ -133,7 +144,7 @@ export const projectsMap = [
     teamSize: "1 person",
     type: "Front-end only",
     textOne: ``,
-    textTwo: `This small-scale project served to practice my React skills and learn how to work with APIs. I used the API from the fakestoreapi.com to get the data. I learned how to fetch data from an API, display it in a user-friendly way, and manage the state of the app.`,
+    textTwo: `This small-scale solo project served to practice my React skills and learn how to work with APIs. I used the API from the fakestoreapi.com to get the data. I learned how to fetch data from an API, display it in a user-friendly way, and manage the state of the app.`,
     textThree: `This was a solo project that was initially built as a part of the tutorial but which I later expanded and customized according to my vision. I learned how to structure a project, manage state, and implement logic for a small-scale e-commerce app.`,
     textFour: ``,
     textFive: `Users can: 1. Order different pizzas in their cart and change quantity. 2. Input their details for delivery. 3. Search for their order in the search bar.`,
@@ -145,17 +156,25 @@ export const projectsMap = [
     description:
       "Pangea is an online museum that educates and entertains adults who love dinosaurs. Users can learn about different dinosaur species and time periods, play a quiz game, and purchase dinosaur-related products in a small scale e-commerce store.",
     projectsImageUrl: "/assets/projects/pangeaprev.png",
-    flowchart: [""],
+    flowchart: ["/assets/projects/pangeaflowchart.png"],
     effort: "Team effort",
-    TechUsed: ["React,", "Tailwind,", "Redux Toolkit,", "React Router", "MongoDB,", "NodeJS,"],
+    TechUsed: [
+      "React,",
+      "Tailwind,",
+      "Redux Toolkit,",
+      "React Router",
+      "MongoDB,",
+      "NodeJS,",
+    ],
     githubLink: "https://github.com/Predrag-Jandric/Pangea-Dino-Museum",
     previewLink: "https://pangea-dino-museum.netlify.app/",
     id: 43798678264,
     buildTime: "6 weeks",
     teamSize: "5 people",
     type: "Full-stack",
-    textOne: ``,
-    textTwo: ``,
+    textOne: `Pangea Dino Museum has a museum section that educates users about different dinosaur species and time periods, and the e-commerce section where users can purchase dinosaur images. The app also features a quiz game where users can test their knowledge of dinosaurs.`,
+    textTwo: `
+    Building Pangea, I reinforced an important lesson of working within a larger team and managing both front-end and back-end. I learned for the first how to work with MongoDB databases, and how to build an API using Node.js, and Express. In the quiz game, I also practiced implementing complex boolean logic using switch statements and conditional rendering.`, 
     textThree: ``,
     textFour: ``,
     textFive: ``,

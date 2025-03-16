@@ -44,7 +44,7 @@ function ZoomImage({ src, alt }) {
   return (
     <div
       ref={zoomRef}
-      className="relative mx-auto mb-8 flex w-full flex-col items-center overflow-hidden md:w-[85%]"
+      className="relative mx-auto mb-8 flex w-full flex-col items-center cursor-move overflow-hidden md:w-[85%]"
       onClick={handleTap}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setZoom(true)}
