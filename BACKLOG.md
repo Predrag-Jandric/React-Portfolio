@@ -2,3 +2,4 @@
 - on project cards, tech stack has big gap when tech listed go into next line
 - remake hero bg to fit the new colors
 - add CV
+- integrate dino app

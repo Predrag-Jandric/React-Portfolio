@@ -12,9 +12,9 @@ export default {
         white: "#f1f1f1",
         grayText: "#575b60",
         dark: "#2d3142",
-
-        bgGradientOne: "#2F4575",
-        bgGradientTwo: "#344D83",
+        
+        bgGradientOne: "#344D83",
+        bgGradientTwo: "#2F4575",
 
         // primary colors
         primary: "#ffc654",
