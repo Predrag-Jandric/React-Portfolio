@@ -101,7 +101,7 @@ export const projectsMap = [
       "/assets/projects/splitsmartflowchartone.png",
       "/assets/projects/splitsmartflowcharttwo.png",
     ],
-    effort: "Team effort",
+    effort: "Team project",
     TechUsed: ["React, ", "Tailwind, ", "Redux Toolkit, ", "React Router. "],
     githubLink: "https://github.com/Predrag-Jandric/Split-Smart",
     previewLink: "https://split-smart.netlify.app/",
@@ -156,7 +156,7 @@ export const projectsMap = [
       "Pangea is an online museum that educates and entertains adults who love dinosaurs. Users can learn about different dinosaur species and time periods, play a quiz game, and purchase dinosaur-related products in a small scale e-commerce store.",
     projectsImageUrl: "/assets/projects/pangeaprev.png",
     flowchart: ["/assets/projects/pangeaflowchart.png"],
-    effort: "Team effort",
+    effort: "Team project",
     TechUsed: [
       "React, ",
       "Tailwind, ",

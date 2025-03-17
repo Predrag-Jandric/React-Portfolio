@@ -6,19 +6,12 @@ to top btn nav
 fixed nav
 
 portfolio
-to top btn should appear earlier
 project card image should have an overlay and some sort of CTA
-faster appear animation for project cards
-endorsements animation transition too fast
 faq section closing too slow
-to top btn should have smooth jump to top fast to slow
-maybe put dl cv in more than one place
-team effort -> team project
 sticky mobile menu (app navigation is bad)
 faq element size changes when it opens and closes
 faq element weird close
-zoom in on project details chart is too much and initial entract is too sudden
-projects cards should not be growing into appearance but rather appear from down to up
+zoom in on project details chart is too much and initial entrance is too sudden
 turn data.js to json so you can format json and improve code. make ordered lists
 
 PIZZA app

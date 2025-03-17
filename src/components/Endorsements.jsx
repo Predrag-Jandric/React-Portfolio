@@ -21,6 +21,7 @@ export default function Endorsements() {
       <Swiper
         grabCursor={true}
         effect={"creative"}
+        speed={500}
         creativeEffect={{
           prev: {
             shadow: true,

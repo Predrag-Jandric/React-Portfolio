@@ -6,7 +6,7 @@ export default function ScrollToTopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 3000) {
+      if (window.pageYOffset > 800) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -20,7 +20,7 @@ export default function ScrollToTopButton() {
 
   function handleJumpToTop(e) {
     e.preventDefault();
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
