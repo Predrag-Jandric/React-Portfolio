@@ -93,7 +93,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
 
   return (
     <div ref={scope}>
-      <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-gradient-to-br from-bgGradientOne to-bgGradientTwo pt-20 transition-colors">
+      <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-bgcolor pt-20 transition-colors">
         <ul className="relative flex flex-col gap-y-6 px-8">
           <motion.div
             className="absolute -top-[16%] right-[5%] cursor-pointer"

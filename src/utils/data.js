@@ -161,7 +161,6 @@ export const projectsMap = [
       "React, ",
       "Tailwind, ",
       "Redux Toolkit, ",
-      "React Router ",
       "MongoDB, ",
       "NodeJS. ",
     ],

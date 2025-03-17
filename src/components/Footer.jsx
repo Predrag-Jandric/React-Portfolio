@@ -34,7 +34,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-16 flex flex-col items-center bg-gradient-to-br from-bgGradientOne to-bgGradientTwo px-4 py-16 xs:px-6">
+    <footer className="mt-16 flex flex-col items-center bg-bgcolor px-4 py-16 xs:px-6">
       <motion.section
         variants={generalVariants}
         initial="initial"

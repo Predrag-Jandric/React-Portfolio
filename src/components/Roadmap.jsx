@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 export default function Roadmap() {
   return (
     <motion.section
-      className="flex flex-col items-center overflow-x-auto bg-gradient-to-br from-bgGradientOne to-bgGradientTwo px-6 py-16 shadow-md"
+      className="flex flex-col items-center overflow-x-auto bg-bgcolor px-6 py-16 shadow-md"
       variants={generalVariants}
       initial="initial"
       whileInView="animate"

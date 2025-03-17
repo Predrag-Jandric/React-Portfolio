@@ -12,9 +12,8 @@ export default {
         white: "#f1f1f1",
         grayText: "#575b60",
         dark: "#2d3142",
-        
-        bgGradientOne: "#344D83",
-        bgGradientTwo: "#2F4575",
+
+        bgcolor: "#2F4575", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
 
         // primary colors
         primary: "#ffc654",
@@ -43,9 +42,9 @@ export default {
       xxl: "1536px",
     },
     backgroundSize: {
-      bigzoom: '200%', 
-      normalzoom: '150%' 
-    }
+      bigzoom: "200%",
+      normalzoom: "150%",
+    },
   },
   plugins: [],
 };

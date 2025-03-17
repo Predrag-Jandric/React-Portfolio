@@ -67,7 +67,14 @@ export default function Projects() {
               </div>
             </article>
 
-            {project.githubLink && (
+            {!project.githubLink ? (
+              <Button
+                className="btn mx-auto mb-10 mt-auto hover:shadow-md w-56 cursor-not-allowed bg-gray-200 blur-sm hover:bg-gray-200"
+                disabled
+              >
+                Coming Soon
+              </Button>
+            ) : (
               <Link
                 target="_blank"
                 to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}

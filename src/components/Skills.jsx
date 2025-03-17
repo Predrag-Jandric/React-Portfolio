@@ -11,7 +11,7 @@ export default function Skills() {
       viewport={{ once: true }}
       id="skills"
     >
-      <section className="flex flex-col items-center justify-center gap-16 bg-gradient-to-br from-bgGradientOne to-bgGradientTwo py-16 shadow-md">
+      <section className="flex flex-col items-center justify-center gap-16 bg-bgcolor py-16 shadow-md">
         <article className="grid grid-cols-2 gap-8 text-center text-body font-normal md:grid-cols-5">
           {skillsMap.map((skill, index) => (
             <motion.div
