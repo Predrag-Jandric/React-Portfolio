@@ -36,31 +36,46 @@ export default function Projects() {
               </span>
             )}
 
-            {/* Card text */}
+            {/* card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-body">
-              <h3 className="font-headings text-headings font-medium">
+              <h3
+                className={`font-headings text-headings font-medium ${!project.githubLink && "blur-sm"}`}
+              >
                 {project.name}
               </h3>
-              <p>{project.description}</p>
+              <p className={` ${!project.githubLink && "blur-sm"} `}>
+                {project.description}
+              </p>
             </article>
 
             {/* technologies used */}
             <article className="flex flex-col px-6 text-body">
-              <h4 className="mb-1 font-bold">Technologies used:</h4>
+              <h4
+                className={`mb-1 font-bold ${!project.githubLink && "blur-sm"}`}
+              >
+                Technologies used:
+              </h4>
               <div>
                 {project.TechUsed.map((techused, techIndex) => (
-                  <span key={techIndex}>{techused}</span>
+                  <span
+                    className={`${!project.githubLink && "blur-sm"}`}
+                    key={techIndex}
+                  >
+                    {techused}
+                  </span>
                 ))}
               </div>
             </article>
 
-            <Link
-              target="_blank"
-              to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
-              className="mx-auto mb-10 mt-auto flex w-56 items-center justify-center"
-            >
-              <Button className="w-56">View Details</Button>
-            </Link>
+            {project.githubLink && (
+              <Link
+                target="_blank"
+                to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
+                className="mx-auto mb-10 mt-auto flex w-56 items-center justify-center"
+              >
+                <Button className="w-56">View Details</Button>
+              </Link>
+            )}
           </motion.section>
         ))}
       </div>

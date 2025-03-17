@@ -96,7 +96,7 @@ export const projectsMap = [
     // brief description
     description:
       "Split Smart is a dashboard type of application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the ways to settle debts among group members.",
-    projectsImageUrl: "/assets/projects/splitsmartpreview.png",
+    projectsImageUrl: "/assets/projects/splitsmartprev.png",
     flowchart: [
       "/assets/projects/splitsmartflowchartone.png",
       "/assets/projects/splitsmartflowcharttwo.png",
@@ -105,7 +105,7 @@ export const projectsMap = [
     TechUsed: ["React, ", "Tailwind, ", "Redux Toolkit, ", "React Router. "],
     githubLink: "https://github.com/Predrag-Jandric/Split-Smart",
     previewLink: "https://split-smart.netlify.app/",
-    id: 3456264,
+    id: 3456267564,
     buildTime: "7 weeks",
     teamSize: "5 people",
     type: "Front-end only",
@@ -139,7 +139,7 @@ export const projectsMap = [
     ],
     githubLink: "https://github.com/Predrag-Jandric/Crustys-Pizza",
     previewLink: "https://crusty-pizza.netlify.app/",
-    id: 43466798264,
+    id: 4311466798264,
     buildTime: "4 weeks",
     teamSize: "1 person",
     type: "Front-end only",
@@ -167,7 +167,7 @@ export const projectsMap = [
     ],
     githubLink: "https://github.com/Predrag-Jandric/Pangea-Dino-Museum",
     previewLink: "https://pangea-dino-museum.netlify.app/",
-    id: 43798678264,
+    id: 4379867828864,
     buildTime: "6 weeks",
     teamSize: "5 people",
     type: "Full-stack",
@@ -177,6 +177,27 @@ export const projectsMap = [
     textFour: `My role was building the UI and logic for the e-commerce section, quiz game section, timeline section, animations, and navigation. I also created a simple API and connected it to the front-end. This project was a scaled-down version of the original which has even more features.`,
     textFive: `Users can: 1. Learn about different dinosaur periods. 2. Add items to the cart in the e-commerce store section. 3. Modify the items on the shopping cart page. 4. Play the quiz game. 5. Navigate through the museum.`,
     textSix: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. MongoDB for the database. Node.js and Express for the API. React Icons and React hot toast for icons and notifications.`,
+  },
+  {
+    name: "Project coming soon",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae quaerat perferendis quasi tempore ipsam excepturi velit perspiciatis ipsum nesciunt, assumenda non, fugit odio libero commodi dicta odit itaque aperiam quisquam voluptatem, recusandae hic eaque saepe possimus! Autem, sunt sed?",
+    projectsImageUrl: "/assets/projects/comingsoonprev.png",
+    flowchart: null,
+    effort: null,
+    TechUsed: ["Some tech, ", "Other tech, ", "Tech, ", "Maybe some tech. "],
+    githubLink: null,
+    previewLink: null,
+    id: 221678264,
+    buildTime: null,
+    teamSize: null,
+    type: null,
+    textOne: null,
+    textTwo: null,
+    textThree: null,
+    textFour: null,
+    textFive: null,
+    textSix: null,
   },
 ];
 

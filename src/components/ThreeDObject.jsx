@@ -4,7 +4,7 @@ import { useRef, forwardRef } from "react";
 import { motion } from "framer-motion";
 import { heroVariants } from "../utils/animations";
 
-// Model component to load 3D object from GLTF file
+// model component to load 3D object from GLTF file
 const Model = forwardRef((props, ref) => {
   const { scene } = useGLTF("/assets/hero/react_logo2.glb");
   return <primitive object={scene} ref={ref} {...props} />;
@@ -12,13 +12,13 @@ const Model = forwardRef((props, ref) => {
 
 Model.displayName = "Model";
 
-// RotatingModel component for rotation animation
+// rotatingModel component for rotation animation
 function RotatingModel() {
   const modelRef = useRef();
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y -= 0.007; // Rotation speed
+      modelRef.current.rotation.y -= 0.007; // rotation speed
     }
   });
 
@@ -31,7 +31,7 @@ export default function ThreeDObject() {
       initial={heroVariants.initial}
       animate={heroVariants.animate}
       transition={{ duration: 0.5, delay: 1 }}
-      className="relative mb-10 size-80 md:mb-0 lg:size-96" // Make it a relative container for overlay
+      className="relative mb-10 size-80 md:mb-0 lg:size-96" // make it a relative container for overlay
     >
       {/* 3D Canvas */}
       <Canvas className="absolute inset-0">
@@ -48,11 +48,9 @@ export default function ThreeDObject() {
         />
       </Canvas>
 
-      {/* Transparent Overlay Div */}
-      <div
-        className="absolute inset-0 z-10" // Overlay with higher z-index than Canvas
-      >
-        {/* You can add more UI elements here if needed */}
+      {/* transparent overlay div */}
+      <div className="absolute inset-0 z-10">
+        {/* can add more UI elements here if needed */}
       </div>
     </motion.div>
   );

@@ -1,3 +1,4 @@
 - make contact form functionable
 - remake hero bg to fit the new colors
 - add CV
+- blurred project card not height enough on mobile screens

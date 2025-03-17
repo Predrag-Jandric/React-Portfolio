@@ -24,8 +24,8 @@ export const skillsVariants = {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.2,
-        delay: 0.140 * index,
+        duration: 0.25,
+        delay: 0.15 * index,
       },
     };
   },
@@ -43,7 +43,7 @@ export const projectsVariants = {
       scale: 1,
       transition: {
         duration: 0.3,
-        delay: 0.1 * index,
+        delay: 0.05 * index,
       },
     };
   },
