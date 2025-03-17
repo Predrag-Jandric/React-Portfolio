@@ -9,6 +9,7 @@ import {
   roadmapArrowVariants,
 } from "../utils/animations.js";
 import { motion } from "framer-motion";
+import { PiSealCheckFill } from "react-icons/pi";
 
 export default function Roadmap() {
   return (
@@ -29,7 +30,7 @@ export default function Roadmap() {
           custom={0.35}
           className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
-          <div className="flex w-fit flex-col items-center justify-center gap-3">
+          <div className="relative flex w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Q1 2025</p>
             <img
               className="size-32 object-contain md:size-20 lg:size-32"
@@ -39,8 +40,9 @@ export default function Roadmap() {
             <p className="text-body">
               Finish 3 mega <br /> projects{" "}
             </p>
+            <PiSealCheckFill className="size-10 text-green-400 absolute top-4 right-0" />
           </div>
-
+         
           <motion.span
             variants={roadmapArrowVariants}
             initial="initial"

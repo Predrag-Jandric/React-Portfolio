@@ -1,4 +1,3 @@
-import { FaPeopleGroup } from "react-icons/fa6";
 import { IoMdTimer, IoIosArrowBack } from "react-icons/io";
 import { VscTypeHierarchySub } from "react-icons/vsc";
 import Button from "./Button";
@@ -6,6 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import { projectsMap } from "../utils/data";
 import { useEffect } from "react";
 import ZoomImage from "../utils/ZoomImage";
+import { RiTeamLine } from "react-icons/ri";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -48,7 +48,7 @@ function ProjectDetails() {
               </p>
             </span>
             <span className="flex items-center gap-2">
-              <FaPeopleGroup size={20} />
+              <RiTeamLine size={20} />
               <p>
                 Team size: <span className="font-bold">{project.teamSize}</span>
               </p>

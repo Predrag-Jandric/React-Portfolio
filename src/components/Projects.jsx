@@ -39,11 +39,13 @@ export default function Projects() {
             {/* card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-body">
               <h3
-                className={`font-headings text-headings font-medium ${!project.githubLink && "blur-sm"}`}
+                className={`font-headings text-headings font-medium ${!project.githubLink && "select-none blur-sm"}`}
               >
                 {project.name}
               </h3>
-              <p className={` ${!project.githubLink && "blur-sm"} `}>
+              <p
+                className={` ${!project.githubLink && "select-none blur-sm"} `}
+              >
                 {project.description}
               </p>
             </article>
@@ -51,14 +53,14 @@ export default function Projects() {
             {/* technologies used */}
             <article className="flex flex-col px-6 text-body">
               <h4
-                className={`mb-1 font-bold ${!project.githubLink && "blur-sm"}`}
+                className={`mb-1 font-bold ${!project.githubLink && "select-none blur-sm"}`}
               >
                 Technologies used:
               </h4>
               <div>
                 {project.TechUsed.map((techused, techIndex) => (
                   <span
-                    className={`${!project.githubLink && "blur-sm"}`}
+                    className={`${!project.githubLink && "select-none blur-sm"}`}
                     key={techIndex}
                   >
                     {techused}
@@ -69,7 +71,7 @@ export default function Projects() {
 
             {!project.githubLink ? (
               <Button
-                className="btn mx-auto mb-10 mt-auto hover:shadow-md w-56 cursor-not-allowed bg-gray-200 blur-sm hover:bg-gray-200"
+                className="btn mx-auto mb-10 mt-auto w-56 cursor-not-allowed bg-gray-200 blur-sm hover:bg-gray-200 hover:shadow-md"
                 disabled
               >
                 Coming Soon

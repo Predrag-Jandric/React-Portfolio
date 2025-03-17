@@ -31,7 +31,7 @@ function useMenuAnimation(isOpen) {
           ["nav", { transform: "translateX(100%)" }, { at: "-0.1" }],
         ];
 
-    // Button animations are independent
+    // button animations are independent
     const buttonAnimations = [
       [
         "path.top",
@@ -50,7 +50,7 @@ function useMenuAnimation(isOpen) {
       ],
     ];
 
-    // Animate the button and menu separately
+    // animate the button and menu separately
     animate([...buttonAnimations]);
     animate([...menuAnimations]);
   }, [animate, isOpen]);

@@ -1,3 +1,2 @@
 - make contact form functionable
 - add CV
-- blurred project card not height enough on mobile screens
