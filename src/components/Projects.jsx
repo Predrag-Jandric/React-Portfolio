@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { projectsVariants, generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 // import { projectsMap } from "../utils/data.js";
-import {data} from "../utils/test.js";
+import { projectsMap } from "../utils/data";
 
 export default function Projects() {
   return (
@@ -16,7 +16,7 @@ export default function Projects() {
       id="projects"
     >
       <div className="grid grid-cols-1 place-items-center gap-20 px-3 text-grayText xs:px-5 lg:grid-cols-2">
-        {data.map((project, index) => (
+        {projectsMap.map((project, index) => (
           <motion.section
             key={project.id}
             variants={projectsVariants}

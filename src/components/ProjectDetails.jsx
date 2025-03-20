@@ -5,13 +5,13 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import ZoomImage from "../utils/ZoomImage";
 import { RiTeamLine } from "react-icons/ri";
-import { data } from "../utils/test";
+import { projectsMap } from "../utils/data";
 
 function ProjectDetails() {
   const { projectName } = useParams();
   const decodedProjectName = decodeURIComponent(projectName);
 
-  const project = data.find(
+  const project = projectsMap.find(
     (proj) =>
       proj.name.toLowerCase().replace(/\s+/g, "-") === decodedProjectName,
   );
@@ -92,18 +92,18 @@ function ProjectDetails() {
             </Button>
           </article>
 
-          <hr className="my-10" />
+          <hr className="mt-10 mb-8" />
 
-          <h5 className="mb-5 text-center text-[2rem] font-medium">About</h5>
+          <h5 className="mb-3 text-center text-[2rem] font-medium">About</h5>
           <div className="flex flex-col gap-6 font-body">
             {aboutArray.map((item, index) => (
               <p key={index}>{item}</p>
             ))}
           </div>
 
-          <hr className="my-10" />
+          <hr className="mt-10 mb-8" />
 
-          <h5 className="mb-5 text-center text-[2rem] font-medium">
+          <h5 className="mb-3 text-center text-[2rem] font-medium">
             How it works
           </h5>
 

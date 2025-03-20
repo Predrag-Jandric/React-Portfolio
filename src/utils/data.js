@@ -93,7 +93,6 @@ export const footerMap = [
 export const projectsMap = [
   {
     name: "Split Smart",
-    // brief description
     description:
       "Split Smart is a dashboard type of application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the ways to settle debts among group members.",
     projectsImageUrl: "/assets/projects/splitsmartprev.png",
@@ -109,26 +108,75 @@ export const projectsMap = [
     buildTime: "7 weeks",
     teamSize: "5 people",
     type: "Front-end only",
-    // explaining more about the project
-    textOne:
-      "Split Smart is an application that aims to make splitting expenses among friends, family, or colleagues easy. Whether planning a trip, organizing a group dinner, or managing shared expenses, Split Smart helps you keep track of who owes what and ensures that everyone pays their equal or unequal share. Your data is automatically saved in your browser locally so that you can always come back to where you left off.",
-    // what you learned
-    textTwo: `Building Split Smart taught me valuable lessons about listening to feedback and improving the app with in-depth testing. I also learned the importance of clear documentation for future development and maintenance. One of the major technical challenges was implementing the logic for accurate contribution changes for each member and ensuring that the app was user-friendly and intuitive.`,
-    // about team, project management and collaboration
-    textThree: `Our team consisted of 1 Product Owner, 2 Developers, 1 UX/UI Designer, and 1 Scrum Master. We followed Agile methodologies, with regular sprints, iterations, and backlog management. Design and implementation decisions were made collaboratively, ensuring a simple and efficient approach.`,
-    // what was your role, what did you do
-    textFour: `My role included implementing complex logic, managing state with Redux, turning designs into a fully responsive user interface, fixing bugs and optimizing. I also worked on integrating animations and charts, writing documentation, testing and implementing the dark mode.`,
-    // features
-    textFive: `Users can: 
-    1. Create groups for different events or activities. 
-    2. Add members to the groups and assign expenses. 
-    3. Track total budget, expenses, and remaining budget. 
-    4. Customize contributions for each member. 
-    5. Edit group details, such as name, description, and image. 
-    6. Search for groups using the search bar. 
-    7. Toggle between light and dark modes for a comfortable viewing experience.`,
-    // technologogies
-    textSix: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. Framer Motion for animations. Recharts for pie chart visualization. React Icons and React Toastify for icons and notifications.`,
+    about: `Split Smart is an application that aims to make splitting expenses among friends, family, or colleagues easy. Whether planning a trip, organizing a group dinner, or managing shared expenses, Split Smart helps you keep track of who owes what and ensures that everyone pays their equal or unequal share. Your data is automatically saved in your browser locally so that you can always come back to where you left off.\n\nBuilding Split Smart taught me valuable lessons about listening to feedback and improving the app with in-depth testing. I also learned the importance of clear documentation for future development and maintenance. One of the major technical challenges was implementing the logic for accurate contribution changes for each member and ensuring that the app was user-friendly and intuitive.\n\nOur team consisted of one Product Owner, two Developers, one UX/UI Designer, and one Scrum Master. We followed Agile methodologies, with regular sprints, iterations, and backlog management. Design and implementation decisions were made collaboratively, ensuring a simple and efficient approach.\n\nMy role included implementing complex logic, managing state with Redux, turning designs into a fully responsive user interface, fixing bugs and optimizing. I also worked on integrating animations and charts, writing documentation, testing and implementing the dark mode.`,
+    howItWorksList: `Users can:\n1. Create groups for different events or activities.\n2. Add members to the groups and assign expenses.\n3. Track total budget, expenses, and remaining budget.\n4. Customize contributions for each member.\n5. Edit group details, such as name, description, and image.\n6. Search for groups using the search bar.\n7. Toggle between light and dark modes for a comfortable viewing experience.`,
+    howItWorksText: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. Framer Motion for animations. Recharts for pie chart visualization. React Icons and React Toastify for icons and notifications.`,
+  },
+  {
+    name: "Crusty's pizza",
+    description:
+      "Crusty's pizza online simulates a local pizza business where people can order pizza easily, to be delivered to their location. Users can choose from a variety of pizzas, add them to cart, and input details for delivery. The app also has a search feature to find orders quickly.",
+    projectsImageUrl: "/assets/projects/pizzaprev.png",
+    flowchart: ["/assets/projects/pizzaflowchart.png"],
+    effort: null,
+    TechUsed: [
+      "React, ",
+      "Tailwind, ",
+      "Redux Toolkit, ",
+      "React Router, ",
+      "API integration. ",
+    ],
+    githubLink: "https://github.com/Predrag-Jandric/Crustys-Pizza",
+    previewLink: "https://crusty-pizza.netlify.app/",
+    id: 4311466798264,
+    buildTime: "4 weeks",
+    teamSize: "1 person",
+    type: "Front-end only",
+    about: `This small-scale solo project served to practice my React skills and learn how to work with APIs. I used the API from the fakestoreapi.com to get the data. I learned how to fetch data from an API, display it in a user-friendly way, and manage the state of the app.\n\nThis was a solo project that was initially built as a part of the tutorial but which I later expanded and customized according to my vision. I learned how to structure a project, manage state, and implement logic for a small-scale e-commerce app.`,
+    howItWorksList: `Users can:\n1. Order different pizzas in their cart and change quantity.\n2. Input their details for delivery.\n3. Search for their order in the search bar.`,
+    howItWorksText: `As a main framework, I've used React to build the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. React Icons and React hot toast for icons and notifications.`,
+  },
+  {
+    name: "Pangea Dino Museum",
+    description:
+      "Pangea is an online museum that educates and entertains adults who love dinosaurs. Users can learn about different dinosaur species and time periods, play a quiz game, and purchase dinosaur-related products in a small scale e-commerce store.",
+    projectsImageUrl: "/assets/projects/pangeaprev.png",
+    flowchart: ["/assets/projects/pangeaflowchart.png"],
+    effort: "Team project",
+    TechUsed: [
+      "React, ",
+      "Tailwind, ",
+      "Redux Toolkit, ",
+      "MongoDB, ",
+      "NodeJS. ",
+    ],
+    githubLink: "https://github.com/Predrag-Jandric/Pangea-Dino-Museum",
+    previewLink: "https://pangea-dino-museum.netlify.app/",
+    id: 4379867828864,
+    buildTime: "6 weeks",
+    teamSize: "5 people",
+    type: "Full-stack",
+    about: `Pangea Dino Museum has a museum section that educates users about different dinosaur species and time periods, and the e-commerce section where users can purchase dinosaur images. The app also features a quiz game where users can test their knowledge of dinosaurs.\n\nBuilding Pangea, I reinforced an important lesson of working within a larger team and connecting the front-end with the back-end. I learned for the first how to work with MongoDB databases, and how to build an API using Node.js, and Express. In the quiz game, I also practiced implementing complex boolean logic using switch statements and conditional rendering.\n\nAs a team, we used Agile methodology for project management along with regular sprints, iterations, and backlog management. Our team consisted of two Product owners, two Developers, and one Scrum Master.\n\nMy role was building the UI and logic for the e-commerce section, quiz game section, timeline section, animations, and navigation. I also created a simple API and connected it to the front-end. This project was a scaled-down version of the original which has even more features.`,
+    howItWorksList: `Users can:\n1. Learn about different dinosaur periods.\n2. Add items to the cart in the e-commerce store section.\n3. Modify the items on the shopping cart page.\n4. Play the quiz game.\n5. Navigate through the museum.`,
+    howItWorksText: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. MongoDB for the database. Node.js and Express for the API. React Icons and React hot toast for icons and notifications.`,
+  },
+  {
+    name: "Project coming soon",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae quaerat perferendis quasi tempore ipsam excepturi velit perspiciatis ipsum nesciunt, assumenda non, fugit odio libero commodi dicta odit itaque aperiam quisquam voluptatem, recusandae hic eaque saepe possimus! Autem, sunt sed?",
+    projectsImageUrl: "/assets/projects/comingsoonprev.png",
+    flowchart: null,
+    effort: null,
+    TechUsed: ["Some tech, ", "Other tech, ", "Tech, ", "Maybe some tech. "],
+    githubLink: null,
+    previewLink: null,
+    id: 221678264,
+    buildTime: null,
+    teamSize: null,
+    type: null,
+    about: null,
+    howItWorksList: null,
+    howItWorksText: null,
   },
 ];
 
