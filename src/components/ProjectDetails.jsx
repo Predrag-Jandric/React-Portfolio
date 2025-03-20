@@ -2,16 +2,16 @@ import { IoMdTimer, IoIosArrowBack } from "react-icons/io";
 import { VscTypeHierarchySub } from "react-icons/vsc";
 import Button from "./Button";
 import { Link, useParams } from "react-router-dom";
-import { projectsMap } from "../utils/data";
 import { useEffect } from "react";
 import ZoomImage from "../utils/ZoomImage";
 import { RiTeamLine } from "react-icons/ri";
+import { data } from "../utils/test";
 
 function ProjectDetails() {
   const { projectName } = useParams();
   const decodedProjectName = decodeURIComponent(projectName);
 
-  const project = projectsMap.find(
+  const project = data.find(
     (proj) =>
       proj.name.toLowerCase().replace(/\s+/g, "-") === decodedProjectName,
   );
@@ -21,6 +21,10 @@ function ProjectDetails() {
   }, []);
 
   if (!project) return <p>Project not found.</p>;
+
+  const howItWorksListArray = project.howItWorksList.split("\n");
+  const aboutArray = project.about.split("\n\n");
+
   return (
     <>
       <nav className="flex h-[8vh] w-screen items-center justify-center bg-dark font-body font-normal text-white shadow-md">
@@ -92,10 +96,9 @@ function ProjectDetails() {
 
           <h5 className="mb-5 text-center text-[2rem] font-medium">About</h5>
           <div className="flex flex-col gap-6 font-body">
-            <p>{project.textOne}</p>
-            <p>{project.textTwo}</p>
-            <p>{project.textThree}</p>
-            <p>{project.textFour}</p>
+            {aboutArray.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
           </div>
 
           <hr className="my-10" />
@@ -105,8 +108,12 @@ function ProjectDetails() {
           </h5>
 
           <div className="flex flex-col gap-6 font-body">
-            <p>{project.textFive}</p>
-            <p>{project.textSix}</p>
+            <ol>
+              {howItWorksListArray.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ol>
+            <p>{project.howItWorksText}</p>
           </div>
 
           <p className="mb-4 mt-8 text-center font-body text-sm italic text-grayText/65">
@@ -115,10 +122,6 @@ function ProjectDetails() {
           {project.flowchart.map((flowchart, index) => (
             <ZoomImage key={index} src={flowchart} alt={`Flowchart ${index}`} />
           ))}
-
-          {/* <Link to="/" className="btn mx-auto ">
-          Go back
-        </Link> */}
         </section>
       </div>
     </>
