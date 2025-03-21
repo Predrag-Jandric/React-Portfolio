@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { projectsVariants, generalVariants } from "../../utils/animations.js";
 import Button from "../Button.jsx";
 import { projectsMap } from "../../utils/data.js";
+import { IoEnter } from "react-icons/io5";
 
 export default function Projects() {
   return (
@@ -25,11 +26,24 @@ export default function Projects() {
             custom={index}
             className="relative flex h-full w-full max-w-[32.5rem] flex-col gap-8 overflow-hidden rounded-custom bg-pureWhite shadow-md"
           >
-            <img
-              src={project.projectsImageUrl}
-              alt="project photo"
-              className=""
-            />
+            <div className="group relative">
+              <img
+                src={project.projectsImageUrl}
+                alt="project photo"
+                className="w-full"
+              />
+              {project.githubLink && (
+                <Link
+                  to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black bg-opacity-55 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >
+                  <IoEnter className="text-6xl" />
+                  <span className="text-center font-semibold">
+                    View Details
+                  </span>
+                </Link>
+              )}
+            </div>
             {project.effort && (
               <span className="absolute right-6 top-6 rounded-full bg-primary px-4 py-1 text-sm font-semibold">
                 {project.effort}

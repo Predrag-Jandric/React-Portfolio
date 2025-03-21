@@ -6,7 +6,6 @@ to top btn nav
 fixed nav
 
 portfolio
-project card image should have an overlay and some sort of CTA
 faq section closing too slow
 sticky mobile menu (app navigation is bad)
 faq element size changes when it opens and closes
