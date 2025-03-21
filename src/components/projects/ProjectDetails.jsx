@@ -1,12 +1,12 @@
 import { IoMdTimer, IoIosArrowBack } from "react-icons/io";
 import { VscTypeHierarchySub } from "react-icons/vsc";
-import Button from "./Button";
+import Button from "../Button";
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
-import ZoomImage from "../utils/ZoomImage";
+import ZoomImage from "../../utils/ZoomImage";
 import { RiTeamLine } from "react-icons/ri";
-import { projectsMap } from "../utils/data";
-import ProjectNotFound from "./ProjectNotFound";
+import { projectsMap } from "../../utils/data";
+import ProjectNotFound from "../projects/ProjectNotFound";
 
 function ProjectDetails() {
   const { projectName } = useParams();

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import projecterror from "../../public/assets/projects/projecterror.png";
+import projecterror from "../../../public/assets/projects/projecterror.png";
 
 function ProjectNotFound() {
   return (

@@ -3,16 +3,16 @@ import Title from "./components/Title";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Projects from "./components/projects/Projects";
 import Roadmap from "./components/Roadmap";
 import Endorsements from "./components/Endorsements";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 // import { useEffect, useState } from "react";
 // import Preloader from "./components/Preloader";
-import ProjectDetails from "./components/ProjectDetails";
+import ProjectDetails from "./components/projects/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import ScrollToTopButton from "./utils/ScrollToTopButton";
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -59,8 +59,7 @@ export default function App() {
               </main>
             }
           />
-         <Route path="/projects/:projectName" element={<ProjectDetails />} />
-
+          <Route path="/projects/:projectName" element={<ProjectDetails />} />
         </Routes>
       </Router>
       {/* )} */}

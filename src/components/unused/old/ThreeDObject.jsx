@@ -2,7 +2,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useRef, forwardRef } from "react";
 import { motion } from "framer-motion";
-import { heroVariants } from "../utils/animations";
+import { heroVariants } from "../../../utils/animations";
 
 // model component to load 3D object from GLTF file
 const Model = forwardRef((props, ref) => {

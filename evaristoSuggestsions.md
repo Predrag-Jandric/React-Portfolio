@@ -12,7 +12,6 @@ sticky mobile menu (app navigation is bad)
 faq element size changes when it opens and closes
 faq element weird close
 zoom in on project details chart is too much and initial entrance is too sudden
-turn data.js to json so you can format json and improve code. make ordered lists
 
 PIZZA app
 why 8 max characters
