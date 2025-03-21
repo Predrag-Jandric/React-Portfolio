@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import ZoomImage from "../utils/ZoomImage";
 import { RiTeamLine } from "react-icons/ri";
 import { projectsMap } from "../utils/data";
+import ProjectNotFound from "./ProjectNotFound";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -20,7 +21,7 @@ function ProjectDetails() {
     window.scrollTo(0, 0); // scroll to the top when route is changed
   }, []);
 
-  if (!project) return <p>Project not found.</p>;
+  if (!project) return <ProjectNotFound />;
 
   const howItWorksListArray = project.howItWorksList.split("\n");
   const aboutArray = project.about.split("\n\n");
@@ -92,7 +93,7 @@ function ProjectDetails() {
             </Button>
           </article>
 
-          <hr className="mt-10 mb-8" />
+          <hr className="mb-8 mt-10" />
 
           <h5 className="mb-3 text-center text-[2rem] font-medium">About</h5>
           <div className="flex flex-col gap-6 font-body">
@@ -101,7 +102,7 @@ function ProjectDetails() {
             ))}
           </div>
 
-          <hr className="mt-10 mb-8" />
+          <hr className="mb-8 mt-10" />
 
           <h5 className="mb-3 text-center text-[2rem] font-medium">
             How it works
