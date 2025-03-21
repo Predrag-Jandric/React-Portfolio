@@ -1,7 +1,7 @@
 import { IoMdTimer, IoIosArrowBack } from "react-icons/io";
 import { VscTypeHierarchySub } from "react-icons/vsc";
 import Button from "../Button";
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import ZoomImage from "../../utils/ZoomImage";
 import { RiTeamLine } from "react-icons/ri";
@@ -10,6 +10,7 @@ import ProjectNotFound from "../projects/ProjectNotFound";
 
 function ProjectDetails() {
   const { projectName } = useParams();
+  const navigate = useNavigate();
   const decodedProjectName = decodeURIComponent(projectName);
 
   const project = projectsMap.find(
@@ -26,16 +27,20 @@ function ProjectDetails() {
   const howItWorksListArray = project.howItWorksList.split("\n");
   const aboutArray = project.about.split("\n\n");
 
+  const handleBackClick = () => {
+    navigate("/#projects");
+  };
+
   return (
     <>
       <nav className="flex h-[8vh] w-screen items-center justify-center bg-dark font-body font-normal text-white shadow-md">
-        <Link
-          to="/"
+        <button
+          onClick={handleBackClick}
           className="mr-4 flex w-full max-w-[70rem] items-center p-2.5 text-xl transition hover:text-primary xl:pl-0"
         >
           <IoIosArrowBack className="size-7" />
           Back
-        </Link>
+        </button>
       </nav>
 
       <div className="my-12 flex flex-col items-center px-3 font-headings xs:px-5">

@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { heroVariants } from "../utils/animations.js";
 import Navbar from "./navbar/Navbar";
 import { SlArrowDown } from "react-icons/sl";
-import useScrollTo from "../utils/useScrollTo.js";
 import devPhoto from "/assets/hero/devPhoto.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
-  const scrollToSection = useScrollTo(170);
+  const navigate = useNavigate();
+
   return (
-    <header className="relative min-h-screen bg-[url('/assets/hero/background.png')] bg-cover p-[2.5rem] px-5 text-pureWhite shadow-md lg:px-20 lg:py-[3.75rem] xl:px-36">
+    <header className="bg-cover relative min-h-screen bg-[url('/assets/hero/background.png')] p-[2.5rem] px-5 text-pureWhite shadow-md lg:px-20 lg:py-[3.75rem] xl:px-36">
       <Navbar />
 
       <div className="flex flex-col items-center justify-between gap-6 pt-[4.5rem] text-center md:pt-[7rem] lg:flex-row lg:text-start">
@@ -42,7 +43,7 @@ export default function Hero() {
         />
       </div>
       <motion.a
-        onClick={() => scrollToSection("about")}
+        onClick={() => navigate("/#about")}
         rel="noopener noreferrer"
         className="absolute bottom-8 left-1/2 z-30 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}

@@ -92,7 +92,6 @@ export default function Projects() {
               </Button>
             ) : (
               <Link
-                target="_blank"
                 to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
                 className="mx-auto mb-10 mt-auto flex w-56 items-center justify-center"
               >
