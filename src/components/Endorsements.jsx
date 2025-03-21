@@ -56,11 +56,11 @@ export default function Endorsements() {
               {endorsement.job}
             </small>
             <div className="mx-auto flex w-full flex-col p-6 text-start md:px-10">
-              <span className="text-body md:px-5">{endorsement.message}</span>
-              <span className="my-5 text-body md:px-5">
-                {endorsement.message2}
-              </span>
-              <span className="text-body md:px-5">{endorsement.message3}</span>
+              {endorsement.message.split("\n\n").map((paragraph, i) => (
+                <p key={i} className="mb-4 text-body md:px-5">
+                  {paragraph}
+                </p>
+              ))}
               <a
                 target="_blank"
                 rel="noopener noreferrer"

@@ -8,35 +8,27 @@ export const navLinks = [
   { href: "endorsements", label: "Endorsements" },
   { href: "faq", label: "Faq" },
 ];
+
 export const endorsementsMap = [
   {
     endorsementsImageUrl: "/assets/endorsements/fari.jpg",
     name: "Farzaneh Falakrou",
     job: "UI/UX Designer",
     message:
-      "Predrag and I were part of a dedicated team on a ‘‘Chingu’’ project, where we worked together to build an app from the scratch in six weeks. As a developer, he made important contributions with his technical skills and dedication.",
-    message2:
-      "Predrag showed a good understanding of development, followed our design guidelines, and kept communication open. His active participation and constructive feedback enhanced our teamwork.",
-    message3: "ㅤ",
+      "Predrag and I were part of a dedicated team on a ‘‘Chingu’’ project, where we worked together to build an app from the scratch in six weeks. As a developer, he made important contributions with his technical skills and dedication.\n\nPredrag showed a good understanding of development, followed our design guidelines, and kept communication open. His active participation and constructive feedback enhanced our teamwork.",
   },
   {
     endorsementsImageUrl: "/assets/endorsements/afrah.jpg",
     name: "Afrah Ali",
     job: "Scrum Master",
     message:
-      "I had the pleasure of working alongside Predrag at Chingu, where we collaborated on developing an app from the ground up. As the Scrum Master and Predrag as the developer, I was consistently impressed by his dedication to delivering high-quality work. His commitment was unparalleled, always ensuring that tasks were completed to the highest standard.",
-    message2:
-      "Predrag was incredibly supportive when team members encountered challenges, often creating video tutorials to explain complex concepts.",
-    message3: "",
+      "I had the pleasure of working alongside Predrag at Chingu, where we collaborated on developing an app from the ground up. As the Scrum Master and Predrag as the developer, I was consistently impressed by his dedication to delivering high-quality work. His commitment was unparalleled, always ensuring that tasks were completed to the highest standard.\n\nPredrag was incredibly supportive when team members encountered challenges, often creating video tutorials to explain complex concepts.",
   },
   {
     endorsementsImageUrl: "/assets/endorsements/anitta.jpg",
     name: "Anita Boakye-Yiadom",
     job: "Product owner and Agile coach",
-    message: `Predrag was an outstanding front-end developer in my Chingu scrum team. As a scrum master during the 6-week Solar Panel Planner app project, his problem-solving skills and attention to detail were instrumental.`,
-    message2:
-      "Predrag is a committed and dedicated professional who constantly shows outstanding leadership with teammates as a senior developer, guiding and initiating pair programming sessions. ",
-    message3: "",
+    message: `Predrag was an outstanding front-end developer in my Chingu scrum team. As a scrum master during the 6-week Solar Panel Planner app project, his problem-solving skills and attention to detail were instrumental. \n\nPredrag is a committed and dedicated professional who constantly shows outstanding leadership with teammates as a senior developer, guiding and initiating pair programming sessions.`,
   },
 ];
 

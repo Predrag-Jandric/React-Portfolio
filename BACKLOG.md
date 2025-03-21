@@ -1,4 +1,3 @@
 - make contact form functionable
 - add CV
 - create new component for errors like, when the project is not found and check for all the other errors liek this and make a component for them
-- do the same thing with line break in othe sections. check out which ones in data.js
