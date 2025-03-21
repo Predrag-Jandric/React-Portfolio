@@ -1,12 +1,23 @@
 import MobileNavbar from "./MobileNavbar";
-import useScrollTo from "../../utils/useScrollTo";
 import { useState } from "react";
 import { CgMenu } from "react-icons/cg";
 import { navLinks } from "../../utils/data";
 
 function Navbar() {
-  const scrollToSection = useScrollTo(170);
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const element = document.getElementById(href);
+    if (element) {
+      const topPosition = element.offsetTop - 170;
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+      window.history.pushState(null, null, `#${href}`);
+    }
+  };
 
   return (
     <>
@@ -17,10 +28,7 @@ function Navbar() {
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.href);
-                }}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="relative cursor-pointer px-5 py-2 text-xl text-white transition duration-200 ease-in-out group-hover:before:scale-100"
               >
                 {link.label}

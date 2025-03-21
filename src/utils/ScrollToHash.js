@@ -8,7 +8,7 @@ export default function ScrollToHash() {
     if (hash) {
       const element = document.getElementById(hash.substring(1));
       if (element) {
-        const topPosition = element.offsetTop - 170; // Adjust the offset value as needed
+        const topPosition = element.offsetTop - 170;
         window.scrollTo({
           top: topPosition,
           behavior: "smooth",

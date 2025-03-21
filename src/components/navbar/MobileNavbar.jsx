@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import useScrollTo from "../../utils/useScrollTo";
+// import useScrollTo from "../../utils/useScrollTo";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { navLinks } from "../../utils/data";
@@ -59,7 +59,7 @@ function useMenuAnimation(isOpen) {
 }
 
 export default function MobileNavbar({ isOpen, setIsOpen }) {
-  const scrollToSection = useScrollTo(170);
+  // const scrollToSection = useScrollTo(170);
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
 
@@ -83,6 +83,20 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
       window.removeEventListener("resize", handleResize);
     };
   }, [isOpen, setIsOpen]);
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const element = document.getElementById(href);
+    if (element) {
+      const topPosition = element.offsetTop - 170;
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+      window.history.pushState(null, null, `#${href}`);
+    }
+  };
 
   const handleToggle = () => {
     if (!clickable) return;
@@ -113,11 +127,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.href);
-                  setIsOpen(false);
-                }}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="relative w-full cursor-pointer px-5 py-2 text-3xl text-white transition duration-200 ease-in-out hover:text-primary group-hover:before:scale-100"
               >
                 {link.label}
