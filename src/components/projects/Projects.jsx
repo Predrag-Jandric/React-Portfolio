@@ -34,7 +34,7 @@ export default function Projects() {
               />
               {project.githubLink && (
                 <Link
-                  to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
+                  to={`/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
                   className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black bg-opacity-55 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 >
                   <IoEnter className="text-6xl" />
@@ -92,7 +92,7 @@ export default function Projects() {
               </Button>
             ) : (
               <Link
-                to={`/projects/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
+                to={`/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
                 className="mx-auto mb-10 mt-auto flex w-56 items-center justify-center"
               >
                 <Button className="w-56">View Details</Button>

@@ -10,7 +10,6 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
-import ScrollToTopButton from "./utils/ScrollToTopButton";
 import ScrollToHash from "./utils/ScrollToHash";
 
 export default function App() {
@@ -37,11 +36,10 @@ export default function App() {
               <Title text="Faq" />
               <Faq />
               <Footer />
-              <ScrollToTopButton />
             </main>
           }
         />
-        <Route path="/projects/:projectName" element={<ProjectDetails />} />
+        <Route path="/:projectName" element={<ProjectDetails />} />
       </Routes>
     </Router>
   );

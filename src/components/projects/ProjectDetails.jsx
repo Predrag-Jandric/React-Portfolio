@@ -1,12 +1,18 @@
-import { IoMdTimer, IoIosArrowBack } from "react-icons/io";
-import { VscTypeHierarchySub } from "react-icons/vsc";
 import Button from "../Button";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import ZoomImage from "../../utils/ZoomImage";
-import { RiTeamLine } from "react-icons/ri";
 import { projectsMap } from "../../utils/data";
 import ProjectNotFound from "../projects/ProjectNotFound";
+import ScrollToTop from "../../utils/ScrollToTop";
+import {
+  LuPresentation,
+  LuCodeXml,
+  LuSendToBack,
+  LuUsers,
+  LuTimer,
+  LuChevronLeft,
+} from "react-icons/lu";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -33,15 +39,19 @@ function ProjectDetails() {
 
   return (
     <>
-      <nav className="flex h-[8vh] w-screen items-center justify-center bg-dark font-body font-normal text-white shadow-md">
-        <button
-          onClick={handleBackClick}
-          className="mr-4 flex w-full max-w-[70rem] items-center p-2.5 text-xl transition hover:text-primary xl:pl-0"
-        >
-          <IoIosArrowBack className="size-7" />
-          Back
-        </button>
+      <nav className="flex h-[8vh] w-full items-center justify-center bg-dark font-body font-normal text-white shadow-md">
+        <div className="mx-[1.1rem] w-full max-w-[70rem]">
+          <button
+            onClick={handleBackClick}
+            className="flex items-center justify-start p-3.5 pl-0 text-xl transition hover:text-primary"
+          >
+            <LuChevronLeft className="size-7" />
+            Back
+          </button>
+        </div>
       </nav>
+
+      <ScrollToTop />
 
       <div className="my-12 flex flex-col items-center px-3 font-headings xs:px-5">
         <section className="container text-grayText">
@@ -49,22 +59,22 @@ function ProjectDetails() {
             {project.name}
           </p>
 
-          <div className="mt-3 flex flex-col items-center justify-center gap-2 font-body md:flex-row md:gap-5">
-            <span className="flex items-center gap-2">
-              <IoMdTimer size={20} />
+          <div className="mt-3 flex flex-col items-center justify-center gap-2 font-body md:flex-row md:gap-7">
+            <span className="flex items-center gap-1">
+              <LuTimer size={20} />
               <p>
                 Build Time:{" "}
                 <span className="font-bold">{project.buildTime}</span>
               </p>
             </span>
-            <span className="flex items-center gap-2">
-              <RiTeamLine size={20} />
+            <span className="flex items-center gap-1">
+              <LuUsers size={20} />
               <p>
                 Team size: <span className="font-bold">{project.teamSize}</span>
               </p>
             </span>
-            <span className="flex items-center gap-2">
-              <VscTypeHierarchySub size={20} />
+            <span className="flex items-center gap-1">
+              <LuSendToBack size={20} />
               <p>
                 Type: <span className="font-bold">{project.type}</span>
               </p>
@@ -84,17 +94,23 @@ function ProjectDetails() {
               href={project.previewLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[1rem] xs:w-56"
+              className="flex gap-2 text-[1rem] xs:w-56"
             >
-              Demo
+              Demo{" "}
+              <span>
+                <LuPresentation className="size-5" />
+              </span>
             </Button>
             <Button
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[1rem] xs:w-56"
+              className="flex gap-2 text-[1rem] xs:w-56"
             >
-              Code
+              Code{" "}
+              <span>
+                <LuCodeXml className="size-5" />
+              </span>
             </Button>
           </article>
 
