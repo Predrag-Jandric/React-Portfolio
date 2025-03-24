@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="absolute left-0 right-0 top-0 flex h-[10vh] w-full items-center justify-center px-32 pt-3 md:px-12">
+      <nav className="transparent h-[8vh] fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center bg-dark ">
         <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out sm:flex">
           {navLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">
@@ -38,7 +38,7 @@ function Navbar() {
           ))}
         </ul>
         <CgMenu
-          className="absolute right-[7%] top-[30%] size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"
+          className="absolute right-[7%] top-[20%] size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"
           onClick={() => setIsOpen(true)}
         />
       </nav>

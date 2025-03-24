@@ -1,2 +1,3 @@
 - make contact form functionable
 - add CV
+- if you are on http://localhost:5173/#about hash, and you click hero arrow down again, nothing will happen
