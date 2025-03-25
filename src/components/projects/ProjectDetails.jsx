@@ -19,26 +19,26 @@ function ProjectDetails() {
   const navigate = useNavigate();
   const decodedProjectName = decodeURIComponent(projectName);
 
+  // makes sure the url displayes the project name correctly
   const project = projectsMap.find(
     (proj) =>
       proj.name.toLowerCase().replace(/\s+/g, "-") === decodedProjectName,
   );
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0); // scroll to the top when route is changed
-  // }, []);
-
+  // return custom error component if project is not found
   if (!project) return <ProjectNotFound />;
 
+  // makes sure text is formated correctly
   const howItWorksListArray = project.howItWorksList.split("\n");
   const aboutArray = project.about.split("\n\n");
 
+  // when back button is clicked, this makes sure it will take the user to the projects section instead of the top of the page
   const handleBackClick = () => {
     navigate("/#projects");
     setTimeout(() => {
       const element = document.getElementById("projects");
       if (element) {
-        const topPosition = element.offsetTop - 230; 
+        const topPosition = element.offsetTop - 230;
         window.scrollTo({
           top: topPosition,
           behavior: "smooth",

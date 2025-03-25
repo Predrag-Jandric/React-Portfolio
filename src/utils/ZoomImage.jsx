@@ -20,16 +20,6 @@ function ZoomImage({ src, alt }) {
     }
   };
 
-  // zoom in tap for mobile
-  const handleTap = (e) => {
-    setZoom(true);
-    updatePosition(
-      e.clientX || e.touches[0].clientX,
-      e.clientY || e.touches[0].clientY,
-      e.currentTarget,
-    );
-  };
-
   // close zoom when clicked outside img, this is only for mobile
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -41,14 +31,22 @@ function ZoomImage({ src, alt }) {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [zoom]);
 
+  // Toggle zoom state on click
+  const handleZoomToggle = (e) => {
+    setZoom((prevZoom) => !prevZoom);
+    if (!zoom) {
+      updatePosition(e.clientX, e.clientY, e.currentTarget);
+    }
+  };
+
   return (
     <div
       ref={zoomRef}
-      className="relative mx-auto mb-8 flex w-full flex-col items-center cursor-move overflow-hidden md:w-[85%]"
-      onClick={handleTap}
+      className={`relative mx-auto mb-8 flex w-full flex-col items-center overflow-hidden md:w-[85%] ${
+        zoom ? "cursor-zoom-out" : "cursor-zoom-in"
+      }`}
+      onClick={handleZoomToggle}
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setZoom(true)}
-      onMouseLeave={() => setZoom(false)}
     >
       <img
         src={src}
@@ -59,7 +57,7 @@ function ZoomImage({ src, alt }) {
       {/* zoom in overlay image */}
       {zoom && (
         <div
-          className="pointer-events-none absolute inset-0 rounded-custom border border-grayText/40 bg-bigzoom bg-no-repeat md:bg-normalzoom"
+          className="pointer-events-none absolute inset-0 rounded-custom border border-grayText/40 bg-bigzoom bg-no-repeat md:bg-normalzoom transition-transform duration-300"
           style={{
             backgroundImage: `url(${src})`,
             backgroundPosition: `${position.x}% ${position.y}%`,

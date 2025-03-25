@@ -89,7 +89,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
     setIsOpen(false);
     const element = document.getElementById(href);
     if (element) {
-      const topPosition = element.offsetTop - 170;
+      const topPosition = element.offsetTop - 230;
       window.scrollTo({
         top: topPosition,
         behavior: "smooth",
@@ -107,7 +107,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
 
   return (
     <div ref={scope}>
-      <nav className="fixed backdrop-blur-sm bg-opacity-95 left-0 top-0 z-50 h-full w-full translate-x-full bg-bgcolor pt-20 transition-colors">
+      <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-bgcolor bg-opacity-95 pt-20 backdrop-blur-sm transition-colors">
         <ul className="relative flex flex-col gap-y-6 px-8">
           <motion.div
             className="absolute -top-[16%] right-[5%] cursor-pointer"
