@@ -6,7 +6,6 @@ to top btn nav
 fixed nav
 
 portfolio
-sticky mobile menu (app navigation is bad)
 zoom in on project details chart is too much and initial entrance is too sudden
 
 PIZZA app

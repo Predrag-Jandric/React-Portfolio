@@ -34,7 +34,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-16 flex flex-col items-center bg-bgcolor px-4 py-16 xs:px-6">
+    <footer className="mt-16 flex flex-col items-center bg-bgcolor px-4 py-12 xs:px-6">
       <motion.section
         variants={generalVariants}
         initial="initial"
@@ -126,7 +126,7 @@ export default function Footer() {
         </article>
       </motion.section>
 
-      <p className="mt-5 flex items-center justify-center text-sm text-slate-500">
+      <p className="mt-4 flex items-center justify-center text-sm text-slate-500">
         &copy; {new Date().getFullYear()} Predrag. All rights reserved.
       </p>
     </footer>

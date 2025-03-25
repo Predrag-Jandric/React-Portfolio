@@ -10,7 +10,7 @@ function Navbar() {
     e.preventDefault();
     const element = document.getElementById(href);
     if (element) {
-      const topPosition = element.offsetTop - 170;
+      const topPosition = element.offsetTop - 230;
       window.scrollTo({
         top: topPosition,
         behavior: "smooth",
@@ -19,9 +19,11 @@ function Navbar() {
     }
   };
 
+
+
   return (
     <>
-      <nav className="transparent h-[8vh] fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center bg-dark ">
+      <nav className="backdrop-blur-sm bg-opacity-95 fixed left-0 right-0 top-0 z-50 flex h-[8vh] w-full items-center justify-center bg-dark">
         <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out sm:flex">
           {navLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">

@@ -1,6 +1,6 @@
 import Button from "../Button";
 import { useNavigate, useParams } from "react-router-dom";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import ZoomImage from "../../utils/ZoomImage";
 import { projectsMap } from "../../utils/data";
 import ProjectNotFound from "../projects/ProjectNotFound";
@@ -24,9 +24,9 @@ function ProjectDetails() {
       proj.name.toLowerCase().replace(/\s+/g, "-") === decodedProjectName,
   );
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // scroll to the top when route is changed
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // scroll to the top when route is changed
+  // }, []);
 
   if (!project) return <ProjectNotFound />;
 
@@ -35,6 +35,16 @@ function ProjectDetails() {
 
   const handleBackClick = () => {
     navigate("/#projects");
+    setTimeout(() => {
+      const element = document.getElementById("projects");
+      if (element) {
+        const topPosition = element.offsetTop - 230; 
+        window.scrollTo({
+          top: topPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 100); //delay
   };
 
   return (
