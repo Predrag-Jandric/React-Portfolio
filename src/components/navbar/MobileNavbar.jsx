@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-// import useScrollTo from "../../utils/useScrollTo";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { navLinks } from "../../utils/data";
+import { mobilenavLinks } from "../../utils/data";
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
@@ -110,7 +109,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
       <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-bgcolor bg-opacity-95 pt-20 backdrop-blur-sm transition-colors">
         <ul className="relative flex flex-col gap-y-6 px-8">
           <motion.div
-            className="absolute -top-[16%] right-[5%] cursor-pointer"
+            className="absolute -top-[10%] right-[5%] cursor-pointer"
             onClick={handleToggle}
             initial={{ scale: 1, opacity: 1 }}
             animate={
@@ -122,7 +121,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
           >
             <IoCloseOutline className="size-12 transition-colors hover:text-primary" />
           </motion.div>
-          {navLinks.map((link, index) => (
+          {mobilenavLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">
               <a
                 rel="noopener noreferrer"

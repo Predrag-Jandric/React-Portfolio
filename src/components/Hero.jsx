@@ -3,10 +3,20 @@ import { heroVariants } from "../utils/animations.js";
 import Navbar from "./navbar/Navbar";
 import { SlArrowDown } from "react-icons/sl";
 import devPhoto from "/assets/hero/devPhoto.jpg";
-import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
-  const navigate = useNavigate();
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const element = document.getElementById(href);
+    if (element) {
+      const topPosition = element.offsetTop - 230;
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+      window.history.pushState(null, null, `#${href}`);
+    }
+  };
 
   return (
     <header className="bg-cover relative min-h-screen bg-[url('/assets/hero/background.png')] p-[2.5rem] px-5 text-pureWhite shadow-md lg:px-20 lg:py-[3.75rem] xl:px-36">
@@ -43,7 +53,7 @@ export default function Hero() {
         />
       </div>
       <motion.a
-        onClick={() => navigate("/#about")}
+        onClick={(e) => handleNavClick(e, "about")}
         rel="noopener noreferrer"
         className="absolute bottom-8 left-1/2 z-30 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}

@@ -36,6 +36,7 @@ export default function Footer() {
   return (
     <footer className="mt-16 flex flex-col items-center bg-bgcolor px-4 py-12 xs:px-6">
       <motion.section
+        id="contact"
         variants={generalVariants}
         initial="initial"
         whileInView="animate"

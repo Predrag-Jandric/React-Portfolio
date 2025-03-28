@@ -6,7 +6,17 @@ export const navLinks = [
   { href: "projects", label: "Projects" },
   { href: "roadmap", label: "Roadmap" },
   { href: "endorsements", label: "Endorsements" },
-  { href: "faq", label: "Faq" },
+  { href: "contact", label: "Contact" },
+];
+
+export const mobilenavLinks = [
+  { href: "about", label: "About" },
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "endorsements", label: "Endorsements" },
+  { href: "faq", label: "FAQ" },
+  { href: "contact", label: "Contact" },
 ];
 
 export const skillsMap = [
