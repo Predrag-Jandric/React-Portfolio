@@ -49,7 +49,7 @@ function ProjectDetails() {
 
   return (
     <>
-      <nav className="flex h-[8vh] w-full items-center justify-center bg-dark font-body font-normal text-white shadow-md">
+      <nav className="backdrop-blur-sm bg-opacity-95 fixed left-0 right-0 top-0 z-50 flex h-[9vh] w-full items-center justify-center bg-dark font-body text-white shadow-md">
         <div className="mx-[1.1rem] w-full max-w-[70rem]">
           <button
             onClick={handleBackClick}
@@ -63,7 +63,7 @@ function ProjectDetails() {
 
       <ScrollToTop />
 
-      <div className="my-12 flex flex-col items-center px-3 font-headings xs:px-5">
+      <div className="my-12 mt-24 flex flex-col items-center px-3 font-headings xs:px-5">
         <section className="container text-grayText">
           <p className="text-center text-[2.3rem] font-medium">
             {project.name}
@@ -127,7 +127,7 @@ function ProjectDetails() {
           <hr className="mb-8 mt-10" />
 
           <h5 className="mb-3 text-center text-[2rem] font-medium">About</h5>
-          <div className="flex flex-col gap-6 font-body">
+          <div className="flex flex-col gap-6 font-body text-body">
             {aboutArray.map((item, index) => (
               <p key={index}>{item}</p>
             ))}
@@ -139,7 +139,7 @@ function ProjectDetails() {
             How it works
           </h5>
 
-          <div className="flex flex-col gap-6 font-body">
+          <div className="flex flex-col gap-6 font-body text-body">
             <ol>
               {howItWorksListArray.map((item, index) => (
                 <li key={index}>{item}</li>

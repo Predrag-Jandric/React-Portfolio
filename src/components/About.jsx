@@ -14,7 +14,7 @@ export default function About() {
       className="mx-1 flex flex-col items-center px-3 xs:px-5"
       id="about"
     >
-      <section className="container rounded-custom text-grayText">
+      <section className="container hover:shadow-lg transition-all rounded-custom text-grayText">
         <section className="flex flex-col">
           {/* <img
             src={devPhoto}

@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { endorsementsMap } from "../utils/data.js";
-// import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 
@@ -38,7 +37,7 @@ export default function Endorsements() {
         }}
         navigation={true}
         modules={[EffectCreative, Pagination, Navigation]}
-        className="container rounded-custom"
+        className="container rounded-custom hover:shadow-lg transition-all"
       >
         {endorsementsMap.map((endorsement, index) => (
           <SwiperSlide
@@ -65,7 +64,7 @@ export default function Endorsements() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/predrag-jandric/details/recommendations/?detailScreen"
-                className="specialLink text-center text-sm italic"
+                className="specialLink mx-auto w-fit text-center italic"
               >
                 View more on Linkedin
               </a>

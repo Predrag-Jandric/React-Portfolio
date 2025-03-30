@@ -39,10 +39,10 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="pb-3 pt-[40px] text-lg text-neutral-200"
           >
-            I’ve worked with over 20 colleagues from diverse tech backgrounds to
-            build production-ready applications in a professional setting. My
-            contributions and team-first mindset were crucial in delivering
-            results across multiple open-source projects.
+            I’ve worked with 4 teams from diverse tech backgrounds to build
+            production-ready applications in a professional setting. My
+            contributions and team-first mindset were crucial in solving user
+            problems across multiple open-source projects.
           </motion.p>
         </div>
 

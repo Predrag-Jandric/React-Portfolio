@@ -19,11 +19,9 @@ function Navbar() {
     }
   };
 
-
-
   return (
     <>
-      <nav className="backdrop-blur-sm bg-opacity-95 fixed left-0 right-0 top-0 z-50 flex h-[8vh] w-full items-center justify-center bg-dark">
+      <nav className="fixed left-0 right-0 top-0 z-50 flex h-[9vh] w-full items-center justify-center bg-dark bg-opacity-95 backdrop-blur-sm">
         <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out sm:flex">
           {navLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">
@@ -35,7 +33,7 @@ function Navbar() {
               >
                 {link.label}
               </a>
-              <span className="absolute left-[10%] top-full z-[-1] h-[5%] w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
+              <span className="absolute left-[10%] top-full z-[-1] h-0.5 w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
             </li>
           ))}
         </ul>

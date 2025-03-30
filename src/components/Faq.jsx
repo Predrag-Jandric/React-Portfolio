@@ -17,7 +17,7 @@ export default function Faq() {
       whileInView="animate"
       viewport={{ once: true }}
       id="faq"
-      className="mx-auto w-full px-4 text-dark xs:px-6 lg:w-[65rem]"
+      className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
     >
       {faqMap.map((faq, index) => {
         const isOpen = activeIndex === index;

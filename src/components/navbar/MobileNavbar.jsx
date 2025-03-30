@@ -131,7 +131,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
               >
                 {link.label}
               </a>
-              <span className="absolute left-5 top-full z-[-1] h-[3px] w-32 origin-left scale-x-0 bg-primary transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+              <span className="absolute left-5 top-full z-[-1] h-1 w-32 origin-left scale-x-0 bg-primary transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </li>
           ))}
         </ul>

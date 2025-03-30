@@ -36,11 +36,11 @@ export default function Footer() {
   return (
     <footer className="mt-16 flex flex-col items-center bg-bgcolor px-4 py-12 xs:px-6">
       <motion.section
-        id="contact"
         variants={generalVariants}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
+        id="contact"
         className="container flex flex-col gap-6 rounded-custom text-grayText md:flex-row md:gap-10"
       >
         {/* Form Section */}

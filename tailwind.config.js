@@ -11,7 +11,7 @@ export default {
         // variables
         white: "#f1f1f1",
         grayText: "#575b60",
-        dark: "#2d3142",
+        dark: "#292D3D",
 
         bgcolor: "#2F4575", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
 

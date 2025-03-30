@@ -24,7 +24,7 @@ export default function Projects() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="relative flex h-full w-full max-w-[32.5rem] flex-col gap-8 overflow-hidden rounded-custom bg-pureWhite shadow-md"
+            className={`relative flex h-full w-full max-w-[32.5rem] flex-col gap-8 overflow-hidden rounded-custom bg-pureWhite shadow-md transition-all hover:shadow-lg ${!project.githubLink && "hover:shadow-md"}`}
           >
             <div className="group relative">
               <img
@@ -35,7 +35,7 @@ export default function Projects() {
               {project.githubLink && (
                 <Link
                   to={`/${encodeURIComponent(project.name.toLowerCase().replace(/\s+/g, "-"))}`}
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black bg-opacity-55 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-xl bg-black bg-opacity-55 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 >
                   <IoEnter className="text-6xl" />
                   <span className="text-center font-semibold">
@@ -53,7 +53,7 @@ export default function Projects() {
             {/* card text */}
             <article className="flex flex-col items-center justify-center gap-4 px-6 text-body">
               <h3
-                className={`font-headings text-headings font-medium ${!project.githubLink && "select-none blur-sm"}`}
+                className={`font-headings text-headings font-semibold ${!project.githubLink && "select-none blur-sm"}`}
               >
                 {project.name}
               </h3>
@@ -67,14 +67,14 @@ export default function Projects() {
             {/* technologies used */}
             <article className="flex flex-col px-6 text-body">
               <h4
-                className={`mb-1 font-bold ${!project.githubLink && "select-none blur-sm"}`}
+                className={`mb-0.5 text-[0.95rem] font-semibold ${!project.githubLink && "select-none blur-sm"}`}
               >
                 Technologies used:
               </h4>
               <div>
                 {project.TechUsed.map((techused, techIndex) => (
                   <span
-                    className={`${!project.githubLink && "select-none blur-sm"}`}
+                    className={`text-[0.95rem] ${!project.githubLink && "select-none blur-sm"}`}
                     key={techIndex}
                   >
                     {techused}
