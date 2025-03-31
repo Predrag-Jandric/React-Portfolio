@@ -24,7 +24,7 @@
 }
 
 .specialLink {
-  color: #2e72b2; /* $link-color */
+  color: #2e72b2;
   text-decoration: underline;
 }
 
@@ -32,12 +32,12 @@
   background: radial-gradient(
     circle,
     #2e72b2 0%,
-    /* $link-hover-gradient-1 */ #3c87cd 16%,
-    /* $link-hover-gradient-2 */ #d8ad48 32%,
-    /* $link-hover-gradient-3 */ #f7b42d 49%,
-    /* $link-hover-gradient-4 */ #d8ad48 66%,
-    /* $link-hover-gradient-3 */ #3c87cd 84%,
-    /* $link-hover-gradient-2 */ #2e72b2 100% /* $link-hover-gradient-1 */
+    #3c87cd 16%,
+    #d8ad48 32%,
+    #f7b42d 49%,
+    #d8ad48 66%,
+    #3c87cd 84%,
+    #2e72b2 100%
   );
   background-clip: text;
   -webkit-background-clip: text;

@@ -3,35 +3,20 @@ import { generalVariants } from "../utils/animations.js";
 import Button from "./Button";
 import { RiMailSendLine } from "react-icons/ri";
 import { footerMap } from "../utils/data.js";
-// import { Link } from "react-router-dom";
+import { useForm, ValidationError } from "@formspree/react";
+import { FaSpinner } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
+import { useEffect } from "react";
 
 export default function Footer() {
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const [state, handleSubmit, reset] = useForm("mwplnjze");
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      description: e.target.description.value,
-    };
-
-    try {
-      const response = await fetch(
-        "https://nodejs-backend-portfolio.onrender.com/send-email",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        },
-      );
-
-      const data = await response.json();
-      alert(data.message); // Show success or error message
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Failed to send email.");
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Message sent!", { position: "bottom-center" });
+      reset();
     }
-  };
+  }, [reset, state]);
 
   return (
     <footer className="mt-16 flex flex-col items-center bg-bgcolor px-4 py-12 xs:px-6">
@@ -43,49 +28,57 @@ export default function Footer() {
         id="contact"
         className="container flex flex-col gap-6 rounded-custom text-grayText md:flex-row md:gap-10"
       >
+        <Toaster />
+
         {/* Form Section */}
-        <form
-          className="mb-6 flex-1 md:mb-0"
-          id="myform"
-          onSubmit={handleSubmit}
-        >
+        <form onSubmit={handleSubmit} className="mb-6 flex-1 md:mb-0">
           <h3 className="relative mb-8 font-headings text-headings font-medium">
             Message Me{" "}
-            <span className="text-sm text-red-500">
-              (Not functional in this version)
-            </span>
             <span className="absolute left-0 top-10 h-[3px] w-20 bg-primary"></span>
           </h3>
 
-          {/* Form Inputs */}
           <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            required
-            className="formInput text-body"
-          />
-          <input
+            id="email"
             type="email"
             name="email"
-            placeholder="Email Address"
             required
-            className="formInput text-body"
+            placeholder="Your email address"
+            className="formInput mt-1 text-base"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+
           <textarea
-            placeholder="Message"
+            placeholder="Your message"
             rows="5"
-            name="description"
+            id="message"
+            name="message"
             required
-            className="formInput text-body"
+            className="formInput text-base"
           ></textarea>
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
 
           <Button
-            // type="submit"
-            onClick={() => alert("Not functional in this version")}
-            className="flex w-44 items-center justify-center gap-3"
+            type="submit"
+            disabled={state.submitting}
+            className={`flex w-44 items-center justify-center gap-3 ${
+              state.submitting &&
+              "cursor-not-allowed bg-gray-200 hover:bg-gray-200"
+            }`}
+            //  className="flex w-44 items-center justify-center gap-3 cursor-not-allowed bg-gray-200 hover:bg-gray-200"
           >
-            Send <RiMailSendLine size={20} />
+            {state.submitting ? (
+              <>
+                Sending... <FaSpinner className="animate-spin" size={20} />
+              </>
+            ) : (
+              <>
+                Send <RiMailSendLine size={20} />
+              </>
+            )}
           </Button>
         </form>
 

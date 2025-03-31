@@ -15,7 +15,7 @@ export const mobilenavLinks = [
   { href: "projects", label: "Projects" },
   { href: "roadmap", label: "Roadmap" },
   { href: "endorsements", label: "Endorsements" },
-  { href: "faq", label: "FAQ" },
+  { href: "FAQ", label: "FAQ" },
   { href: "contact", label: "Contact" },
 ];
 

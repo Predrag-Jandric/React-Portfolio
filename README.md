@@ -1,21 +1,15 @@
-Projects section = fill the data
-Endorsements = add new lines and consistency
-
-Footer section
-
-- add a way for a user to see all Endorsements
-
-- use 3rd party to make form functional
-- implement MODAL that will let user know the msg in the form has been sent, from https://sweetalert2.github.io/
+- add CV
 
 ========== FOR GITHUB PROFILE DESC ===========
 
 - add Why I Code section to your github
 - add emotional intelligence as strong point
-- add diagrams image to readmes for featured projects
 
 hero pattern got from
 https://patternico.com/#meM0W5EUKUjVsnNY
 
 3d got from
 https://sketchfab.com
+
+3rd party used to make form functionable
+https://formspree.io/

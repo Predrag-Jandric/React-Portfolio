@@ -1,2 +1,0 @@
-- make contact form functionable
-- add CV

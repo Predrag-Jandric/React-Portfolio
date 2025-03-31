@@ -44,12 +44,12 @@ function ProjectDetails() {
           behavior: "smooth",
         });
       }
-    }, 100); //delay
+    }, 100); //must have delay
   };
 
   return (
     <>
-      <nav className="backdrop-blur-sm bg-opacity-95 fixed left-0 right-0 top-0 z-50 flex h-[9vh] w-full items-center justify-center bg-dark font-body text-white shadow-md">
+      <nav className="fixed left-0 right-0 top-0 z-50 flex h-[8vh] w-full items-center justify-center bg-dark bg-opacity-95 font-body text-white shadow-md backdrop-blur-sm">
         <div className="mx-[1.1rem] w-full max-w-[70rem]">
           <button
             onClick={handleBackClick}
