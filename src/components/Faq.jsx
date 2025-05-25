@@ -16,7 +16,7 @@ export default function Faq() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      id="faq"
+      id="FAQ"
       className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
     >
       {faqMap.map((faq, index) => {

@@ -14,7 +14,7 @@ export default function About() {
       className="mx-1 flex flex-col items-center px-3 xs:px-5"
       id="about"
     >
-      <section className="container hover:shadow-lg transition-all rounded-custom text-grayText">
+      <section className="container rounded-custom text-grayText transition-all hover:shadow-lg">
         <section className="flex flex-col">
           {/* <img
             src={devPhoto}
@@ -49,12 +49,14 @@ export default function About() {
           {/* </div> */}
         </section>
 
-        <Button
-          onClick={() => alert("Coming soon")}
-          className="mx-auto mt-10 flex w-56 gap-3"
+        <a
+          href="/assets/about/Predrag_Jandric_FrontendDeveloper_Resume.pdf"
+          download="Predrag_Jandric_FrontendDeveloper_Resume.pdf"
         >
-          Download CV <RiDownload2Fill size={20} />
-        </Button>
+          <Button className="mx-auto mt-10 flex w-56 gap-3">
+            Download CV <RiDownload2Fill size={20} />
+          </Button>
+        </a>
       </section>
     </motion.div>
   );
