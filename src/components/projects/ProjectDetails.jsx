@@ -149,7 +149,7 @@ function ProjectDetails() {
           </div>
 
           <p className="mb-4 mt-8 text-center font-body text-sm italic text-grayText/65">
-            Hover or Tap to zoom in
+            Click or Tap to zoom in
           </p>
           {project.flowchart.map((flowchart, index) => (
             <ZoomImage key={index} src={flowchart} alt={`Flowchart ${index}`} />

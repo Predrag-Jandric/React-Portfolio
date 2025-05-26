@@ -39,10 +39,12 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="pb-3 pt-[40px] text-lg text-neutral-200"
           >
-            I’ve worked with 4 teams from diverse tech backgrounds to build
-            production-ready applications in a professional setting. My
-            contributions and team-first mindset were crucial in solving user
-            problems across multiple open-source projects.
+            In the past year, I’ve made 1000+ commits and worked with 20+
+            developers across 4 teams, building real world open source apps. I
+            spent that time solving problems, reducing technical debt, and
+            shipping features on time. Open source taught me how to work with
+            different coding styles, give and receive feedback, and collaborate
+            with people from all kinds of backgrounds.
           </motion.p>
         </div>
 
@@ -55,7 +57,7 @@ export default function Hero() {
       <motion.a
         onClick={(e) => handleNavClick(e, "about")}
         rel="noopener noreferrer"
-        className="absolute bottom-8 left-1/2 z-30 text-primary"
+        className="absolute bottom-4 left-1/2 z-30 text-primary"
         initial={{ opacity: 0, y: -30, x: "-50%" }}
         animate={{
           opacity: [0, 1, 1], // Appear, stay, then stay
@@ -70,7 +72,7 @@ export default function Hero() {
           },
           y: {
             duration: 1.2, // Bounce duration for one cycle
-            delay: 7, // Starts bouncing after X seconds
+            delay: 5, // Starts bouncing after X seconds
             repeat: 3, // Repeats twice (total of 3 bounces)
             repeatType: "loop", // Ensures smooth looping
             yoyo: true, // Ensures the bounce goes up and down
@@ -78,7 +80,7 @@ export default function Hero() {
         }}
         viewport={{ once: true }}
       >
-        <SlArrowDown size={50} className="cursor-pointer" />
+        <SlArrowDown size={40} className="cursor-pointer" />
       </motion.a>
     </header>
   );
