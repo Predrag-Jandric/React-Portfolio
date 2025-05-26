@@ -29,7 +29,7 @@ export default function Faq() {
             key={index}
           >
             <p
-              className="flex cursor-pointer items-center justify-between gap-5 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50"
+              className={`${isOpen ? "border-primary" : "border-transparent"} flex cursor-pointer items-center justify-between gap-5 border-l-4 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50`}
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}

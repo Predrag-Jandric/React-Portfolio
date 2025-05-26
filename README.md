@@ -1,9 +1,6 @@
-- add CV
-
-========== FOR GITHUB PROFILE DESC ===========
-
-- add Why I Code section to your github
-- add emotional intelligence as strong point
+- update hero bg color with new "bgcolor" var
+- integrate ebuy clone instead of blurred out 4th card
+- replace hero subtitle to similar to cv
 
 hero pattern got from
 https://patternico.com/#meM0W5EUKUjVsnNY

@@ -13,7 +13,7 @@ export default {
         grayText: "#575b60",
         dark: "#292D3D",
 
-        bgcolor: "#2F4575", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
+        bgcolor: "#314e8c", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
 
         // primary colors
         primary: "#ffc654",

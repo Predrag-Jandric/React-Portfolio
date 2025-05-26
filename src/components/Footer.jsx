@@ -120,7 +120,7 @@ export default function Footer() {
         </article>
       </motion.section>
 
-      <p className="mt-4 flex items-center justify-center text-sm text-slate-500">
+      <p className="mt-4 flex items-center justify-center text-sm text-slate-400">
         &copy; {new Date().getFullYear()} Predrag. All rights reserved.
       </p>
     </footer>

@@ -40,9 +40,9 @@ export default function Roadmap() {
             <p className="text-body">
               Finish 3 mega <br /> projects{" "}
             </p>
-            <PiSealCheckFill className="size-10 text-green-400 absolute top-4 right-0" />
+            <PiSealCheckFill className="absolute right-0 top-4 size-10 text-green-400" />
           </div>
-         
+
           <motion.span
             variants={roadmapArrowVariants}
             initial="initial"
@@ -73,8 +73,8 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Do 200 code
-              <br /> challenges
+              Code challenges
+              <br /> & prepare
             </p>
           </div>
 
