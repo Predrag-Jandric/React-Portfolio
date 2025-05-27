@@ -110,7 +110,7 @@ export const projectsMap = [
     description:
       "Ebuy is a full-stack, scaled-down clone of eBay. Users can sign up, log in, browse items, and check their purchase history. They can also add or remove items from their cart, search for products, and use different filtering criteria. This has been the largest project I’ve worked on.",
     projectsImageUrl: "/assets/projects/ebuyprev.png",
-    flowchart: [""],
+    flowchart: ["/assets/projects/ebuyflowchart.png"],
     effort: "Team project",
     TechUsed: [
       "Typescript, ",
