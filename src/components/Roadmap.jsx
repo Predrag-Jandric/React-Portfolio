@@ -38,7 +38,7 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Finish 3 mega <br /> projects{" "}
+              Build 4 real <br /> world projects{" "}
             </p>
             <PiSealCheckFill className="absolute right-0 top-4 size-10 text-green-400" />
           </div>
@@ -65,7 +65,7 @@ export default function Roadmap() {
           viewport={{ once: true }}
           className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
-          <div className="flex w-fit flex-col items-center justify-center gap-3">
+          <div className="relative flex w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Q2 2025</p>
             <img
               className="size-32 object-contain md:size-20 lg:size-32"
@@ -73,9 +73,10 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Code challenges
-              <br /> & prepare
+              Practice coding &
+              <br /> prep for interviews
             </p>
+            <PiSealCheckFill className="absolute right-0 top-4 size-10 text-green-400" />
           </div>
 
           <motion.span
@@ -108,7 +109,7 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="w-24 text-body">
-              Appy and <br /> land a job
+              Appy and <br /> get hired
             </p>
           </div>
           <motion.span
@@ -141,7 +142,7 @@ export default function Roadmap() {
               alt="symbol of goal"
             />
             <p className="text-body">
-              Continue learning
+              Go deeper into
               <br /> MERN stack
             </p>
           </div>

@@ -1,12 +1,8 @@
 # Portfolio
 
-# 🔗 [Live preview]()
+# 🔗 [Live preview](https://predrag.website/)
 
-![Design preview](./public/assets/portfolioprev.png)
-
----
-
-## Table of Contents
+### Table of Contents
 
 - [About](#about)
 - [Sections](#sections)
