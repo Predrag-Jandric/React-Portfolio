@@ -30,8 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="whitespace-wrap text-[40px] font-bold text-white lg:text-[66px]"
           >
-            <span className="text-primary">Frontend</span> developer building
-            apps that shine.
+            <span className="text-primary">Frontend</span> developer turning ideas into products.
           </motion.h2>
           <motion.p
             initial={heroVariants.initial}
@@ -39,12 +38,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="pb-3 pt-[40px] text-lg text-neutral-200"
           >
-            In the past year, I’ve made 1000+ commits and worked with 20+
-            developers across 4 teams, building real world open source apps. I
-            spent that time solving problems, reducing technical debt, and
-            shipping features on time. Open source taught me how to work with
-            different coding styles, give and receive feedback, and collaborate
-            with people from all kinds of backgrounds.
+           I&apos;ve worked on real world open source apps with more than 20 developers on four different teams and made 1000+ commits in the past year. I used that time to fix problems, reduce technical debt, and get features out on time. Open source taught me how to work with people from all kinds of backgrounds, give and receive feedback, and use different coding styles. 
           </motion.p>
         </div>
 

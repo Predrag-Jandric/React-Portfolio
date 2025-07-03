@@ -31,7 +31,7 @@ export default function Roadmap() {
           className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
           <div className="relative flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">Q1 2025</p>
+            <p className="text-sm font-semibold italic">2024 - Q1 2025</p>
             <img
               className="size-32 object-contain md:size-20 lg:size-32"
               src={projects}
