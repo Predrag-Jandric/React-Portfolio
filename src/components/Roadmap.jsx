@@ -31,14 +31,14 @@ export default function Roadmap() {
           className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
           <div className="relative flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">2024 - Q1 2025</p>
+            <p className="text-sm font-semibold italic">2024</p>
             <img
               className="size-32 object-contain md:size-20 lg:size-32"
               src={projects}
               alt="symbol of goal"
             />
             <p className="text-body">
-              Build 4 real <br /> world projects{" "}
+              Build 4 big <br /> team projects{" "}
             </p>
             <PiSealCheckFill className="absolute right-0 top-4 size-10 text-green-400" />
           </div>
@@ -102,7 +102,7 @@ export default function Roadmap() {
           className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
         >
           <div className="flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">Q3 2025</p>
+            <p className="text-sm font-semibold italic">Q3 - Q4 2025</p>
             <img
               className="size-32 object-contain md:size-20 lg:size-32"
               src={job}
